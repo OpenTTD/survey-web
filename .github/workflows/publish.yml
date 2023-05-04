@@ -1,0 +1,53 @@
+name: Publish
+
+on:
+  push:
+    branches:
+    - main
+  pull_request_target:
+    branches:
+    - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    name: Publish to Cloudflare Pages
+
+    environment:
+      name: ${{ github.event_name == 'push' && 'Production' || 'Preview' }}
+      url: ${{ steps.pages.outputs.url }}
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.pull_request.head.sha || github.ref }}
+        fetch-depth: 0
+
+    - name: Set up Ruby 3.0
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0' # Not needed with a .ruby-version file
+        bundler-cache: true
+
+    - name: Build
+      run: |
+        JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter
+
+    - name: Publish to Cloudflare Pages
+      uses: cloudflare/pages-action@v1
+      id: pages
+      with:
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+        directory: _site
+        branch: ${{ github.event.pull_request.number || github.ref_name }}
