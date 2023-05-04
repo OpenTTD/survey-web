@@ -1,0 +1,102 @@
+
+#section, #section-full {
+	text-align: left;
+}
+#section {
+	width: 500px;
+}
+.section-header {
+	background: url("../img/layout/section-bg.png") repeat-x;
+	color: #365800;
+	line-height: 38px;
+	height: 38px;
+	padding: 0 10px;
+	text-align: left;
+	border-radius: 4px;
+}
+.section-header h3 {
+	background: url("../img/layout/section-news.gif") left center no-repeat;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 0 0 0 32px;
+}
+
+.section-item {
+	padding-top: 10px;
+}
+.section-item .title {
+	font-size: 16px;
+	float: left;
+	padding-top: 5px;
+}
+.section-item .title h3, .section-list li .header, .section-item .title a {
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.section-item .date {
+	text-align: right;
+}
+.section-item .user {
+	text-align: right;
+	padding-bottom: 5px;
+}
+.section-item .content {
+	border-top: 1px solid #EEEEEE;
+	font-size: 14px;
+	padding: 5px 15px 30px 15px;
+	text-align: justify;
+}
+
+article {
+	margin-top: 10px;
+}
+article > header {
+	border-bottom: 1px dotted #d8d8d8;
+	padding: 0 0 5px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+article > header h3 {
+	flex: 1 1 auto;
+}
+article > header h3, article > header h3 a {
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+}
+article > header h3 a:focus, article > header h3 a:hover {
+	color: #DD6000;
+	text-decoration: underline;
+}
+article > header p {
+	margin: 0;
+	color: #282828;
+	flex: 0 0 11em;
+	text-align: right;
+}
+article > header p > * {
+	display: block;
+}
+article > .content {
+	border-bottom: 1px solid #d8d8d8;
+	font-size: 14px;
+	padding: 5px 15px 30px 15px;
+	text-align: justify;
+}
+
+.section-item hr {
+	width: 500px;
+}
+
+.section-list {
+	list-style-type: none;
+}
+
+.further-link {
+	margin-bottom: 20px;
+	text-align: center;
+}
