@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Description" content="An open source simulator based on the classic game Transport Tycoon Deluxe. It attempts to mimic the original game as closely as possible while extending it with new features." />
+        <meta name="Keywords" content="Transport,Tycoon,Deluxe,TTDLX,TTD,OpenTTD,OTTD" />
+        <link rel="icon" href="{{ site.staticurl }}/favicon.ico" type="image/icon" />
+        <link rel="stylesheet" href="{{ site.staticurl }}/css/base.css" type="text/css" />
+        <link rel="stylesheet" href="{{ site.staticurl }}/css/page.css" type="text/css" />
+        <link rel="stylesheet" href="{{ site.staticurl }}/css/index.css" type="text/css" />
+        <title>OpenTTD{% if layout.section_title != nil %} | {{layout.section_title}}{% endif %} | {{ page.title }}</title>
+    </head>
+    <body>
+        <header>
+            <div></div>
+            <div id="openttd-logo">
+                <div id="openttd-logo-text"><a href="{{ site.baseurl }}/"><img src="{{ site.staticurl }}/img/layout/openttd-logo.png" alt="OpenTTD" /></a></div>
+            </div>
+        </header>
+        <nav>
+            <ul id="navigation-bar">
+                <li class="{% if page.active_nav == 'home' %}selected{% endif %}">
+                    <a href="{{ site.baseurl }}/">Introduction</a>
+                </li>
+                <li class="{% if page.active_nav == 'participate' %}selected{% endif %}">
+                    <a href="{{ site.baseurl }}/participate.html">Participate</a>
+                </li>
+                <li class="{% if page.active_nav == 'results' %}selected{% endif %}">
+                    <a href="{{ site.baseurl }}/results.html">Results</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            {{ content }}
+        </main>
+        <footer>
+            <div id="content-bottom-links">
+                <a href="https://www.openttd.org/policy.html">Privacy Policy</a> |
+                <a href="https://www.openttd.org/contact.html">Contact</a>
+            </div>
+             <div id="content-bottom-copyright">
+                    Copyright &copy; 2023-{{ site.time | date: '%Y' }} OpenTTD Team
+            </div>
+        </footer>
+    </body>
+</html>

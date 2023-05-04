@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+/.jekyll-cache/
+/.jekyll-metadata/
+/.sass-cache/
+/.env/
+/_analysis/
+/_site/
