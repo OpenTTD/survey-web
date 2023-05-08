@@ -1,0 +1,32 @@
+title: OpenTTD's Survey
+email: info@openttd.org
+description: >- # this means to ignore newlines until "baseurl:"
+  OpenTTD's Survey results and analysis.
+baseurl: ""
+staticurl: /static
+url: "https://survey.openttd.org"
+timezone: Etc/UTC
+excerpt_separator: <!-- more -->
+future: true
+
+markdown: kramdown
+
+exclude:
+  - fetch_downloads
+  - requirements.base
+  - requirements.txt
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "analysis"
+    values:
+      layout: "analysis"
+
+collections:
+  analysis:
+    output: true
