@@ -1,0 +1,11 @@
+name = "openttd-survey-participate"
+main = "src/index.js"
+compatibility_date = "2023-04-19"
+
+[[r2_buckets]]
+binding = 'SURVEY_BUCKET'
+bucket_name = 'openttd-survey'
+preview_bucket_name = 'openttd-survey-dev'
+
+[vars]
+JWT_KID = "1"
