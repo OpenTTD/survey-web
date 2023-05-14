@@ -84,9 +84,8 @@ async function handleSurveyResult(body, env) {
 }
 
 /* Handle verifying create request and the actual creating of a new survey-key. */
-async function handleCreateSurveyKey(request) {
+async function handleCreateSurveyKey(identifier, request, env) {
     try {
-        const identifier = pathname.split("/")[2];
         const payload = await request.clone().json();
         const signature = request.headers.get("x-signature");
 
@@ -153,7 +152,8 @@ export default {
                 context.waitUntil(handleSurveyResult(payload, env));
                 return new Response("OK");
             } else if (pathname.startsWith("/create-survey-key/")) {
-                return await handleCreateSurveyKey(request);
+                const identifier = pathname.split("/")[2];
+                return await handleCreateSurveyKey(identifier, request, env);
             } else {
                 return new Response('Not Found', {
                     status: 404,
