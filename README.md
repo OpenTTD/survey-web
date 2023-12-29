@@ -69,7 +69,7 @@ Requests to this URL have to be signed with the private key of which the public 
 
 Make a Pull Request out of this change, and point to where your patch-pack can be found etc.
 
-Next, the base64 encoded private key (`cat privatekey.pem | base64 -w0`) needs to be added as secret to the GitHub Actions of your repository.
+Next, the contents of the private key file (`privatekey.pem`) needs to be added as the `SURVEY_SIGNING_KEY` secret to the GitHub Actions of your repository.
 Now for the last part, add the `SURVEY_TYPE` variable to the GitHub Actions of your repository matching the name of the file above.
 The patch-pack can now safely create new survey keys.
 See OpenTTD's workflow (`release-source.yml`) for more details exactly how.
