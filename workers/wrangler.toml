@@ -1,6 +1,6 @@
 name = "openttd-survey-participate"
 main = "src/index.js"
-compatibility_date = "2023-04-19"
+compatibility_date = "2024-01-04"
 
 [[r2_buckets]]
 binding = 'SURVEY_BUCKET'
