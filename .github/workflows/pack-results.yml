@@ -6,9 +6,8 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: 'Date of the survey to pack'
+        description: 'Date of the survey results to pack (e.g. 2024-01-01)'
         required: true
-        default: '2024-01-01'
 
 jobs:
   publish:
@@ -25,12 +24,12 @@ jobs:
       run: |
         curl -sL https://rclone.org/install.sh | sudo bash
 
-        rclone config create --non-interactive --no-obscure openttd s3 \
+        rclone config create --no-obscure openttd s3 \
           provider Cloudflare \
           access_key_id ${{ secrets.R2_SURVEY_ACCESS_KEY_ID }} \
           secret_access_key ${{ secrets.R2_SURVEY_SECRET_ACCESS_KEY }} \
           endpoint ${{ secrets.R2_SURVEY_ENDPOINT }} \
-          acl private
+          acl private \
           no_check_bucket true
 
     - name: Download, pack, and upload survey results
@@ -53,7 +52,7 @@ jobs:
         echo "::endgroup::"
 
         echo "::group::Upload survey result pack"
-        rclone copy -v ${date}.tar.xz openttd:survey-packed-prod/${year}/${month}/${date}.tar.xz
+        rclone copy -v ${date}.tar.xz openttd:survey-packed-prod/${year}/${month}
         echo "::endgroup::"
 
         echo "::group::Remove survey results"
