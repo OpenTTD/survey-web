@@ -48,11 +48,11 @@ jobs:
         echo "::endgroup::"
 
         echo "::group::Pack survey results"
-        tar --xz -cvf ${date}.tar.xz ${date}
+        tar --xz -cvf openttd-survey-pack.${date}.tar.xz ${date}
         echo "::endgroup::"
 
         echo "::group::Upload survey result pack"
-        rclone copy -v ${date}.tar.xz openttd:survey-packed-prod/${year}/${month}
+        rclone copy -v openttd-survey-pack.${date}.tar.xz openttd:survey-packed-prod/${year}/${month}
         echo "::endgroup::"
 
         echo "::group::Remove survey results"
