@@ -4,8 +4,8 @@ compatibility_date = "2024-01-04"
 
 [[r2_buckets]]
 binding = 'SURVEY_BUCKET'
-bucket_name = 'openttd-survey'
-preview_bucket_name = 'openttd-survey-dev'
+bucket_name = 'survey-prod'
+preview_bucket_name = 'survey-preview'
 
 [vars]
 JWT_KID = "1"
