@@ -1,0 +1,61 @@
+name: Pack Survey Results
+
+on:
+  schedule:
+  - cron: '0 5 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date of the survey to pack'
+        required: true
+        default: '2024-01-01'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    name: Pack Survey Results
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install rclone
+      shell: bash
+      run: |
+        curl -sL https://rclone.org/install.sh | sudo bash
+
+        rclone config create --non-interactive --no-obscure openttd s3 \
+          provider Cloudflare \
+          access_key_id ${{ secrets.R2_SURVEY_ACCESS_KEY_ID }} \
+          secret_access_key ${{ secrets.R2_SURVEY_SECRET_ACCESS_KEY }} \
+          endpoint ${{ secrets.R2_SURVEY_ENDPOINT }} \
+          acl private
+          no_check_bucket true
+
+    - name: Download, pack, and upload survey results
+      shell: bash
+      run: |
+        date="${{ inputs.date }}"
+        if [ -z "$date" ]; then
+          date=$(date -d "yesterday" +%Y-%m-%d)
+        fi
+        year=$(date -d "${date}" +%Y)
+        month=$(date -d "${date}" +%m)
+        echo "Packing all results for ${date}"
+
+        echo "::group::Download survey results"
+        rclone copy -v openttd:survey-prod/${date} ${date}
+        echo "::endgroup::"
+
+        echo "::group::Pack survey results"
+        tar --xz -cvf ${date}.tar.xz ${date}
+        echo "::endgroup::"
+
+        echo "::group::Upload survey result pack"
+        rclone copy -v ${date}.tar.xz openttd:survey-packed-prod/${year}/${month}/${date}.tar.xz
+        echo "::endgroup::"
+
+        echo "::group::Remove survey results"
+        rclone delete -v openttd:survey-prod/${date}
+        echo "::endgroup::"
