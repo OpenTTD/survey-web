@@ -1,0 +1,15 @@
+WINDOWS_BUILD_NUMBER_TO_NAME = {
+    "4.00": "Windows 95",
+    "4.0": "Windows NT",
+    "4.10": "Windows 98",
+    "4.90": "Windows Me",
+    "5.0": "Windows 2000",
+    "5.1": "Windows XP",
+    "5.2": "Windows XP",
+    "6.0": "Windows Vista",
+    "6.1": "Windows 7",
+    "6.2": "Windows 8",
+    "6.3": "Windows 8.1",
+    "10.0": "Windows 10",
+    "10.0.22000": "Windows 11",
+}

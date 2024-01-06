@@ -8,6 +8,12 @@ This is a [Jekyll](https://jekyllrb.com/) website, and is served by nginx as a s
 
 ## Development
 
+### Survey results
+
+To summarize survey results, the Python application `analysis` processes a bundle of JSONs and outputs another JSON with the summary.
+
+To run it, simply execute `python3 -m analysis <tar-xz bundle files>`
+
 ### Running a local server
 
 If you do not want to run a server, but just build the current site, replace `serve` with `build` in the examples below.
