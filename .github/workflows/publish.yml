@@ -50,4 +50,4 @@ jobs:
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
         directory: _site
-        branch: ${{ github.event_name == 'push' && github.ref_name || format('pull/{0}', github.event.pull_request.number) }}
+        branch: ${{ github.event_name == 'push' && github.ref_name || format('pr/{0}', github.event.pull_request.number) }}
