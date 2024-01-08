@@ -59,22 +59,22 @@ jobs:
         start_date=$(date -d "${first_monday} +${week} weeks -1 week" +%Y-%m-%d)
         end_date=$(date -d "${start_date} +6 days" +%Y-%m-%d)
 
+        if [ "${week}" -lt 10 ]; then
+          week="0${week}"
+        fi
+
         # Ensure the start date is actually in the week we want.
         start_check=$(date -d "${start_date}" +%G-%V)
         if [ "${start_check}" != "${year}-${week}" ]; then
-          echo "Start date ${start_date} is not in week ${week} of ${year}, but in ${start_check}"
+          echo "Start date ${start_date} is not in ${year}-${week}, but in ${start_check}"
           exit 1
         fi
 
         # Ensure the end date is actually in the week we want.
         end_check=$(date -d "${end_date}" +%G-%V)
         if [ "${end_check}" != "${year}-${week}" ]; then
-          echo "End date ${end_date} is not in week ${week} of ${year}, but in ${end_check}"
+          echo "End date ${end_date} is not in ${year}-${week}, but in ${end_check}"
           exit 1
-        fi
-
-        if [ "${week}" -lt 10 ]; then
-          week="0${week}"
         fi
 
         echo "Week: ${week}"
@@ -94,9 +94,9 @@ jobs:
 
         mkdir -p packed
         for i in $(seq 0 6); do
-          date=$(date -d "${start_date} +${i} days" +%Y-%m-%d)
-          date_year=$(date -d "${start_date} +${i} days" +%Y)
-          date_month=$(date -d "${start_date} +${i} days" +%m)
+          date=$(date -d "${{ steps.dates.outputs.start_date }} +${i} days" +%Y-%m-%d)
+          date_year=$(date -d "${{ steps.dates.outputs.start_date }} +${i} days" +%Y)
+          date_month=$(date -d "${{ steps.dates.outputs.start_date }} +${i} days" +%m)
 
           echo "Downloading ${date}"
           rclone copy -v openttd:survey-packed-prod/${date_year}/${date_month}/openttd-survey-pack.${date}.tar.xz packed
