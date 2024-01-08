@@ -1,0 +1,137 @@
+name: Create Summary
+
+on:
+  schedule:
+  - cron: '0 7 * * 1'
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Year to create the summary of'
+        required: true
+      week:
+        description: 'ISO week to create the summary of'
+        required: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    name: Create Summary
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install rclone
+      shell: bash
+      run: |
+        curl -sL https://rclone.org/install.sh | sudo bash
+
+        rclone config create --no-obscure openttd s3 \
+          provider Cloudflare \
+          access_key_id ${{ secrets.R2_SURVEY_ACCESS_KEY_ID }} \
+          secret_access_key ${{ secrets.R2_SURVEY_SECRET_ACCESS_KEY }} \
+          endpoint ${{ secrets.R2_SURVEY_ENDPOINT }} \
+          acl private \
+          no_check_bucket true
+
+    - name: Calculate dates
+      shell: bash
+      id: dates
+      run: |
+        year="${{ inputs.year }}"
+        week="${{ inputs.week }}"
+
+        # If no year/week is given, detect the week before today.
+        # This assumes this script is started on a Monday.
+        if [ -z "${year}" ] || [ -z "${week}"]; then
+          year=$(date -d "yesterday" +%G)
+          week=$(date -d "yesterday" +%V)
+        fi
+
+        # Calculate the start and end of the week.
+        day_in_week=$(date -d "${year}-01-01" +%u)
+        if [ "${day_in_week}" -lt 5 ]; then
+            first_monday=$(date -d "${year}-01-01 -${day_in_week} days +1 day" +%Y-%m-%d)
+        else
+            first_monday=$(date -d "${year}-01-01 -${day_in_week} days +8 day" +%Y-%m-%d)
+        fi
+        start_date=$(date -d "${first_monday} +${week} weeks -1 week" +%Y-%m-%d)
+        end_date=$(date -d "${start_date} +6 days" +%Y-%m-%d)
+
+        # Ensure the start date is actually in the week we want.
+        start_check=$(date -d "${start_date}" +%G-%V)
+        if [ "${start_check}" != "${year}-${week}" ]; then
+          echo "Start date ${start_date} is not in week ${week} of ${year}, but in ${start_check}"
+          exit 1
+        fi
+
+        # Ensure the end date is actually in the week we want.
+        end_check=$(date -d "${end_date}" +%G-%V)
+        if [ "${end_check}" != "${year}-${week}" ]; then
+          echo "End date ${end_date} is not in week ${week} of ${year}, but in ${end_check}"
+          exit 1
+        fi
+
+        if [ "${week}" -lt 10 ]; then
+          week="0${week}"
+        fi
+
+        echo "Week: ${week}"
+        echo "Year: ${year}"
+        echo "Start date: ${start_date}"
+        echo "End date: ${end_date}"
+
+        echo "week=${week}" >> "$GITHUB_OUTPUT"
+        echo "year=${year}" >> "$GITHUB_OUTPUT"
+        echo "start_date=${start_date}" >> "$GITHUB_OUTPUT"
+        echo "end_date=${end_date}" >> "$GITHUB_OUTPUT"
+
+    - name: Download packed results
+      shell: bash
+      run: |
+        echo "Downloading packs for week ${{ steps.dates.outputs.week }} in ${{ steps.dates.outputs.year }}: [${{ steps.dates.outputs.start_date }} .. ${{ steps.dates.outputs.end_date }}]"
+
+        mkdir -p packed
+        for i in $(seq 0 6); do
+          date=$(date -d "${start_date} +${i} days" +%Y-%m-%d)
+          date_year=$(date -d "${start_date} +${i} days" +%Y)
+          date_month=$(date -d "${start_date} +${i} days" +%m)
+
+          echo "Downloading ${date}"
+          rclone copy -v openttd:survey-packed-prod/${date_year}/${date_month}/openttd-survey-pack.${date}.tar.xz packed
+        done
+
+    - name: Run analysis
+      shell: bash
+      run: |
+        mkdir -p _data/summaries/${{ steps.dates.outputs.year }}
+        python -m analysis packed/* > _data/summaries/${{ steps.dates.outputs.year }}/wk${{ steps.dates.outputs.week }}.json
+
+    - name: Create summary entry
+      shell: bash
+      run: |
+        mkdir -p _summaries/${{ steps.dates.outputs.year }}
+        summary="_summaries/${{ steps.dates.outputs.year }}/wk${{ steps.dates.outputs.week }}.md"
+
+        echo "---" > ${summary}
+        echo "name: ${{ steps.dates.outputs.year }} - Week ${{ steps.dates.outputs.week }}" >> ${summary}
+        echo "title: Survey Result Summary - ${{ steps.dates.outputs.year }} - Week ${{ steps.dates.outputs.week }}"
+        echo "active_nav: summaries" >> ${summary}
+        echo "year: \"${{ steps.dates.outputs.year }}\"" >> ${summary}
+        echo "week: wk${{ steps.dates.outputs.week }}" >> ${summary}
+        echo "start_date: \"${{ steps.dates.outputs.start_date }}\"" >> ${summary}
+        echo "end_date: \"${{ steps.dates.outputs.end_date }}\"" >> ${summary}
+        echo "---" >> ${summary}
+
+    - name: Commit and push
+      shell: bash
+      run: |
+        git config --global user.name "OpenTTD Survey"
+        git config --global user.email "survey@openttd.org"
+
+        git add _data/summaries/${{ steps.dates.outputs.year }}/wk${{ steps.dates.outputs.week }}.json
+        git add _summaries/${{ steps.dates.outputs.year }}/wk${{ steps.dates.outputs.week }}.md
+
+        git commit -m "Add: summary for week ${{ steps.dates.outputs.week }} of ${{ steps.dates.outputs.year }}"
+        git push

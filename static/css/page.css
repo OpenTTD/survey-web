@@ -100,3 +100,29 @@ article > .content {
 	margin-bottom: 20px;
 	text-align: center;
 }
+
+.summary-table tr:nth-child(odd) {
+	background-color: #f8f8f8;
+}
+.summary-table tr:nth-child(even) {
+	background-color: #f4f4f4;
+}
+.summary-table tr:hover {
+	background-color: #e0e0e0;
+}
+
+.summary-table tr.setting {
+	background-color: #ffffff;
+}
+
+.summary-table tr.setting th {
+	padding-top: 8px;
+	width: 600px;
+}
+
+.summary-table pre {
+	background-color: #e0e0e0;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}

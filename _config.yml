@@ -23,10 +23,10 @@ defaults:
       layout: "default"
   - scope:
       path: ""
-      type: "analysis"
+      type: "summaries"
     values:
-      layout: "analysis"
+      layout: "summaries"
 
 collections:
-  analysis:
+  summaries:
     output: true
