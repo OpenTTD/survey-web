@@ -4,6 +4,11 @@ notifications:
     - openttd
     - openttd.notice
 
+  push:
+    only:
+    - main
+    only-by:
+    - survey-summary\[bot\]
   pull-request:
     except-by:
     - dependabot\[bot\]
