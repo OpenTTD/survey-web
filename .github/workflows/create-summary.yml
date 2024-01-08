@@ -19,8 +19,18 @@ jobs:
     name: Create Summary
 
     steps:
+    - name: Generate access token
+      id: generate_token
+      uses: tibdex/github-app-token@v1
+      with:
+        app_id: ${{ secrets.SURVEY_SUMMARY_APP_ID }}
+        private_key: ${{ secrets.SURVEY_SUMMARY_APP_PRIVATE_KEY }}
+        repository: OpenTTD/survey-web
+
     - name: Checkout
       uses: actions/checkout@v3
+      with:
+        token: ${{ steps.generate_token.outputs.token }}
 
     - name: Install rclone
       shell: bash
