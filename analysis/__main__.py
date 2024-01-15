@@ -34,6 +34,7 @@ BLACKLIST_PATHS = [
     "id",  # Not interesting.
     "info.compiler",  # Not interesting.
     "info.configuration.graphics_set",  # Processed differently.
+    "info.configuration.graphics_set_parameters",  # Processed differently.
     "info.configuration.music_set",  # Processed differently.
     "info.configuration.sound_set",  # Processed differently.
     "info.libraries",  # Not interesting.
