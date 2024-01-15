@@ -69,7 +69,7 @@ jobs:
         start_date=$(date -d "${first_monday} +${week} weeks -1 week" +%Y-%m-%d)
         end_date=$(date -d "${start_date} +6 days" +%Y-%m-%d)
 
-        if [ "${week}" -lt 10 ]; then
+        if [ "$(echo -n ${week} | wc -c)" = "1" ]; then
           week="0${week}"
         fi
 
