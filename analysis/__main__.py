@@ -65,6 +65,19 @@ def summarize_setting(summary, version, seconds, path, data):
 
         return
 
+    # Broken data from the early days.
+    if path == "info.plugins":
+        return
+
+    # Only track plugins if they are running.
+    if path.startswith("info.plugins"):
+        for entry in data:
+            if entry["state"] == "running":
+                data = entry["version"]
+                break
+        else:
+            data = "(not running)"
+
     if type(data) is list:
         raise Exception("Lists are not implemented yet")
 
