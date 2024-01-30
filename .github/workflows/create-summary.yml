@@ -21,14 +21,15 @@ jobs:
     steps:
     - name: Generate access token
       id: generate_token
-      uses: tibdex/github-app-token@v1
+      uses: tibdex/github-app-token@v2
       with:
         app_id: ${{ secrets.SURVEY_SUMMARY_APP_ID }}
         private_key: ${{ secrets.SURVEY_SUMMARY_APP_PRIVATE_KEY }}
-        repository: OpenTTD/survey-web
+        installation_retrieval_mode: "repository"
+        installation_retrieval_payload: "OpenTTD/survey-web"
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         token: ${{ steps.generate_token.outputs.token }}
 
