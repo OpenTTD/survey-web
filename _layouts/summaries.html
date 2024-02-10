@@ -45,38 +45,38 @@ layout: default
                     <p>
                         Due to low number of games played, no summary is available.
                     </p>
-                    {% continue %}
-                {% endif %}
+                {% else %}
 
-                {% assign seconds = version[1].summary.seconds | times: 1.0 %}
+                    {% assign seconds = version[1].summary.seconds | times: 1.0 %}
 
-                <p>
-                    We received surveys for a total of {{ version[1].summary.seconds | divided_by: 3600 | round: 2 }} hours of games played, over a total of {{ version[1].summary.ids }} games.
-                    This is an average of {{ seconds | divided_by: version[1].summary.ids | divided_by: 3600 | round: 2 }} hours per game.
-                </p>
+                    <p>
+                        We received surveys for a total of {{ version[1].summary.seconds | divided_by: 3600 | round: 2 }} hours of games played, over a total of {{ version[1].summary.ids }} games.
+                        This is an average of {{ seconds | divided_by: version[1].summary.ids | divided_by: 3600 | round: 2 }} hours per game.
+                    </p>
 
-                <table class="summary-table">
-                {% for summary in version[1] %}
-                    {% if summary[0] == "summary" %}{% continue %}{% endif %}
-                    <tr id="{{ version[0] }}-{{ summary[0] }}" class="setting">
-                        <th colspan="3">
-                            <a href="#{{ version[0] }}-{{ summary[0] }}">{{ summary[0] }}</a>
-                        </th>
-                    </tr>
-                    {% for line in summary[1] %}
-                        {% assign percentage = line[1] | divided_by: seconds | percentage %}
-                    <tr>
-                        <td style="width: 40px;"></td>
-                        <td><pre>{{ line[0] }}</pre></td>
-                        {% if percentage == "0.0" %}
-                        <td style="text-align: right;">&lt;0.1%</td>
-                        {% else %}
-                        <td style="text-align: right;">{{ percentage }}%</td>
-                        {% endif %}
-                    </tr>
+                    <table class="summary-table">
+                    {% for summary in version[1] %}
+                        {% if summary[0] == "summary" %}{% continue %}{% endif %}
+                        <tr id="{{ version[0] }}-{{ summary[0] }}" class="setting">
+                            <th colspan="3">
+                                <a href="#{{ version[0] }}-{{ summary[0] }}">{{ summary[0] }}</a>
+                            </th>
+                        </tr>
+                        {% for line in summary[1] %}
+                            {% assign percentage = line[1] | divided_by: seconds | percentage %}
+                        <tr>
+                            <td style="width: 40px;"></td>
+                            <td><pre>{{ line[0] }}</pre></td>
+                            {% if percentage == "0.0" %}
+                            <td style="text-align: right;">&lt;0.1%</td>
+                            {% else %}
+                            <td style="text-align: right;">{{ percentage }}%</td>
+                            {% endif %}
+                        </tr>
+                        {% endfor %}
                     {% endfor %}
-                {% endfor %}
-                </table>
+                    </table>
+                {% endif %}
             </div>
         </div>
     {% endfor %}
