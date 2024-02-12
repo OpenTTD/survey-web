@@ -154,6 +154,10 @@ def summarize_result(summary, fp):
         # Invalid (or very old) survey result.
         return
 
+    # Due to a bug in OpenTTD, clients report a broken "seconds".
+    if data["info"]["configuration"]["network"] == "client":
+        return
+
     # Surveys results that were either mostly paused or really short are skipped
     # to avoid people gaming the system.
     if seconds < 60 or ticks < 100:
