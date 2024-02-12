@@ -250,7 +250,7 @@ def main():
                 data["(not reported)"] = version_summary["summary"]["seconds"] - total
 
             # Collapse entries below 0.1% to a single (other) entry, and not true/false.
-            if path != "summary":
+            if path not in ("summary", "reason"):
                 collapse = []
                 for key, value in data.items():
                     if value / total < 0.001 and key not in ("true", "false", "(not reported)"):
