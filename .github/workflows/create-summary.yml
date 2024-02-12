@@ -55,7 +55,7 @@ jobs:
 
         # If no year/week is given, detect the week before today.
         # This assumes this script is started on a Monday.
-        if [ -z "${year}" ] || [ -z "${week}"]; then
+        if [ -z "${year}" ] || [ -z "${week}" ]; then
           year=$(date -d "yesterday" +%G)
           week=$(date -d "yesterday" +%V)
         fi
