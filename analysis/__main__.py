@@ -233,7 +233,7 @@ def main():
             # Sort the data based on the value.
             summary[version][path] = dict(sorted(data.items(), key=lambda item: item[1], reverse=True))
 
-    print(json.dumps(summary, indent=4))
+    print(json.dumps(dict(sorted(summary.items(), key=lambda item: item[0])), indent=4))
 
 
 if __name__ == "__main__":
