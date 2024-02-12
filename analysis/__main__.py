@@ -92,6 +92,7 @@ def summarize_setting(summary, version, seconds, path, data):
     if path == "info.configuration.video_info":
         if "(" not in data or data.startswith("sdl "):
             data = "(no hardware acceleration)"
+            summarize_setting(summary, version, seconds, f"{path}.brand", data)
         else:
             driver = data.split("(")[0].strip()
 
@@ -105,6 +106,19 @@ def summarize_setting(summary, version, seconds, path, data):
             data = data.replace("(TM)", "@TM@").replace("(R)", "@R@").replace("(C)", "@C@")
             data = data.split(",")[0].split("(")[0].strip()
             data = data.replace("@TM@", "(TM)").replace("@R@", "(R)").replace("@C@", "(C)")
+
+            if "nvidia" in data.lower() or "geforce" in data.lower() or "quadro" in data.lower():
+                brand = "NVIDIA"
+            elif "intel" in data.lower():
+                brand = "Intel"
+            elif "amd " in data.lower() or "radeon" in data.lower():
+                brand = "AMD"
+            elif "apple" in data.lower():
+                brand = "Apple"
+            else:
+                brand = "(other)"
+
+            summarize_setting(summary, version, seconds, f"{path}.brand", brand)
 
     if path == "game.settings.resolution":
         width, _, height = data.partition(",")
