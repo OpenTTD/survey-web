@@ -229,10 +229,21 @@ def main():
             if path.startswith("game.settings.display_opt.") or path.startswith("game.settings.extra_display_opt."):
                 data["false"] = version_summary["summary"]["seconds"] - data["true"]
 
-            # Check if it adds up to the total; if not, it is (most likely) an OS specific setting.
             total = sum(data.values())
+
+            # Check if it adds up to the total; if not, it is (most likely) an OS specific setting.
             if path != "summary" and total != version_summary["summary"]["seconds"]:
                 data["(not reported)"] = version_summary["summary"]["seconds"] - total
+
+            # Collapse entries below 0.1% to a single (other) entry, and not true/false.
+            if path != "summary":
+                collapse = []
+                for key, value in data.items():
+                    if value / total < 0.001 and key not in ("true", "false", "(not reported)"):
+                        collapse.append(key)
+                for key in collapse:
+                    data["(other)"] += data[key]
+                    del data[key]
 
             # Sort the data based on the value.
             summary[version][path] = dict(sorted(data.items(), key=lambda item: item[1], reverse=True))
