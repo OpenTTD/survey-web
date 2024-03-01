@@ -11,8 +11,8 @@ permalink: /summaries.html
     </div>
     <div class="section-item">
         <div class="content">
-            {% for year in site.summaries %}
-            {{ year.end_date }}: <a href="{{ year.url }}">Survey Result Summary - {{ year.name }}</a><br/>
+            {% for summary in site.summaries %}
+                {{ summary.end_date }}: <a href="{{ summary.url }}">Survey Result Summary - {{ summary.name }}</a><br/>
             {% endfor %}
         </div>
     </div>
