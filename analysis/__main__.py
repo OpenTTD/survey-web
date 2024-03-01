@@ -172,6 +172,11 @@ def summarize_result(summary, fp):
     if data["info"]["configuration"]["network"] == "client":
         return
 
+    # This is most likely an unix timestamp; caused by bugs in the client,
+    # but let's make sure it doesn't influence the survey results.
+    if seconds > 1000000000:
+        return
+
     # Surveys results that were either mostly paused or really short are skipped
     # to avoid people gaming the system.
     if seconds < 60 or ticks < 100:
