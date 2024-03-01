@@ -9796,2972 +9796,4914 @@
     "jgrpp-0.57.0": null,
     "jgrpp-0.57.1": {
         "game.settings.advance_order_on_clone": {
-            "false": 1717387334,
+            "false": 8925503,
             "true": 2172309
         },
         "game.settings.ai.ai_disable_veh_aircraft": {
-            "false": 1719070160,
+            "false": 10608329,
             "true": 489483
         },
         "game.settings.ai.ai_disable_veh_roadveh": {
-            "false": 1719461682,
+            "false": 10999851,
             "true": 97961
         },
         "game.settings.ai.ai_disable_veh_ship": {
-            "false": 1719440186,
+            "false": 10978355,
             "true": 119457
         },
         "game.settings.ai.ai_disable_veh_train": {
-            "false": 1719197259,
+            "false": 10735428,
             "true": 362384
         },
         "game.settings.ai.ai_in_multiplayer": {
-            "true": 1718502074,
+            "true": 10040243,
             "false": 1057569
         },
         "game.settings.allow_hidpi": {
-            "(not reported)": 1718174142,
+            "(not reported)": 9712311,
             "true": 1385501
         },
         "game.settings.auto_timetable_separation_rate": {
-            "30": 1708560864,
             "40": 10793684,
-            "(other)": 205095
+            "20": 121140,
+            "30": 99033,
+            "60": 49322,
+            "100": 17762,
+            "50": 16871
         },
         "game.settings.blitter": {
-            "(empty)": 1719296846,
-            "(other)": 262797
+            "(empty)": 10835015,
+            "32bpp-anim": 242473,
+            "32bpp-optimized": 20324
         },
         "game.settings.cargo_payment_x_mode": {
-            "1": 1711652754,
-            "0": 7906889
+            "0": 7906889,
+            "1": 3190923
         },
         "game.settings.client_locale.sync_locale_network_server": {
-            "false": 1719006430,
+            "false": 10544599,
             "true": 553213
         },
         "game.settings.construction.allow_docks_under_bridges": {
-            "true": 1714223691,
+            "true": 5761860,
             "false": 5335952
         },
         "game.settings.construction.allow_grf_objects_under_bridges": {
-            "true": 1714335289,
+            "true": 5873458,
             "false": 5224354
         },
         "game.settings.construction.allow_road_stops_under_bridges": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.construction.allow_stations_under_bridges": {
-            "true": 1715260190,
+            "true": 6798359,
             "false": 4299453
         },
         "game.settings.construction.autoslope": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.construction.build_object_area_permitted": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.construction.build_object_frame_burst": {
-            "2048": 1719559643
+            "2048": 11097812
         },
         "game.settings.construction.build_object_per_64k_frames": {
-            "2097152": 1719559643
+            "2097152": 11097812
         },
         "game.settings.construction.build_on_slopes": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.construction.chunnel": {
-            "true": 1715976777,
+            "true": 7514946,
             "false": 3582866
         },
         "game.settings.construction.clear_frame_burst": {
-            "4096": 1719518015,
-            "(other)": 41628
+            "4096": 11056184,
+            "32": 41628
         },
         "game.settings.construction.clear_per_64k_frames": {
-            "4194304": 1719559643
+            "4194304": 11097812
         },
         "game.settings.construction.command_pause_level": {
-            "3": 1717567387,
+            "3": 9105556,
             "1": 1978695,
-            "(other)": 13561
+            "2": 13561
         },
         "game.settings.construction.convert_town_road_no_houses": {
-            "true": 1709421012,
-            "false": 10138631
+            "false": 10138631,
+            "true": 959181
         },
         "game.settings.construction.crossing_with_competitor": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.construction.enable_build_river": {
-            "true": 1715806394,
+            "true": 7344563,
             "false": 3753249
         },
         "game.settings.construction.enable_remove_water": {
-            "true": 1719501695,
+            "true": 11039864,
             "false": 57948
         },
         "game.settings.construction.extra_dynamite": {
-            "true": 1719354271,
+            "true": 10892440,
             "false": 205372
         },
         "game.settings.construction.extra_tree_placement": {
-            "3": 1709307562,
             "2": 9879199,
-            "(other)": 372882
+            "3": 845731,
+            "1": 217149,
+            "0": 155733
         },
         "game.settings.construction.flood_from_edges": {
-            "true": 1719506486,
+            "true": 11044655,
             "false": 53157
         },
         "game.settings.construction.freeform_edges": {
-            "true": 1719543180,
+            "true": 11081349,
             "false": 16463
         },
         "game.settings.construction.ignore_object_intro_dates": {
-            "false": 1715785247,
+            "false": 7323416,
             "true": 3774396
         },
         "game.settings.construction.industry_platform": {
-            "1": 1716333560,
+            "1": 7871729,
             "0": 2172811,
-            "(other)": 1053272
+            "4": 558584,
+            "2": 487855,
+            "(other)": 6833
         },
         "game.settings.construction.map_edge_mode": {
-            "0": 1718870260,
-            "(other)": 689383
+            "0": 10408429,
+            "2": 689383
         },
         "game.settings.construction.map_height_limit": {
-            "130": 1708636632,
-            "(other)": 9079970,
-            "30": 1843041
+            "30": 1843041,
+            "105": 1180596,
+            "15": 787513,
+            "115": 634098,
+            "255": 626921,
+            "46": 597520,
+            "76": 553861,
+            "45": 477018,
+            "32": 391531,
+            "40": 345019,
+            "34": 336886,
+            "31": 258350,
+            "64": 238783,
+            "102": 222432,
+            "67": 206452,
+            "35": 185612,
+            "130": 174801,
+            "75": 173600,
+            "165": 160760,
+            "43": 142921,
+            "145": 141735,
+            "38": 134405,
+            "52": 108451,
+            "143": 108243,
+            "100": 99725,
+            "19": 94556,
+            "74": 89086,
+            "184": 86218,
+            "88": 82808,
+            "65": 78129,
+            "60": 68232,
+            "55": 68088,
+            "47": 51810,
+            "82": 42404,
+            "80": 37096,
+            "20": 32274,
+            "50": 31958,
+            "155": 30111,
+            "95": 28568,
+            "79": 27616,
+            "44": 26465,
+            "78": 26320,
+            "(other)": 25459,
+            "66": 24773,
+            "128": 15567
         },
         "game.settings.construction.max_bridge_height": {
-            "255": 1710275030,
             "12": 6735587,
-            "(other)": 2549026
+            "255": 1813199,
+            "52": 1158166,
+            "20": 428860,
+            "16": 380509,
+            "100": 277131,
+            "24": 99126,
+            "88": 82718,
+            "50": 54054,
+            "30": 28326,
+            "14": 20652,
+            "(other)": 19484
         },
         "game.settings.construction.max_bridge_length": {
-            "4096": 1709961792,
             "64": 5536559,
-            "(other)": 4061292
+            "128": 1706154,
+            "4096": 1499961,
+            "100": 894257,
+            "500": 405693,
+            "1964": 299409,
+            "120": 293301,
+            "32": 77238,
+            "20": 63768,
+            "256": 60270,
+            "72": 56158,
+            "(other)": 50546,
+            "24": 41651,
+            "124": 32708,
+            "640": 29439,
+            "68": 25635,
+            "400": 25065
         },
         "game.settings.construction.max_tunnel_length": {
-            "4096": 1710041104,
             "64": 4796092,
-            "(other)": 4722447
+            "4096": 1579273,
+            "2048": 1158166,
+            "100": 743247,
+            "128": 697718,
+            "300": 330528,
+            "3166": 299409,
+            "256": 287194,
+            "800": 270313,
+            "1000": 241298,
+            "400": 101965,
+            "120": 82718,
+            "32": 81173,
+            "72": 66159,
+            "75": 53157,
+            "248": 49234,
+            "80": 46621,
+            "24": 36319,
+            "(other)": 34242,
+            "124": 32708,
+            "500": 30665,
+            "640": 28879,
+            "90": 25961,
+            "116": 24773
         },
         "game.settings.construction.maximum_signal_evaluations": {
-            "4096": 1708907579,
             "256": 9984196,
-            "(other)": 667868
+            "4096": 445748,
+            "1024": 342481,
+            "400": 231804,
+            "2560": 49234,
+            "500": 25065,
+            "512": 15567,
+            "(other)": 3717
         },
         "game.settings.construction.no_expire_objects_after": {
-            "0": 1718019187,
-            "(other)": 1540456
+            "0": 9557356,
+            "1": 1357788,
+            "1980": 137858,
+            "1984": 30175,
+            "(other)": 14635
         },
         "game.settings.construction.purchase_land_frame_burst": {
-            "1024": 1719559643
+            "1024": 11097812
         },
         "game.settings.construction.purchase_land_per_64k_frames": {
-            "1048576": 1719559643
+            "1048576": 11097812
         },
         "game.settings.construction.purchase_land_permitted": {
-            "2": 1715608619,
+            "2": 7146788,
             "1": 3950644,
             "(other)": 380
         },
         "game.settings.construction.rail_custom_bridge_heads": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.construction.raw_industry_construction": {
-            "1": 1714243407,
+            "1": 5781576,
             "0": 3280226,
             "2": 2036010
         },
         "game.settings.construction.road_custom_bridge_heads": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.construction.road_stop_on_competitor_road": {
-            "true": 1719479353,
+            "true": 11017522,
             "false": 80290
         },
         "game.settings.construction.road_stop_on_town_road": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.construction.terraform_frame_burst": {
-            "4096": 1719510462,
-            "(other)": 49181
+            "4096": 11048631,
+            "24": 39571,
+            "(other)": 9610
         },
         "game.settings.construction.terraform_per_64k_frames": {
-            "4194304": 1719553134,
+            "4194304": 11091303,
             "(other)": 6509
         },
         "game.settings.construction.train_signal_side": {
-            "1": 1718791454,
-            "(other)": 768189
+            "1": 10329623,
+            "0": 728174,
+            "2": 40015
         },
         "game.settings.construction.tree_frame_burst": {
-            "4096": 1719558514,
+            "4096": 11096683,
             "(other)": 1129
         },
         "game.settings.construction.tree_growth_rate": {
-            "4": 1709334687,
             "0": 9573719,
-            "(other)": 651237
+            "4": 872856,
+            "3": 252332,
+            "2": 215086,
+            "1": 183819
         },
         "game.settings.construction.tree_per_64k_frames": {
-            "4194304": 1719559643
+            "4194304": 11097812
         },
         "game.settings.construction.trees_around_snow_line_dynamic_range": {
-            "50": 1708641643,
             "75": 10804951,
-            "(other)": 113049
+            "50": 179812,
+            "60": 40787,
+            "25": 27617,
+            "(other)": 17177,
+            "0": 15417,
+            "100": 12051
         },
         "game.settings.construction.trees_around_snow_line_enabled": {
-            "true": 1719557691,
+            "true": 11095860,
             "false": 1952
         },
         "game.settings.construction.trees_around_snow_line_range": {
-            "30": 1708641643,
             "8": 10171147,
-            "(other)": 746853
+            "9": 271972,
+            "30": 179812,
+            "6": 161268,
+            "64": 151111,
+            "10": 69622,
+            "20": 32358,
+            "50": 25065,
+            "2": 18010,
+            "(other)": 17447
         },
         "game.settings.copy_clone_add_to_group": {
-            "true": 1719555430,
+            "true": 11093599,
             "false": 4213
         },
         "game.settings.debug.chicken_bits": {
-            "0": 1719558147,
+            "0": 11096316,
             "(other)": 1496
         },
         "game.settings.debug.newgrf_optimiser_flags": {
-            "0": 1719559643
+            "0": 11097812
         },
         "game.settings.default_sched_dispatch_duration": {
-            "0": 1719393832,
-            "(other)": 165811
+            "0": 10932001,
+            "60": 165811
         },
         "game.settings.difficulty.competitor_speed": {
-            "2": 1718071524,
-            "(other)": 1488119
+            "2": 9609693,
+            "0": 475715,
+            "3": 418209,
+            "4": 348877,
+            "1": 245318
         },
         "game.settings.difficulty.competitors_interval": {
-            "10": 1717836644,
-            "(other)": 1722999
+            "10": 9374813,
+            "0": 802808,
+            "5": 402333,
+            "1": 280864,
+            "60": 80649,
+            "30": 71008,
+            "3": 61286,
+            "(other)": 24051
         },
         "game.settings.difficulty.construction_cost": {
-            "0": 1716596319,
-            "(other)": 2963324
+            "0": 8134488,
+            "1": 1654628,
+            "2": 1308696
         },
         "game.settings.difficulty.disasters": {
-            "false": 1718670875,
+            "false": 10209044,
             "true": 888768
         },
         "game.settings.difficulty.economy": {
-            "false": 1717084831,
+            "false": 8623000,
             "true": 2474812
         },
         "game.settings.difficulty.industry_density": {
-            "0": 1713325892,
+            "0": 4864061,
             "4": 3233673,
-            "(other)": 3000078
+            "2": 935393,
+            "3": 882565,
+            "5": 726550,
+            "6": 374871,
+            "1": 80699
         },
         "game.settings.difficulty.initial_interest": {
-            "2": 1718332057,
-            "(other)": 1227586
+            "2": 9870226,
+            "4": 861155,
+            "3": 366431
         },
         "game.settings.difficulty.line_reverse_mode": {
-            "false": 1719057433,
+            "false": 10595602,
             "true": 502210
         },
         "game.settings.difficulty.max_loan": {
-            "20000000": 1708644413,
-            "(other)": 5822303,
-            "300000": 5092927
+            "300000": 5092927,
+            "500000": 1219483,
+            "5000000": 1199440,
+            "2000000000": 601220,
+            "0": 599953,
+            "2500000": 393551,
+            "200000": 319500,
+            "50000000": 225148,
+            "580000": 189979,
+            "20000000": 182582,
+            "1000000": 150219,
+            "3300000": 110595,
+            "900000": 105184,
+            "400000": 103253,
+            "360000": 89555,
+            "250000": 83714,
+            "320000": 50740,
+            "830000": 43277,
+            "450000": 37635,
+            "50000": 35150,
+            "550000": 32105,
+            "100000": 31302,
+            "(other)": 29498,
+            "390000": 26839,
+            "10000": 25065,
+            "3000000": 24152,
+            "15000000": 22674,
+            "2000000": 20656,
+            "600000": 19234,
+            "1250000": 18087,
+            "12500000": 15095
         },
         "game.settings.difficulty.max_no_competitors": {
-            "0": 1718153273,
-            "(other)": 1406370
+            "0": 9691442,
+            "14": 347786,
+            "1": 302813,
+            "7": 299514,
+            "3": 177838,
+            "2": 136157,
+            "6": 90413,
+            "10": 31178,
+            "4": 11820,
+            "(other)": 8851
         },
         "game.settings.difficulty.money_cheat_in_multiplayer": {
-            "false": 1718932474,
+            "false": 10470643,
             "true": 627169
         },
         "game.settings.difficulty.number_towns": {
-            "3": 1709774409,
             "2": 3248744,
             "4": 2648443,
             "0": 2164628,
-            "1": 1723419
+            "1": 1723419,
+            "3": 1312578
         },
         "game.settings.difficulty.override_town_settings_in_multiplayer": {
-            "true": 1709392055,
-            "false": 10167588
+            "false": 10167588,
+            "true": 930224
         },
         "game.settings.difficulty.quantity_sea_lakes": {
-            "0": 1712411463,
+            "0": 3949632,
             "1": 2975989,
             "2": 2527497,
-            "(other)": 1644694
+            "4": 1132637,
+            "3": 512057
         },
         "game.settings.difficulty.rename_towns_in_multiplayer": {
-            "true": 1709730138,
-            "false": 9829505
+            "false": 9829505,
+            "true": 1268307
         },
         "game.settings.difficulty.subsidy_duration": {
-            "0": 1708679439,
             "1": 9112235,
-            "(other)": 1767969
+            "5000": 537769,
+            "10": 506866,
+            "500": 231804,
+            "0": 217608,
+            "2": 143200,
+            "5": 129201,
+            "3": 107217,
+            "4": 70981,
+            "8": 26465,
+            "15": 12214,
+            "(other)": 2252
         },
         "game.settings.difficulty.subsidy_multiplier": {
-            "2": 1715399357,
+            "2": 6937526,
             "3": 3423157,
-            "(other)": 737129
+            "1": 402909,
+            "0": 334220
         },
         "game.settings.difficulty.terrain_type": {
-            "1": 1711963606,
-            "(other)": 3951515,
+            "1": 3501775,
             "5": 1902252,
-            "2": 1742270
+            "2": 1742270,
+            "0": 1639560,
+            "3": 1238836,
+            "4": 1073119
         },
         "game.settings.difficulty.town_council_tolerance": {
-            "3": 1711360409,
             "0": 8051309,
-            "(other)": 147925
+            "3": 2898578,
+            "1": 113712,
+            "2": 34213
         },
         "game.settings.difficulty.vehicle_breakdowns": {
-            "0": 1716167631,
+            "0": 7705800,
             "1": 2700208,
-            "(other)": 691804
+            "64": 571489,
+            "2": 120315
         },
         "game.settings.difficulty.vehicle_costs": {
-            "1": 1710011070,
             "0": 8723097,
-            "(other)": 825476
+            "1": 1549239,
+            "2": 825476
         },
         "game.settings.difficulty.vehicle_costs_in_depot": {
-            "1": 1717535857,
-            "(other)": 2023786
+            "1": 9074026,
+            "8": 928871,
+            "4": 663181,
+            "3": 308297,
+            "5": 56291,
+            "2": 39881,
+            "6": 25313,
+            "(other)": 1952
         },
         "game.settings.difficulty.vehicle_costs_when_stopped": {
-            "6": 1708735496,
             "1": 8829816,
-            "(other)": 1994331
+            "8": 776900,
+            "2": 581406,
+            "3": 405405,
+            "6": 273665,
+            "4": 209419,
+            "5": 21201
         },
         "game.settings.display_opt.FULL_ANIMATION": {
-            "true": 1718908495,
+            "true": 10446664,
             "false": 651148
         },
         "game.settings.display_opt.FULL_DETAIL": {
-            "true": 1718246940,
+            "true": 9785109,
             "false": 1312703
         },
         "game.settings.display_opt.SHOW_COMPETITOR_SIGNS": {
-            "true": 1718538182,
+            "true": 10076351,
             "false": 1021461
         },
         "game.settings.display_opt.SHOW_SIGNS": {
-            "true": 1718851869,
+            "true": 10390038,
             "false": 707774
         },
         "game.settings.display_opt.SHOW_STATION_NAMES": {
-            "true": 1719061783,
+            "true": 10599952,
             "false": 497860
         },
         "game.settings.display_opt.SHOW_TOWN_NAMES": {
-            "true": 1719350771,
+            "true": 10888940,
             "false": 208872
         },
         "game.settings.display_opt.WAYPOINTS": {
-            "true": 1718631144,
+            "true": 10169313,
             "false": 928499
         },
         "game.settings.economy.allow_shares": {
-            "false": 1715318608,
+            "false": 6856777,
             "true": 4241035
         },
         "game.settings.economy.allow_town_bridges": {
-            "true": 1718731923,
+            "true": 10270092,
             "false": 827720
         },
         "game.settings.economy.allow_town_level_crossings": {
-            "false": 1712771786,
-            "true": 6787857
+            "true": 6787857,
+            "false": 4309955
         },
         "game.settings.economy.allow_town_roads": {
-            "false": 1711870336,
-            "true": 7689307
+            "true": 7689307,
+            "false": 3408505
         },
         "game.settings.economy.bribe": {
-            "true": 1719106010,
+            "true": 10644179,
             "false": 453633
         },
         "game.settings.economy.city_zone_0_mult": {
-            "255": 1709446205,
             "15": 9290318,
-            "(other)": 823120
+            "255": 984374,
+            "30": 443834,
+            "99": 270313,
+            "8": 40787,
+            "25": 32313,
+            "(other)": 20306,
+            "96": 15567
         },
         "game.settings.economy.city_zone_1_mult": {
-            "4": 1709020579,
             "9": 9934467,
-            "(other)": 604597
+            "4": 558748,
+            "99": 270313,
+            "0": 148016,
+            "15": 128880,
+            "16": 22924,
+            "(other)": 19047,
+            "32": 15417
         },
         "game.settings.economy.city_zone_2_mult": {
-            "3": 1709148419,
             "0": 9566589,
-            "(other)": 844635
+            "3": 686588,
+            "6": 443834,
+            "99": 270313,
+            "2": 56622,
+            "10": 32313,
+            "8": 22924,
+            "4": 18468,
+            "(other)": 161
         },
         "game.settings.economy.city_zone_3_mult": {
-            "2": 1709085202,
             "5": 9871485,
-            "(other)": 602956
+            "2": 623371,
+            "99": 270313,
+            "0": 180423,
+            "3": 72607,
+            "1": 41055,
+            "8": 22924,
+            "4": 15567,
+            "(other)": 67
         },
         "game.settings.economy.city_zone_4_mult": {
-            "1": 1709117676,
             "3": 9946263,
-            "(other)": 495704
+            "1": 655845,
+            "99": 270313,
+            "0": 189071,
+            "9": 22924,
+            "(other)": 13396
         },
         "game.settings.economy.day_length_factor": {
-            "43": 1708636369,
             "1": 5493784,
-            "(other)": 5429490
+            "125": 1498151,
+            "20": 575881,
+            "30": 478086,
+            "4": 434910,
+            "10": 428535,
+            "3": 342928,
+            "24": 226932,
+            "5": 192406,
+            "43": 174538,
+            "60": 158109,
+            "19": 142925,
+            "2": 134639,
+            "32": 111570,
+            "8": 96835,
+            "9": 94475,
+            "14": 82447,
+            "15": 74243,
+            "70": 69703,
+            "16": 44316,
+            "54": 32313,
+            "21": 32302,
+            "7": 30238,
+            "100": 27765,
+            "22": 24773,
+            "12": 23835,
+            "31": 20038,
+            "11": 18707,
+            "(other)": 18046,
+            "25": 14382
         },
         "game.settings.economy.disable_inflation_newgrf_flag": {
-            "false": 1719559643
+            "false": 11097812
         },
         "game.settings.economy.dist_local_authority": {
-            "20": 1719556976,
+            "20": 11095145,
             "(other)": 2667
         },
         "game.settings.economy.exclusive_rights": {
-            "true": 1718312025,
+            "true": 9850194,
             "false": 1247618
         },
         "game.settings.economy.feeder_payment_share": {
-            "75": 1717021943,
-            "(other)": 2537700
+            "75": 8560112,
+            "3": 1155749,
+            "100": 458924,
+            "67": 235561,
+            "80": 216824,
+            "70": 146272,
+            "40": 83201,
+            "25": 78679,
+            "90": 73816,
+            "30": 33817,
+            "(other)": 31933,
+            "0": 22924
         },
         "game.settings.economy.found_town": {
-            "2": 1714602290,
+            "2": 6140459,
             "0": 4240721,
-            "(other)": 716632
+            "1": 716632
         },
         "game.settings.economy.fund_buildings": {
-            "false": 1710765214,
-            "true": 8794429
+            "true": 8794429,
+            "false": 2303383
         },
         "game.settings.economy.fund_roads": {
-            "true": 1717912024,
+            "true": 9450193,
             "false": 1647619
         },
         "game.settings.economy.give_money": {
-            "true": 1719559512,
+            "true": 11097681,
             "false": 131
         },
         "game.settings.economy.industry_cargo_scale": {
-            "162": 1708662981,
             "100": 8144958,
-            "(other)": 2751704
+            "151": 1157701,
+            "200": 454105,
+            "250": 443834,
+            "162": 201150,
+            "3000": 181419,
+            "110": 82803,
+            "492": 81044,
+            "5": 66382,
+            "500": 61286,
+            "55": 34690,
+            "50": 30789,
+            "150": 30175,
+            "800": 29521,
+            "(other)": 29149,
+            "174": 22473,
+            "1500": 19074,
+            "228": 15459,
+            "1000": 11800
         },
         "game.settings.economy.industry_cargo_scale_mode": {
-            "0": 1719162923,
-            "(other)": 396720
+            "0": 10701092,
+            "1": 396720
         },
         "game.settings.economy.inflation": {
-            "false": 1717312685,
+            "false": 8850854,
             "true": 2246958
         },
         "game.settings.economy.inflation_fixed_dates": {
-            "false": 1712052185,
-            "true": 7507458
+            "true": 7507458,
+            "false": 3590354
         },
         "game.settings.economy.infrastructure_maintenance": {
-            "true": 1713379118,
-            "false": 6180525
+            "false": 6180525,
+            "true": 4917287
         },
         "game.settings.economy.infrastructure_sharing[0]": {
-            "true": 1713727526,
-            "false": 5832117
+            "false": 5832117,
+            "true": 5265695
         },
         "game.settings.economy.infrastructure_sharing[1]": {
-            "true": 1713942043,
-            "false": 5617600
+            "false": 5617600,
+            "true": 5480212
         },
         "game.settings.economy.infrastructure_sharing[2]": {
-            "true": 1713516299,
-            "false": 6043344
+            "false": 6043344,
+            "true": 5054468
         },
         "game.settings.economy.infrastructure_sharing[3]": {
-            "true": 1713671340,
-            "false": 5888303
+            "false": 5888303,
+            "true": 5209509
         },
         "game.settings.economy.initial_city_size": {
-            "8": 1708733199,
             "2": 6896164,
-            "(other)": 3930280
+            "10": 1202164,
+            "1": 1054901,
+            "5": 720784,
+            "4": 595681,
+            "3": 308555,
+            "8": 271368,
+            "7": 48195
         },
         "game.settings.economy.larger_towns": {
-            "0": 1708879828,
             "4": 5381103,
-            "(other)": 5298712
+            "15": 1309526,
+            "5": 1003149,
+            "1": 537731,
+            "10": 492166,
+            "12": 478065,
+            "0": 417997,
+            "16": 354043,
+            "3": 258964,
+            "255": 208656,
+            "2": 152224,
+            "8": 148665,
+            "20": 94241,
+            "100": 83826,
+            "6": 82462,
+            "18": 61286,
+            "7": 23085,
+            "(other)": 10623
         },
         "game.settings.economy.max_town_heightlevel": {
-            "30": 1708647297,
             "255": 9246371,
-            "(other)": 1665975
+            "17": 270313,
+            "50": 231760,
+            "199": 209295,
+            "25": 207632,
+            "30": 185466,
+            "100": 141735,
+            "12": 123919,
+            "7": 99460,
+            "16": 96567,
+            "20": 52588,
+            "(other)": 41379,
+            "8": 41221,
+            "200": 38503,
+            "48": 35406,
+            "10": 32332,
+            "64": 31185,
+            "70": 12680
         },
         "game.settings.economy.min_city_land_area": {
-            "140": 1708636632,
             "75": 9551562,
-            "(other)": 1371449
+            "160": 270313,
+            "300": 231760,
+            "400": 228049,
+            "140": 174801,
+            "200": 117828,
+            "50": 112612,
+            "0": 101415,
+            "100": 98655,
+            "80": 61286,
+            "40": 34714,
+            "60": 28568,
+            "45": 24773,
+            "64": 24720,
+            "(other)": 22448,
+            "20": 14308
         },
         "game.settings.economy.min_town_land_area": {
-            "25": 1708636713,
             "0": 9875575,
-            "(other)": 1047355
+            "200": 270313,
+            "100": 236341,
+            "25": 174882,
+            "50": 170282,
+            "20": 136606,
+            "10": 71599,
+            "40": 70279,
+            "5": 67566,
+            "(other)": 24369
         },
         "game.settings.economy.min_years_for_shares": {
-            "6": 1716788268,
-            "(other)": 2771375
+            "6": 8326437,
+            "1": 1199775,
+            "0": 749193,
+            "3": 339687,
+            "4": 192446,
+            "10": 153647,
+            "5": 127199,
+            "(other)": 9428
         },
         "game.settings.economy.mod_road_rebuild": {
-            "true": 1718954911,
+            "true": 10493080,
             "false": 604732
         },
         "game.settings.economy.multiple_industry_per_town": {
-            "true": 1714754128,
+            "true": 6292297,
             "false": 4805515
         },
         "game.settings.economy.payment_algorithm": {
-            "1": 1717875017,
-            "(other)": 1684626
+            "1": 9413186,
+            "0": 1684626
         },
         "game.settings.economy.random_road_reconstruction": {
-            "0": 1718936561,
-            "(other)": 623082
+            "0": 10474730,
+            "1": 158878,
+            "120": 156861,
+            "20": 152674,
+            "3": 83073,
+            "30": 61286,
+            "(other)": 10310
         },
         "game.settings.economy.sharing_fee[0]": {
-            "10": 1708643432,
             "100": 8016418,
             "0": 2025069,
-            "(other)": 874724
+            "10": 181601,
+            "80": 178275,
+            "300": 156861,
+            "400": 74904,
+            "120": 56669,
+            "500": 50424,
+            "150": 46836,
+            "40": 44528,
+            "108100": 30160,
+            "60": 29451,
+            "110": 26465,
+            "50": 26247,
+            "70": 24773,
+            "(other)": 23007,
+            "135141": 21557,
+            "440": 20728,
+            "609": 19964,
+            "365": 19082,
+            "1000": 12803,
+            "5000": 11990
         },
         "game.settings.economy.sharing_fee[1]": {
-            "10": 1708667712,
             "100": 8197419,
             "0": 2019795,
-            "(other)": 674717
+            "60": 239436,
+            "10": 205881,
+            "25": 103667,
+            "400": 58252,
+            "120": 56294,
+            "200": 49951,
+            "(other)": 39422,
+            "520": 39373,
+            "50": 36271,
+            "80": 26465,
+            "110": 13596,
+            "5000": 11990
         },
         "game.settings.economy.sharing_fee[2]": {
-            "100": 1717168358,
+            "100": 8706527,
             "0": 2018530,
-            "(other)": 372755
+            "120": 56294,
+            "200": 50174,
+            "1250": 49322,
+            "140": 39373,
+            "(other)": 28055,
+            "90": 26465,
+            "50": 26247,
+            "500": 24953,
+            "70": 24773,
+            "505": 20728,
+            "5000": 13568,
+            "1000": 12803
         },
         "game.settings.economy.sharing_fee[3]": {
-            "100": 1716929461,
+            "100": 8467630,
             "0": 2019795,
-            "(other)": 610387
+            "400": 135962,
+            "140": 82650,
+            "5000": 61312,
+            "120": 56294,
+            "135181": 51717,
+            "540": 36388,
+            "200": 31753,
+            "(other)": 27015,
+            "50": 26888,
+            "150": 26465,
+            "425": 24953,
+            "460": 20728,
+            "1500": 15459,
+            "1000": 12803
         },
         "game.settings.economy.sharing_payment_in_debt": {
-            "false": 1717498018,
+            "false": 9036187,
             "true": 2061625
         },
         "game.settings.economy.station_noise_level": {
-            "false": 1715220594,
+            "false": 6758763,
             "true": 4339049
         },
         "game.settings.economy.tick_rate": {
-            "0": 1718141278,
-            "(other)": 1418365
+            "0": 9679447,
+            "1": 1418365
         },
         "game.settings.economy.town_build_tunnels": {
-            "2": 1718360075,
-            "(other)": 1199568
+            "2": 9898244,
+            "0": 763563,
+            "1": 436005
         },
         "game.settings.economy.town_cargo_scale": {
-            "200": 1709862900,
             "100": 7877632,
-            "(other)": 1819111
+            "200": 1401069,
+            "250": 444621,
+            "400": 186742,
+            "107": 153850,
+            "141": 152773,
+            "(other)": 109755,
+            "20": 69449,
+            "174": 62982,
+            "500": 61286,
+            "80": 52120,
+            "5": 49382,
+            "160": 40728,
+            "50": 37227,
+            "71": 35639,
+            "228": 35580,
+            "40": 28191,
+            "10": 27189,
+            "1600": 25486,
+            "7": 25358,
+            "170": 22473,
+            "120": 20019,
+            "186": 19116,
+            "1500": 19074,
+            "151": 18291,
+            "19": 16691,
+            "3": 15183,
+            "214": 14493,
+            "25": 13677,
+            "246": 13621,
+            "492": 13547,
+            "1000": 11800,
+            "13": 11516,
+            "6": 11252
         },
         "game.settings.economy.town_cargo_scale_mode": {
-            "0": 1719296868,
-            "(other)": 262775
+            "0": 10835037,
+            "1": 262775
         },
         "game.settings.economy.town_cargogen_mode": {
-            "1": 1717031660,
+            "1": 8569829,
             "0": 2527983
         },
         "game.settings.economy.town_growth_cargo_transported": {
-            "0": 1715954973,
-            "(other)": 3604670
+            "0": 7493142,
+            "50": 1244520,
+            "100": 970218,
+            "75": 390589,
+            "30": 352905,
+            "70": 213115,
+            "20": 148063,
+            "40": 106104,
+            "10": 103173,
+            "1": 30702,
+            "25": 22735,
+            "60": 11826,
+            "(other)": 10720
         },
         "game.settings.economy.town_growth_rate": {
-            "2": 1715248189,
-            "(other)": 2305122,
-            "4": 2006332
+            "2": 6786358,
+            "4": 2006332,
+            "0": 694201,
+            "1": 627097,
+            "-1": 401261,
+            "-2": 318950,
+            "3": 263613
         },
         "game.settings.economy.town_layout": {
-            "1": 1712881662,
             "0": 4683347,
-            "(other)": 1994634
+            "1": 4419831,
+            "3": 1363495,
+            "4": 591257,
+            "2": 39882
         },
         "game.settings.economy.town_max_road_slope": {
-            "4": 1718196712,
-            "(other)": 1362931
+            "4": 9734881,
+            "1": 391694,
+            "3": 291298,
+            "2": 274040,
+            "0": 262954,
+            "8": 119552,
+            "5": 21609,
+            "(other)": 1784
         },
         "game.settings.economy.town_min_distance": {
-            "35": 1708768970,
             "20": 8173777,
-            "(other)": 2616896
+            "15": 706846,
+            "200": 556820,
+            "35": 307139,
+            "25": 270597,
+            "40": 245234,
+            "150": 231760,
+            "30": 192664,
+            "60": 111570,
+            "45": 76370,
+            "100": 71031,
+            "50": 69870,
+            "16": 49951,
+            "65": 28842,
+            "(other)": 5341
         },
         "game.settings.economy.town_noise_population[0]": {
-            "800": 1719559643
+            "800": 11097812
         },
         "game.settings.economy.town_noise_population[1]": {
-            "2000": 1719556976,
+            "2000": 11095145,
             "(other)": 2667
         },
         "game.settings.economy.town_noise_population[2]": {
-            "4000": 1719556976,
+            "4000": 11095145,
             "(other)": 2667
         },
         "game.settings.economy.town_zone_0_mult": {
-            "255": 1709163133,
             "15": 9384946,
-            "(other)": 1011564
+            "255": 701302,
+            "30": 443999,
+            "127": 283072,
+            "18": 146272,
+            "8": 40787,
+            "25": 32313,
+            "20": 30702,
+            "(other)": 18852,
+            "96": 15567
         },
         "game.settings.economy.town_zone_1_mult": {
-            "3": 1708967380,
             "9": 10102848,
-            "(other)": 489415
+            "3": 505549,
+            "0": 218181,
+            "15": 128880,
+            "4": 62310,
+            "16": 53626,
+            "32": 15417,
+            "(other)": 11001
         },
         "game.settings.economy.town_zone_2_mult": {
-            "2": 1709178849,
             "0": 9690242,
-            "(other)": 690552
+            "2": 717018,
+            "6": 443834,
+            "3": 190932,
+            "10": 32313,
+            "8": 22924,
+            "(other)": 549
         },
         "game.settings.economy.town_zone_3_mult": {
-            "1": 1709017233,
             "5": 9626734,
-            "(other)": 915676
+            "1": 555402,
+            "6": 443834,
+            "0": 184194,
+            "3": 145687,
+            "2": 118872,
+            "8": 23089
         },
         "game.settings.economy.town_zone_4_mult": {
-            "0": 1709168730,
             "3": 9705283,
-            "(other)": 685630
+            "0": 706899,
+            "5": 443999,
+            "1": 218484,
+            "9": 22924,
+            "(other)": 223
         },
         "game.settings.economy.town_zone_calc_mode": {
-            "true": 1710911778,
-            "false": 8647865
+            "false": 8647865,
+            "true": 2449947
         },
         "game.settings.economy.type": {
-            "1": 1717241541,
+            "1": 8779710,
             "2": 2175904,
-            "(other)": 142198
+            "0": 142198
         },
         "game.settings.engine_renew": {
-            "true": 1716536160,
+            "true": 8074329,
             "false": 3023483
         },
         "game.settings.engine_renew_money": {
-            "80000": 1708471309,
             "100000": 9354420,
-            "(other)": 1733914
+            "0": 1447167,
+            "60000": 110870,
+            "20000": 46698,
+            "(other)": 39011,
+            "300000": 36388,
+            "40000": 32443,
+            "1220000": 17762,
+            "10000": 13053
         },
         "game.settings.engine_renew_months": {
-            "0": 1708990728,
             "6": 8174580,
-            "(other)": 2394335
+            "-1": 1400739,
+            "0": 528897,
+            "12": 447148,
+            "-6": 411567,
+            "-3": 89555,
+            "-4": 24923,
+            "-12": 11229,
+            "(other)": 9174
         },
         "game.settings.extra_display_opt.SHOW_HIDDEN_SIGNS": {
-            "false": 1719407445,
+            "false": 10945614,
             "true": 152198
         },
         "game.settings.extra_display_opt.SHOW_MONEY_TEXT_EFFECTS": {
-            "true": 1719297261,
+            "true": 10835430,
             "false": 262382
         },
         "game.settings.extra_transparency_locks": {
-            "1": 1709141559,
-            "0": 10418084
+            "0": 10418084,
+            "1": 679728
         },
         "game.settings.extra_transparency_options": {
-            "1": 1711049045,
-            "0": 8510598
+            "0": 8510598,
+            "1": 2587214
         },
         "game.settings.fullscreen": {
-            "false": 1716046983,
+            "false": 7585152,
             "true": 3512660
         },
         "game.settings.game_creation.amount_of_rivers": {
-            "2": 1713027494,
+            "2": 4565663,
             "0": 3428909,
             "1": 2226769,
-            "(other)": 876471
+            "3": 699430,
+            "5": 97568,
+            "4": 79473
         },
         "game.settings.game_creation.amount_of_rocks": {
-            "1": 1709229053,
             "5": 10067718,
-            "(other)": 262872
+            "1": 767222,
+            "7": 166526,
+            "4": 37298,
+            "3": 29261,
+            "8": 17063,
+            "(other)": 12724
         },
         "game.settings.game_creation.build_public_roads": {
-            "1": 1711195604,
             "0": 7426085,
-            "(other)": 937954
+            "1": 2733773,
+            "2": 937954
         },
         "game.settings.game_creation.climate_threshold_mode": {
-            "0": 1719183491,
-            "(other)": 376152
+            "0": 10721660,
+            "1": 376152
         },
         "game.settings.game_creation.coast_tropics_width": {
-            "0": 1719211583,
-            "(other)": 348060
+            "0": 10749752,
+            "2": 318607,
+            "3": 19828,
+            "(other)": 9625
         },
         "game.settings.game_creation.custom_industry_number": {
-            "1": 1718742836,
-            "(other)": 816807
+            "1": 10281005,
+            "2000": 257569,
+            "1600": 141735,
+            "5000": 96252,
+            "50": 67860,
+            "400": 61286,
+            "1500": 57787,
+            "(other)": 53782,
+            "2": 41106,
+            "30": 27617,
+            "1000": 11813
         },
         "game.settings.game_creation.custom_sea_level": {
-            "1": 1713805749,
+            "1": 5343918,
             "2": 3287856,
-            "(other)": 2466038
+            "5": 1475760,
+            "25": 257561,
+            "70": 128142,
+            "15": 115804,
+            "75": 96790,
+            "10": 82569,
+            "80": 81491,
+            "(other)": 65671,
+            "17": 49234,
+            "7": 39571,
+            "55": 34424,
+            "40": 26381,
+            "90": 12640
         },
         "game.settings.game_creation.custom_terrain_type": {
-            "30": 1716468038,
-            "(other)": 3091605
+            "30": 8006207,
+            "90": 1254149,
+            "255": 361912,
+            "25": 270313,
+            "10": 252849,
+            "100": 179786,
+            "1": 125497,
+            "35": 111632,
+            "150": 110660,
+            "33": 89546,
+            "169": 86218,
+            "180": 49698,
+            "85": 49234,
+            "40": 34481,
+            "65": 32313,
+            "(other)": 23459,
+            "60": 21379,
+            "50": 19609,
+            "20": 18870
         },
         "game.settings.game_creation.custom_town_number": {
-            "1300": 1708783378,
             "1": 6305005,
-            "(other)": 4471260
+            "55": 1158166,
+            "1200": 445686,
+            "50": 399488,
+            "1300": 321547,
+            "5000": 291232,
+            "40": 286644,
+            "9": 231760,
+            "20": 213969,
+            "250": 209654,
+            "144": 204893,
+            "2999": 111570,
+            "400": 110845,
+            "1700": 96567,
+            "(other)": 96527,
+            "500": 72274,
+            "150": 72144,
+            "200": 70160,
+            "100": 57778,
+            "99": 41106,
+            "450": 35180,
+            "376": 34331,
+            "2200": 32313,
+            "5": 31455,
+            "1000": 24414,
+            "700": 23768,
+            "825": 22954,
+            "1500": 19017,
+            "130": 17681,
+            "64": 13444,
+            "600": 12322,
+            "125": 11480,
+            "4000": 11277,
+            "30": 11161
         },
         "game.settings.game_creation.desert_coverage": {
-            "50": 1716843177,
-            "(other)": 2716466
+            "50": 8381346,
+            "40": 673938,
+            "30": 493577,
+            "0": 326032,
+            "20": 262336,
+            "75": 232929,
+            "33": 155762,
+            "80": 140138,
+            "90": 124344,
+            "25": 85829,
+            "60": 83057,
+            "100": 61296,
+            "55": 31178,
+            "15": 29212,
+            "(other)": 16838
         },
         "game.settings.game_creation.ending_year": {
-            "2050": 1718031320,
-            "(other)": 1528323
+            "2050": 9569489,
+            "2199": 283072,
+            "9999": 270313,
+            "0": 168092,
+            "2021": 161268,
+            "2400": 87394,
+            "2222": 82718,
+            "2500": 76302,
+            "2200": 63722,
+            "2100": 49575,
+            "2064": 49234,
+            "3000": 35680,
+            "1900": 32313,
+            "4000": 31797,
+            "2077": 31178,
+            "2024": 30175,
+            "4999999": 22924,
+            "2080": 20489,
+            "2150": 17475,
+            "(other)": 14602
         },
         "game.settings.game_creation.height_affects_rocks": {
-            "5": 1708673885,
             "0": 9909553,
-            "(other)": 976205
+            "1": 402452,
+            "4": 327207,
+            "3": 229697,
+            "5": 212054,
+            "(other)": 16849
         },
         "game.settings.game_creation.heightmap_height": {
-            "130": 1708778367,
-            "(other)": 5703330,
-            "30": 5077946
+            "30": 5077946,
+            "255": 1346553,
+            "100": 647853,
+            "200": 460678,
+            "80": 391979,
+            "15": 323109,
+            "130": 316536,
+            "150": 276162,
+            "72": 263518,
+            "85": 252898,
+            "60": 211144,
+            "52": 206452,
+            "40": 168382,
+            "45": 157137,
+            "35": 130990,
+            "128": 120651,
+            "20": 110831,
+            "50": 105578,
+            "42": 96567,
+            "64": 82454,
+            "70": 60005,
+            "1": 58539,
+            "10": 45457,
+            "140": 35122,
+            "160": 32747,
+            "29": 26465,
+            "5": 26017,
+            "(other)": 25175,
+            "51": 24773,
+            "25": 16094
         },
         "game.settings.game_creation.heightmap_rotation": {
-            "0": 1718480603,
-            "(other)": 1079040
+            "0": 10018772,
+            "1": 1079040
         },
         "game.settings.game_creation.lake_size": {
-            "62": 1708636632,
             "8": 9645382,
-            "(other)": 1277629
+            "100": 614755,
+            "62": 174801,
+            "12": 150446,
+            "20": 115494,
+            "6": 90806,
+            "10": 82977,
+            "16": 77802,
+            "60": 61286,
+            "40": 25065,
+            "(other)": 21486,
+            "0": 18870,
+            "14": 18642
         },
         "game.settings.game_creation.lake_tropics_width": {
-            "2": 1708641643,
             "5": 10512841,
-            "(other)": 405159
+            "8": 283072,
+            "2": 179812,
+            "7": 84772,
+            "25": 25065,
+            "(other)": 12250
         },
         "game.settings.game_creation.lakes_allowed_in_deserts": {
-            "false": 1718456450,
+            "false": 9994619,
             "true": 1103193
         },
         "game.settings.game_creation.land_generator": {
-            "1": 1719548429,
-            "(other)": 11214
+            "1": 11086598,
+            "0": 11214
         },
         "game.settings.game_creation.landscape": {
-            "arctic": 1712846542,
             "temperate": 6430435,
-            "(other)": 282666
+            "arctic": 4384711,
+            "tropic": 215466,
+            "toyland": 67200
         },
         "game.settings.game_creation.map_x": {
-            "9": 1709490457,
-            "(other)": 6557805,
             "8": 1784104,
-            "12": 1727277
+            "12": 1727277,
+            "7": 1542620,
+            "10": 1449728,
+            "13": 1411722,
+            "11": 1334020,
+            "9": 1028626,
+            "6": 772314,
+            "14": 47401
         },
         "game.settings.game_creation.map_y": {
-            "9": 1709683464,
-            "(other)": 4853246,
             "8": 2900754,
-            "12": 2122179
+            "12": 2122179,
+            "10": 1580256,
+            "11": 1390792,
+            "9": 1221633,
+            "13": 875873,
+            "6": 733948,
+            "7": 256113,
+            "14": 16264
         },
         "game.settings.game_creation.min_river_length": {
-            "86": 1708641643,
             "16": 9695301,
-            "(other)": 1222699
+            "255": 274054,
+            "80": 231760,
+            "86": 179812,
+            "10": 161268,
+            "100": 151111,
+            "6": 91035,
+            "21": 61598,
+            "180": 61286,
+            "46": 49234,
+            "26": 28630,
+            "25": 27617,
+            "36": 25947,
+            "50": 25065,
+            "2": 18870,
+            "(other)": 15224
         },
         "game.settings.game_creation.oil_refinery_limit": {
-            "114": 1708641643,
             "32": 7394501,
-            "(other)": 3523499
+            "46": 1158166,
+            "48": 1045870,
+            "128": 855019,
+            "12": 293910,
+            "114": 179812,
+            "44": 61286,
+            "(other)": 35296,
+            "20": 28326,
+            "30": 24135,
+            "40": 21491
         },
         "game.settings.game_creation.rainforest_line_height": {
-            "8": 1719118323,
-            "(other)": 441320
+            "8": 10656492,
+            "20": 231760,
+            "10": 96567,
+            "5": 49630,
+            "1": 30850,
+            "15": 30111,
+            "(other)": 2402
         },
         "game.settings.game_creation.river_route_random": {
-            "6": 1708734433,
             "5": 10185567,
-            "(other)": 639643
+            "6": 272602,
+            "30": 270313,
+            "255": 163670,
+            "20": 93169,
+            "2": 89555,
+            "10": 20922,
+            "(other)": 2014
         },
         "game.settings.game_creation.river_tropics_width": {
-            "2": 1708641643,
             "5": 10241444,
-            "(other)": 676556
+            "8": 263823,
+            "7": 195096,
+            "2": 179812,
+            "10": 102801,
+            "6": 87219,
+            "20": 25065,
+            "(other)": 2552
         },
         "game.settings.game_creation.rivers_top_of_hill": {
-            "true": 1719336603,
+            "true": 10874772,
             "false": 223040
         },
         "game.settings.game_creation.se_flat_world_height": {
-            "1": 1717049049,
-            "(other)": 2510594
+            "1": 8587218,
+            "4": 1158166,
+            "5": 530775,
+            "3": 394126,
+            "15": 258229,
+            "0": 138902,
+            "2": 30396
         },
         "game.settings.game_creation.snow_coverage": {
-            "30": 1709448835,
             "40": 7105759,
-            "(other)": 3005049
+            "30": 987004,
+            "20": 617829,
+            "100": 615453,
+            "0": 366909,
+            "50": 314866,
+            "80": 302263,
+            "70": 187733,
+            "60": 174289,
+            "15": 116450,
+            "90": 101192,
+            "45": 90465,
+            "10": 64466,
+            "(other)": 21705,
+            "25": 17224,
+            "95": 14205
         },
         "game.settings.game_creation.snow_line_height": {
-            "24": 1708653855,
-            "(other)": 6053789,
             "10": 2602154,
-            "7": 2249845
+            "7": 2249845,
+            "4": 1101106,
+            "15": 932363,
+            "5": 907617,
+            "2": 749743,
+            "3": 423149,
+            "12": 263654,
+            "30": 247460,
+            "11": 232799,
+            "13": 208798,
+            "9": 206288,
+            "6": 197239,
+            "24": 192024,
+            "32": 155006,
+            "20": 107243,
+            "47": 100926,
+            "22": 61286,
+            "(other)": 38581,
+            "31": 27617,
+            "8": 24204,
+            "14": 21383,
+            "255": 18137,
+            "253": 17504,
+            "55": 11686
         },
         "game.settings.game_creation.starting_year": {
-            "1930": 1709373510,
-            "(other)": 7535841,
-            "1950": 2650292
+            "1950": 2650292,
+            "1900": 929461,
+            "1930": 911679,
+            "1920": 759937,
+            "2020": 499310,
+            "2201": 443834,
+            "1860": 437535,
+            "2033": 359868,
+            "1850": 345541,
+            "1945": 295807,
+            "2000": 249578,
+            "2051": 231804,
+            "2100": 216662,
+            "2023": 212003,
+            "1980": 176655,
+            "1990": 165031,
+            "1960": 154693,
+            "1942": 141735,
+            "(other)": 128342,
+            "1918": 123112,
+            "1880": 119095,
+            "1978": 111570,
+            "1872": 110595,
+            "1875": 106676,
+            "2010": 103712,
+            "1881": 81388,
+            "1970": 75211,
+            "1870": 62357,
+            "1975": 60207,
+            "1934": 58120,
+            "2030": 52852,
+            "1951": 49425,
+            "1965": 49417,
+            "1976": 48478,
+            "1830": 45942,
+            "1987": 43277,
+            "1935": 36330,
+            "1940": 34884,
+            "2002": 34777,
+            "1931": 34690,
+            "1968": 34331,
+            "2024": 32768,
+            "1992": 31749,
+            "2050": 30708,
+            "1835": 29026,
+            "1815": 28051,
+            "1997": 27617,
+            "1972": 22954,
+            "1919": 18870,
+            "1925": 18311,
+            "1885": 17861,
+            "1910": 15885,
+            "1962": 13733,
+            "2040": 12920,
+            "1999": 11146
         },
         "game.settings.game_creation.tgen_smoothness": {
-            "1": 1712742792,
+            "1": 4280961,
             "2": 3959995,
-            "(other)": 2856856
+            "0": 1679404,
+            "3": 1177452
         },
         "game.settings.game_creation.town_name": {
-            "german": 1708786832,
-            "(other)": 5445400,
             "21": 3076769,
-            "english": 2250642
+            "english": 2250642,
+            "22": 1189465,
+            "american": 969407,
+            "23": 533900,
+            "czech": 445533,
+            "polish": 420101,
+            "dutch": 397064,
+            "german": 325001,
+            "25": 293028,
+            "swedish": 284020,
+            "romanian": 166526,
+            "danish": 142355,
+            "silly": 140288,
+            "24": 138274,
+            "107": 90651,
+            "finnish": 61355,
+            "hungarian": 44139,
+            "latin": 35657,
+            "(other)": 29023,
+            "french": 21748,
+            "swiss": 17696,
+            "austrian": 13141,
+            "27": 12029
         },
         "game.settings.game_creation.tree_placer": {
-            "3": 1712019106,
             "2": 7236089,
-            "(other)": 304448
+            "3": 3557275,
+            "0": 270016,
+            "1": 34432
         },
         "game.settings.game_creation.variety": {
-            "4": 1710120870,
             "0": 2964229,
             "2": 2316598,
             "3": 2136012,
-            "(other)": 2021934
+            "4": 1659039,
+            "5": 1360398,
+            "1": 661536
         },
         "game.settings.game_creation.water_borders": {
-            "15": 1713453833,
-            "(other)": 3482102,
-            "16": 2623708
+            "15": 4992002,
+            "16": 2623708,
+            "0": 1377106,
+            "3": 1304438,
+            "14": 188966,
+            "5": 130916,
+            "9": 84807,
+            "7": 84339,
+            "6": 68527,
+            "8": 63550,
+            "4": 57748,
+            "2": 47500,
+            "12": 36064,
+            "10": 33061,
+            "(other)": 5080
         },
         "game.settings.game_time.clock_offset": {
-            "0": 1719469537,
-            "(other)": 90106
+            "0": 11007706,
+            "60": 89546,
+            "(other)": 560
         },
         "game.settings.game_time.ticks_per_minute": {
-            "300": 1709380068,
             "74": 7037233,
-            "(other)": 3142342
+            "300": 918237,
+            "600": 599953,
+            "1500": 443834,
+            "296": 280366,
+            "140": 258043,
+            "370": 232710,
+            "240": 216357,
+            "148": 198618,
+            "500": 151111,
+            "444": 148224,
+            "750": 99186,
+            "60": 83400,
+            "1365": 67995,
+            "120": 59755,
+            "37": 52588,
+            "380": 49698,
+            "100": 46426,
+            "44": 39373,
+            "690": 32313,
+            "110": 26465,
+            "(other)": 23695,
+            "200": 17850,
+            "285": 14382
         },
         "game.settings.game_time.time_in_minutes": {
-            "true": 1712757114,
-            "false": 6802529
+            "false": 6802529,
+            "true": 4295283
         },
         "game.settings.global_aa": {
-            "true": 1719050117,
+            "true": 10588286,
             "false": 509526
         },
         "game.settings.gui.action_when_viewport_map_is_dblclicked": {
-            "2": 1708492855,
             "1": 10905520,
-            "(other)": 161268
+            "0": 161268,
+            "2": 31024
         },
         "game.settings.gui.adv_sig_bridge_tun_modes": {
-            "true": 1715013987,
+            "true": 6552156,
             "false": 4545656
         },
         "game.settings.gui.advanced_vehicle_list": {
-            "2": 1709995386,
-            "1": 9564257
+            "1": 9564257,
+            "2": 1533555
         },
         "game.settings.gui.ai_developer_tools": {
-            "false": 1718422405,
+            "false": 9960574,
             "true": 1137238
         },
         "game.settings.gui.allow_hiding_waypoint_labels": {
-            "true": 1710223910,
-            "false": 9335733
+            "false": 9335733,
+            "true": 1762079
         },
         "game.settings.gui.auto_euro": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.gui.auto_remove_signals": {
-            "false": 1716371513,
+            "false": 7909682,
             "true": 3188130
         },
         "game.settings.gui.auto_scrolling": {
-            "0": 1719184584,
-            "(other)": 375059
+            "0": 10722753,
+            "3": 206610,
+            "1": 90012,
+            "2": 78437
         },
         "game.settings.gui.autosave_interval": {
-            "10": 1715604004,
-            "(other)": 3955639
+            "10": 7142173,
+            "30": 1372623,
+            "120": 965951,
+            "0": 678579,
+            "60": 481422,
+            "15": 331334,
+            "5": 60201,
+            "3": 49322,
+            "25": 16207
         },
         "game.settings.gui.autosave_on_exit": {
-            "false": 1719039663,
+            "false": 10577832,
             "true": 519980
         },
         "game.settings.gui.autosave_on_network_disconnect": {
-            "true": 1719367605,
+            "true": 10905774,
             "false": 192038
         },
         "game.settings.gui.autosave_realtime": {
-            "true": 1719528941,
+            "true": 11067110,
             "false": 30702
         },
         "game.settings.gui.bigger_main_toolbar": {
-            "false": 1718230599,
+            "false": 9768768,
             "true": 1329044
         },
         "game.settings.gui.city_in_label": {
-            "true": 1709939266,
-            "false": 9620377
+            "false": 9620377,
+            "true": 1477435
         },
         "game.settings.gui.clock_offset": {
-            "0": 1719464041,
-            "(other)": 95602
+            "0": 11002210,
+            "60": 95042,
+            "(other)": 560
         },
         "game.settings.gui.coloured_news_year": {
-            "1950": 1708502455,
             "2000": 9453459,
-            "(other)": 1603729
+            "1985": 463174,
+            "1980": 284730,
+            "1972": 209295,
+            "1960": 165811,
+            "1975": 156883,
+            "1990": 110301,
+            "1997": 45432,
+            "1950": 40624,
+            "1996": 31178,
+            "0": 27351,
+            "1777": 25947,
+            "3100": 25065,
+            "1970": 17384,
+            "(other)": 16446,
+            "1989": 13053,
+            "1983": 11679
         },
         "game.settings.gui.console_backlog_length": {
-            "100": 1719559643
+            "100": 11097812
         },
         "game.settings.gui.console_backlog_timeout": {
-            "100": 1719559643
+            "100": 11097812
         },
         "game.settings.gui.console_show_unlisted": {
-            "false": 1719559643
+            "false": 11097812
         },
         "game.settings.gui.cycle_signal_types": {
-            "0": 1717632030,
+            "0": 9170199,
             "1": 1927613
         },
         "game.settings.gui.dash_level_of_route_lines": {
-            "8": 1708520618,
             "0": 9444174,
-            "(other)": 1594851
+            "10": 499828,
+            "3": 470166,
+            "1": 284470,
+            "5": 204413,
+            "2": 118212,
+            "8": 58787,
+            "4": 17762
         },
         "game.settings.gui.date_format_in_default_names": {
-            "iso": 1715573811,
+            "iso": 7111980,
             "long": 3839513,
-            "(other)": 146319
+            "short": 146319
         },
         "game.settings.gui.date_with_time": {
-            "3": 1713369705,
             "0": 5902514,
-            "(other)": 287424
+            "3": 4907874,
+            "2": 261769,
+            "1": 25655
         },
         "game.settings.gui.default_rail_type": {
-            "2": 1711122182,
             "0": 7524623,
-            "(other)": 912838
+            "2": 2660351,
+            "1": 912838
         },
         "game.settings.gui.default_road_type": {
-            "2": 1709214777,
             "0": 9956150,
-            "(other)": 388716
+            "2": 752946,
+            "1": 278074,
+            "3": 110642
         },
         "game.settings.gui.default_signal_type": {
-            "5": 1712793650,
+            "5": 4331819,
             "4": 3697336,
             "0": 2585118,
-            "(other)": 483539
+            "1": 229816,
+            "2": 220826,
+            "3": 32897
         },
         "game.settings.gui.default_viewport_map_mode": {
-            "1": 1709106965,
             "0": 9687435,
-            "(other)": 765243
+            "1": 645134,
+            "2": 446828,
+            "3": 318415
         },
         "game.settings.gui.demolish_confirm_mode": {
-            "2": 1719127045,
-            "(other)": 432598
+            "2": 10665214,
+            "0": 385284,
+            "1": 47314
         },
         "game.settings.gui.departure_calc_frequency": {
-            "10": 1719179010,
-            "(other)": 380633
+            "10": 10717179,
+            "100": 121140,
+            "25": 85071,
+            "120": 70599,
+            "20": 67436,
+            "9": 30702,
+            "(other)": 5685
         },
         "game.settings.gui.departure_conditionals": {
-            "1": 1709243590,
             "0": 10096338,
-            "(other)": 219715
+            "1": 781759,
+            "2": 219715
         },
         "game.settings.gui.departure_destination_type": {
-            "true": 1711413846,
-            "false": 8145797
+            "false": 8145797,
+            "true": 2952015
         },
         "game.settings.gui.departure_larger_font": {
-            "false": 1718338732,
+            "false": 9876901,
             "true": 1220911
         },
         "game.settings.gui.departure_merge_identical": {
-            "true": 1709810359,
-            "false": 9749284
+            "false": 9749284,
+            "true": 1348528
         },
         "game.settings.gui.departure_only_passengers": {
-            "false": 1718443556,
+            "false": 9981725,
             "true": 1116087
         },
         "game.settings.gui.departure_show_all_stops": {
-            "true": 1709243722,
-            "false": 10315921
+            "false": 10315921,
+            "true": 781891
         },
         "game.settings.gui.departure_show_both": {
-            "true": 1710185368,
-            "false": 9374275
+            "false": 9374275,
+            "true": 1723537
         },
         "game.settings.gui.departure_show_company": {
-            "true": 1711043895,
-            "false": 8515748
+            "false": 8515748,
+            "true": 2582064
         },
         "game.settings.gui.departure_show_group": {
-            "true": 1711989859,
-            "false": 7569784
+            "false": 7569784,
+            "true": 3528028
         },
         "game.settings.gui.departure_show_vehicle": {
-            "false": 1716754431,
+            "false": 8292600,
             "true": 2805212
         },
         "game.settings.gui.departure_show_vehicle_color": {
-            "true": 1710864261,
-            "false": 8695382
+            "false": 8695382,
+            "true": 2402430
         },
         "game.settings.gui.departure_show_vehicle_type": {
-            "true": 1711550735,
-            "false": 8008908
+            "false": 8008908,
+            "true": 3088904
         },
         "game.settings.gui.departure_smart_terminus": {
-            "false": 1719302141,
+            "false": 10840310,
             "true": 257502
         },
         "game.settings.gui.depot_tooltip_mode": {
-            "2": 1709218220,
             "1": 10330754,
+            "2": 756389,
             "(other)": 10669
         },
         "game.settings.gui.developer": {
-            "1": 1719398375,
-            "(other)": 161268
+            "1": 10936544,
+            "0": 161268
         },
         "game.settings.gui.disable_top_veh_list_mass_actions": {
-            "false": 1719066667,
+            "false": 10604836,
             "true": 492976
         },
         "game.settings.gui.disable_water_animation": {
-            "4": 1708491660,
             "255": 10378362,
-            "(other)": 689621
+            "3": 664556,
+            "4": 29829,
+            "5": 25065
         },
         "game.settings.gui.drag_signals_density": {
-            "6": 1708981867,
-            "(other)": 6926481,
             "4": 1884166,
-            "10": 1767129
+            "10": 1767129,
+            "5": 1653994,
+            "2": 1438026,
+            "1": 778927,
+            "8": 580154,
+            "15": 545187,
+            "7": 526225,
+            "6": 520036,
+            "3": 361011,
+            "12": 327545,
+            "9": 248030,
+            "20": 232117,
+            "16": 166116,
+            "13": 32815,
+            "14": 22819,
+            "11": 13515
         },
         "game.settings.gui.drag_signals_fixed_distance": {
-            "true": 1712587979,
-            "false": 6971664
+            "false": 6971664,
+            "true": 4126148
         },
         "game.settings.gui.drag_signals_skip_stations": {
-            "false": 1719165131,
+            "false": 10703300,
             "true": 394512
         },
         "game.settings.gui.dual_pane_train_purchase_window": {
-            "true": 1719508550,
+            "true": 11046719,
             "false": 51093
         },
         "game.settings.gui.dual_pane_train_purchase_window_dual_buttons": {
-            "false": 1708472868,
-            "true": 11086775
+            "true": 11086775,
+            "false": 11037
         },
         "game.settings.gui.enable_single_veh_shared_order_gui": {
-            "false": 1718874111,
+            "false": 10412280,
             "true": 685532
         },
         "game.settings.gui.errmsg_duration": {
-            "5": 1718294635,
-            "(other)": 1265008
+            "5": 9832804,
+            "2": 559940,
+            "8": 321260,
+            "3": 279437,
+            "10": 77513,
+            "4": 26780,
+            "(other)": 78
         },
         "game.settings.gui.fast_forward_speed_limit": {
-            "0": 1709159419,
             "2500": 7026528,
-            "(other)": 3373696
+            "50000": 1351945,
+            "0": 697588,
+            "30000": 443834,
+            "2600": 299409,
+            "3000": 280479,
+            "2340": 209295,
+            "1200": 161268,
+            "10": 117855,
+            "3500": 113088,
+            "100": 93046,
+            "1000": 71171,
+            "2020": 69048,
+            "1500": 59403,
+            "5000": 37310,
+            "10000": 29891,
+            "500": 14380,
+            "666": 13053,
+            "(other)": 9221
         },
         "game.settings.gui.graph_line_thickness": {
-            "2": 1709533374,
             "3": 9760988,
-            "(other)": 265281
+            "2": 1071543,
+            "4": 158605,
+            "1": 60828,
+            "5": 45848
         },
         "game.settings.gui.hide_default_stop_location": {
-            "true": 1719456748,
+            "true": 10994917,
             "false": 102895
         },
         "game.settings.gui.hover_delay_ms": {
-            "200": 1708581230,
             "250": 10659064,
-            "(other)": 319349
+            "0": 158375,
+            "200": 119399,
+            "50": 83273,
+            "1000": 61948,
+            "500": 14613,
+            "(other)": 1140
         },
         "game.settings.gui.industry_tooltip_show": {
-            "true": 1719556481,
+            "true": 11094650,
             "false": 3162
         },
         "game.settings.gui.industry_tooltip_show_name": {
-            "true": 1719545812,
+            "true": 11083981,
             "false": 13831
         },
         "game.settings.gui.industry_tooltip_show_produced": {
-            "true": 1719556481,
+            "true": 11094650,
             "false": 3162
         },
         "game.settings.gui.industry_tooltip_show_required": {
-            "true": 1710070056,
-            "false": 9489587
+            "false": 9489587,
+            "true": 1608225
         },
         "game.settings.gui.industry_tooltip_show_stockpiled": {
-            "true": 1710067713,
-            "false": 9491930
+            "false": 9491930,
+            "true": 1605882
         },
         "game.settings.gui.instant_tile_tooltip": {
-            "false": 1719452407,
+            "false": 10990576,
             "true": 107236
         },
         "game.settings.gui.keep_all_autosave": {
-            "false": 1719548974,
+            "false": 11087143,
             "true": 10669
         },
         "game.settings.gui.link_terraform_toolbar": {
-            "true": 1714484710,
+            "true": 6022879,
             "false": 5074933
         },
         "game.settings.gui.linkgraph_colours": {
-            "0": 1719496316,
-            "(other)": 63327
+            "0": 11034485,
+            "1": 60279,
+            "(other)": 3048
         },
         "game.settings.gui.liveries": {
-            "2": 1719354258,
-            "(other)": 205385
+            "2": 10892427,
+            "1": 205385
         },
         "game.settings.gui.loading_indicators": {
-            "2": 1710484634,
             "1": 9040227,
-            "(other)": 34782
+            "2": 2022803,
+            "0": 34782
         },
         "game.settings.gui.lost_vehicle_warn": {
-            "false": 1709230872,
-            "true": 10328771
+            "true": 10328771,
+            "false": 769041
         },
         "game.settings.gui.max_departure_time": {
-            "120": 1718500655,
-            "(other)": 1058988
+            "120": 10038824,
+            "240": 532608,
+            "365": 341983,
+            "30": 60201,
+            "90": 36388,
+            "100": 29637,
+            "259": 24773,
+            "150": 21448,
+            "180": 11950
         },
         "game.settings.gui.max_departure_time_minutes": {
-            "1440": 1719129681,
-            "(other)": 429962
+            "1440": 10667850,
+            "5000": 185099,
+            "60": 121140,
+            "1710": 67308,
+            "1200": 30702,
+            "4230": 24773,
+            "(other)": 940
         },
         "game.settings.gui.max_departures": {
-            "30": 1709717789,
             "10": 8314276,
-            "(other)": 1527578
+            "20": 1340773,
+            "30": 1255958,
+            "8": 94799,
+            "12": 39787,
+            "15": 21832,
+            "25": 15874,
+            "24": 12309,
+            "(other)": 2204
         },
         "game.settings.gui.max_num_autosaves": {
-            "32": 1708591407,
             "16": 9415944,
-            "(other)": 1552292
+            "255": 1158166,
+            "10": 394126,
+            "32": 129576
         },
         "game.settings.gui.max_num_lt_autosaves": {
-            "8": 1719559643
+            "8": 11097812
         },
         "game.settings.gui.measure_tooltip": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.gui.missing_strings_threshold": {
-            "25": 1719559643
+            "25": 11097812
         },
         "game.settings.gui.network_chat_box_height": {
-            "25": 1719559643
+            "25": 11097812
         },
         "game.settings.gui.network_chat_box_width_pct": {
-            "40": 1719559643
+            "40": 11097812
         },
         "game.settings.gui.network_chat_timeout": {
-            "20": 1719559643
+            "20": 11097812
         },
         "game.settings.gui.new_nonstop": {
-            "true": 1718264266,
+            "true": 9802435,
             "false": 1295377
         },
         "game.settings.gui.newgrf_default_palette": {
-            "1": 1719559643
+            "1": 11097812
         },
         "game.settings.gui.newgrf_developer_tools": {
-            "true": 1713694181,
-            "false": 5865462
+            "false": 5865462,
+            "true": 5232350
         },
         "game.settings.gui.newgrf_disable_big_gui": {
-            "false": 1719559643
+            "false": 11097812
         },
         "game.settings.gui.newgrf_show_old_versions": {
-            "false": 1718888999,
+            "false": 10427168,
             "true": 670644
         },
         "game.settings.gui.news_message_timeout": {
-            "2": 1719559643
+            "2": 11097812
         },
         "game.settings.gui.no_depot_order_warn": {
-            "0": 1718545081,
-            "(other)": 1014562
+            "0": 10083250,
+            "1": 841127,
+            "2": 173435
         },
         "game.settings.gui.open_vehicle_gui_clone_share": {
-            "false": 1718990065,
+            "false": 10528234,
             "true": 569578
         },
         "game.settings.gui.order_review_system": {
-            "1": 1710481620,
             "2": 7681424,
-            "(other)": 1396599
+            "1": 2019789,
+            "0": 1396599
         },
         "game.settings.gui.osk_activation": {
-            "disabled": 1709498060,
-            "double": 10061583
+            "double": 10061583,
+            "disabled": 1036229
         },
         "game.settings.gui.override_time_settings": {
-            "false": 1718609105,
+            "false": 10147274,
             "true": 950538
         },
         "game.settings.gui.pause_on_newgame": {
-            "true": 1715029116,
+            "true": 6567285,
             "false": 4530527
         },
         "game.settings.gui.persistent_buildingtools": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.gui.population_in_label": {
-            "true": 1719546047,
+            "true": 11084216,
             "false": 13596
         },
         "game.settings.gui.prefer_teamchat": {
-            "false": 1719104619,
+            "false": 10642788,
             "true": 455024
         },
         "game.settings.gui.quick_goto": {
-            "false": 1709635900,
-            "true": 9923743
+            "true": 9923743,
+            "false": 1174069
         },
         "game.settings.gui.refresh_rate": {
-            "60": 1718039176,
-            "(other)": 1520467
+            "60": 9577345,
+            "144": 716510,
+            "240": 210592,
+            "165": 197275,
+            "100": 149338,
+            "120": 108576,
+            "75": 74831,
+            "30": 33817,
+            "90": 16119,
+            "175": 13409
         },
         "game.settings.gui.restriction_wait_vehicle_warn": {
-            "true": 1712433143,
-            "false": 7126500
+            "false": 7126500,
+            "true": 3971312
         },
         "game.settings.gui.right_click_wnd_close": {
-            "yes": 1711619669,
             "no": 7506522,
-            "(other)": 433452
+            "yes": 3157838,
+            "except sticky": 433452
         },
         "game.settings.gui.right_mouse_btn_emulation": {
-            "(not reported)": 1718174142,
+            "(not reported)": 9712311,
             "0": 1385501
         },
         "game.settings.gui.savegame_overwrite_confirm": {
-            "yes": 1719528864,
-            "(other)": 30779
+            "yes": 11067033,
+            "not same": 27617,
+            "(other)": 3162
         },
         "game.settings.gui.scale_bevels": {
-            "true": 1717520237,
+            "true": 9058406,
             "false": 2039406
         },
         "game.settings.gui.scenario_developer": {
-            "true": 1712847629,
-            "false": 6712014
+            "false": 6712014,
+            "true": 4385798
         },
         "game.settings.gui.scroll_mode": {
-            "0": 1717936998,
-            "(other)": 1622645
+            "0": 9475167,
+            "2": 1223505,
+            "3": 288050,
+            "1": 111090
         },
         "game.settings.gui.scrollwheel_multiplier": {
-            "1": 1709306720,
             "5": 9632077,
-            "(other)": 620846
+            "1": 844889,
+            "6": 244113,
+            "4": 189841,
+            "10": 119768,
+            "2": 60201,
+            "(other)": 6923
         },
         "game.settings.gui.scrollwheel_scrolling": {
-            "0": 1719485006,
-            "(other)": 74637
+            "0": 11023175,
+            "2": 54521,
+            "1": 20116
         },
         "game.settings.gui.semaphore_build_before": {
-            "1925": 1708480387,
             "1950": 9166032,
-            "(other)": 1913224
+            "1975": 487676,
+            "1893": 270313,
+            "10000": 231804,
+            "1960": 197633,
+            "1940": 168578,
+            "1900": 134442,
+            "1800": 95042,
+            "1970": 73254,
+            "0": 57718,
+            "9953": 53157,
+            "9000": 33817,
+            "1000": 27603,
+            "1935": 24923,
+            "1920": 24576,
+            "1925": 18556,
+            "1952": 17762,
+            "(other)": 14926
         },
         "game.settings.gui.settings_restriction_mode": {
-            "2": 1719106512,
-            "(other)": 453131
+            "2": 10644681,
+            "1": 275238,
+            "0": 177733,
+            "(other)": 160
         },
         "game.settings.gui.shade_trees_on_slopes": {
-            "true": 1719548200,
+            "true": 11086369,
             "false": 11443
         },
         "game.settings.gui.show_adv_load_mode_features": {
-            "true": 1713501199,
-            "false": 6058444
+            "false": 6058444,
+            "true": 5039368
         },
         "game.settings.gui.show_adv_tracerestrict_features": {
-            "true": 1714321705,
+            "true": 5859874,
             "false": 5237938
         },
         "game.settings.gui.show_all_signal_default": {
-            "0": 1718936907,
-            "(other)": 622736
+            "0": 10475076,
+            "1": 588359,
+            "2": 34377
         },
         "game.settings.gui.show_bridges_on_map": {
-            "true": 1719547334,
+            "true": 11085503,
             "false": 12309
         },
         "game.settings.gui.show_cargo_in_vehicle_lists": {
-            "true": 1711025664,
-            "false": 8533979
+            "false": 8533979,
+            "true": 2563833
         },
         "game.settings.gui.show_date_in_logs": {
-            "false": 1719559643
+            "false": 11097812
         },
         "game.settings.gui.show_depot_sell_gui": {
-            "true": 1712165915,
-            "false": 7393728
+            "false": 7393728,
+            "true": 3704084
         },
         "game.settings.gui.show_finances": {
-            "false": 1711473266,
-            "true": 8086377
+            "true": 8086377,
+            "false": 3011435
         },
         "game.settings.gui.show_group_hierarchy_name": {
-            "false": 1716938416,
+            "false": 8476585,
             "true": 2621227
         },
         "game.settings.gui.show_height_on_viewport_map": {
-            "true": 1719525826,
+            "true": 11063995,
             "false": 33817
         },
         "game.settings.gui.show_newgrf_name": {
-            "true": 1714386558,
+            "true": 5924727,
             "false": 5173085
         },
         "game.settings.gui.show_noentrysig_ui": {
-            "true": 1712422545,
-            "false": 7137098
+            "false": 7137098,
+            "true": 3960714
         },
         "game.settings.gui.show_order_number_vehicle_view": {
-            "true": 1709263810,
-            "false": 10295833
+            "false": 10295833,
+            "true": 801979
         },
         "game.settings.gui.show_order_occupancy_by_default": {
-            "true": 1710599275,
-            "false": 8960368
+            "false": 8960368,
+            "true": 2137444
         },
         "game.settings.gui.show_progsig_ui": {
-            "false": 1714373132,
+            "false": 5911301,
             "true": 5186511
         },
         "game.settings.gui.show_rail_polyline_tool": {
-            "false": 1708627667,
-            "true": 10931976
+            "true": 10931976,
+            "false": 165836
         },
         "game.settings.gui.show_restricted_signal_recolour": {
-            "true": 1719532932,
+            "true": 11071101,
             "false": 26711
         },
         "game.settings.gui.show_scrolling_viewport_on_map": {
-            "2": 1708951600,
             "3": 10512890,
-            "(other)": 95153
+            "2": 489769,
+            "0": 95042,
+            "(other)": 111
         },
         "game.settings.gui.show_slopes_on_viewport_map": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.gui.show_track_reservation": {
-            "true": 1717556350,
+            "true": 9094519,
             "false": 2003293
         },
         "game.settings.gui.show_train_length_in_details": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.gui.show_train_weight_ratios_in_details": {
-            "true": 1711654543,
-            "false": 7905100
+            "false": 7905100,
+            "true": 3192712
         },
         "game.settings.gui.show_tunnels_on_map": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.gui.show_vehicle_group_hierarchy_name": {
-            "true": 1709636651,
-            "false": 9922992
+            "false": 9922992,
+            "true": 1174820
         },
         "game.settings.gui.show_vehicle_group_in_details": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.gui.show_vehicle_list_company_colour": {
-            "true": 1719556481,
+            "true": 11094650,
             "false": 3162
         },
         "game.settings.gui.show_vehicle_route": {
-            "true": 1718072509,
+            "true": 9610678,
             "false": 1487134
         },
         "game.settings.gui.show_vehicle_route_mode": {
-            "1": 1719138284,
-            "(other)": 421359
+            "1": 10676453,
+            "0": 248375,
+            "2": 172984
         },
         "game.settings.gui.show_vehicle_route_steps": {
-            "true": 1719555216,
+            "true": 11093385,
             "false": 4427
         },
         "game.settings.gui.show_wagon_intro_year": {
-            "true": 1710528822,
-            "false": 9030821
+            "false": 9030821,
+            "true": 2066991
         },
         "game.settings.gui.signal_gui_mode": {
-            "0": 1713535343,
-            "1": 6024300
+            "1": 6024300,
+            "0": 5073512
         },
         "game.settings.gui.smallmap_land_colour": {
-            "2": 1708523695,
             "0": 10740250,
-            "(other)": 295698
+            "1": 295698,
+            "2": 61864
         },
         "game.settings.gui.smooth_scroll": {
-            "true": 1710474623,
-            "false": 9085020
+            "false": 9085020,
+            "true": 2012792
         },
         "game.settings.gui.sort_track_types_by_speed": {
-            "false": 1718642490,
+            "false": 10180659,
             "true": 917153
         },
         "game.settings.gui.sprite_zoom_min": {
-            "1": 1708622370,
             "0": 9472988,
-            "(other)": 1464285
+            "2": 1464285,
+            "1": 160539
         },
         "game.settings.gui.starting_colour": {
-            "4": 1709948739,
             "16": 7614082,
-            "(other)": 1996822
+            "4": 1486908,
+            "8": 846879,
+            "0": 357247,
+            "3": 164823,
+            "11": 155868,
+            "15": 124099,
+            "1": 95042,
+            "5": 77851,
+            "7": 66736,
+            "12": 59902,
+            "14": 32424,
+            "2": 14380,
+            "(other)": 1571
         },
         "game.settings.gui.starting_colour_secondary": {
-            "16": 1718636045,
-            "(other)": 923598
+            "16": 10174214,
+            "0": 443834,
+            "15": 220401,
+            "3": 129956,
+            "12": 87219,
+            "11": 15795,
+            "7": 13409,
+            "(other)": 12984
         },
         "game.settings.gui.station_dragdrop": {
-            "false": 1713454046,
-            "true": 6105597
+            "true": 6105597,
+            "false": 4992215
         },
         "game.settings.gui.station_gui_group_order": {
-            "3": 1711733925,
-            "(other)": 4060917,
-            "0": 3764801
+            "0": 3764801,
+            "3": 3272094,
+            "5": 1684372,
+            "2": 1351783,
+            "4": 976291,
+            "1": 48471
         },
         "game.settings.gui.station_gui_sort_by": {
-            "1": 1710699086,
             "0": 8561521,
-            "(other)": 299036
+            "1": 2237255,
+            "3": 289284,
+            "(other)": 9752
         },
         "game.settings.gui.station_gui_sort_order": {
-            "0": 1716038463,
+            "0": 7576632,
             "1": 3521180
         },
         "game.settings.gui.station_numtracks": {
-            "4": 1709355320,
             "1": 5237863,
             "2": 2965683,
-            "(other)": 2000777
+            "5": 1429175,
+            "4": 893489,
+            "3": 206506,
+            "6": 205127,
+            "7": 159969
         },
         "game.settings.gui.station_platlength": {
-            "7": 1709898163,
-            "(other)": 5713813,
-            "1": 3947667
+            "1": 3947667,
+            "2": 1718334,
+            "5": 1711445,
+            "7": 1436332,
+            "4": 1213290,
+            "3": 781127,
+            "6": 289617
         },
         "game.settings.gui.station_rating_tooltip_mode": {
-            "1": 1716197205,
+            "1": 7735374,
             "2": 3222118,
-            "(other)": 140320
+            "0": 140320
         },
         "game.settings.gui.station_show_coverage": {
-            "true": 1718822882,
+            "true": 10361051,
             "false": 736761
         },
         "game.settings.gui.station_viewport_tooltip_cargo": {
-            "true": 1719548974,
+            "true": 11087143,
             "false": 10669
         },
         "game.settings.gui.station_viewport_tooltip_name": {
-            "2": 1708723041,
-            "1": 10836602
+            "1": 10836602,
+            "2": 261210
         },
         "game.settings.gui.statusbar_pos": {
-            "1": 1719364276,
-            "(other)": 195367
+            "1": 10902445,
+            "2": 178141,
+            "0": 17226
         },
         "game.settings.gui.stop_location": {
-            "1": 1713796449,
+            "1": 5334618,
             "2": 4472167,
-            "(other)": 1291027
+            "0": 1291027
         },
         "game.settings.gui.threaded_saves": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.gui.ticks_per_minute": {
-            "132": 1708471309,
             "74": 8245002,
-            "(other)": 2843332
+            "296": 670794,
+            "1500": 443834,
+            "300": 270601,
+            "200": 188864,
+            "148": 161953,
+            "380": 161268,
+            "500": 151111,
+            "370": 121140,
+            "740": 110660,
+            "37": 110008,
+            "100": 85071,
+            "60": 83853,
+            "750": 76262,
+            "1365": 67995,
+            "120": 59755,
+            "690": 32313,
+            "(other)": 24344,
+            "164": 17762,
+            "150": 15222
         },
         "game.settings.gui.time_in_minutes": {
-            "true": 1711202128,
-            "false": 8357515
+            "false": 8357515,
+            "true": 2740297
         },
         "game.settings.gui.timetable_arrival_departure": {
-            "true": 1719289330,
+            "true": 10827499,
             "false": 270313
         },
         "game.settings.gui.timetable_in_ticks": {
-            "false": 1718904925,
+            "false": 10443094,
             "true": 654718
         },
         "game.settings.gui.timetable_leftover_ticks": {
-            "false": 1718592511,
+            "false": 10130680,
             "true": 967132
         },
         "game.settings.gui.timetable_start_text_entry": {
-            "false": 1716645502,
+            "false": 8183671,
             "true": 2914141
         },
         "game.settings.gui.toolbar_pos": {
-            "1": 1717945720,
-            "(other)": 1613923
+            "1": 9483889,
+            "0": 1371722,
+            "2": 242201
         },
         "game.settings.gui.town_name_tooltip_mode": {
-            "0": 1708474471,
             "1": 10882894,
-            "(other)": 202278
+            "2": 202278,
+            "0": 12640
         },
         "game.settings.gui.use_owner_colour_for_tunnelbridge": {
-            "true": 1710991330,
-            "false": 8568313
+            "false": 8568313,
+            "true": 2529499
         },
         "game.settings.gui.vehicle_income_warn": {
-            "false": 1713324761,
-            "true": 6234882
+            "true": 6234882,
+            "false": 4862930
         },
         "game.settings.gui.vehicle_names": {
-            "1": 1718231790,
-            "(other)": 1327853
+            "1": 9769959,
+            "2": 1141535,
+            "0": 186318
         },
         "game.settings.gui.waypoint_viewport_tooltip_name": {
-            "2": 1708548415,
-            "1": 11011228
+            "1": 11011228,
+            "2": 86584
         },
         "game.settings.gui.window_snap_radius": {
-            "8": 1708505999,
             "10": 10707346,
-            "(other)": 346298
+            "7": 151111,
+            "15": 89555,
+            "20": 63398,
+            "8": 44168,
+            "30": 27617,
+            "5": 12833,
+            "(other)": 1784
         },
         "game.settings.gui.window_soft_limit": {
-            "20": 1718427446,
-            "(other)": 1132197
+            "20": 9965615,
+            "100": 397174,
+            "51": 231804,
+            "30": 154852,
+            "32": 96567,
+            "15": 83273,
+            "10": 76373,
+            "25": 32916,
+            "50": 29945,
+            "36": 17762,
+            "(other)": 11531
         },
         "game.settings.gui.zoom_max": {
-            "9": 1719121946,
-            "(other)": 437697
+            "9": 10660115,
+            "8": 207076,
+            "7": 191625,
+            "6": 38996
         },
         "game.settings.gui.zoom_min": {
-            "0": 1719403508,
-            "(other)": 156135
+            "0": 10941677,
+            "1": 156135
         },
         "game.settings.gui_scale": {
-            "200": 1710569002,
             "-1": 4578438,
-            "(other)": 4412203
+            "200": 2107171,
+            "150": 1162759,
+            "100": 1055287,
+            "125": 844978,
+            "175": 685899,
+            "225": 346691,
+            "400": 211673,
+            "250": 71252,
+            "(other)": 19284,
+            "325": 14380
         },
         "game.settings.infra_others_buy_in_depot[0]": {
-            "false": 1717074771,
+            "false": 8612940,
             "true": 2484872
         },
         "game.settings.infra_others_buy_in_depot[1]": {
-            "false": 1717276497,
+            "false": 8814666,
             "true": 2283146
         },
         "game.settings.infra_others_buy_in_depot[2]": {
-            "false": 1717242160,
+            "false": 8780329,
             "true": 2317483
         },
         "game.settings.infra_others_buy_in_depot[3]": {
-            "false": 1717223097,
+            "false": 8761266,
             "true": 2336546
         },
         "game.settings.invisibility_options": {
-            "2": 1710056720,
-            "(other)": 4811471,
-            "0": 4691452
+            "0": 4691452,
+            "2": 1594889,
+            "246": 1158166,
+            "6": 661604,
+            "38": 524437,
+            "193": 270313,
+            "254": 254131,
+            "54": 206452,
+            "223": 169092,
+            "166": 156861,
+            "230": 129121,
+            "42": 121855,
+            "238": 120871,
+            "34": 112555,
+            "130": 103632,
+            "(other)": 96459,
+            "103": 87219,
+            "62": 79386,
+            "224": 73247,
+            "60": 62982,
+            "3": 58869,
+            "10": 44622,
+            "18": 44566,
+            "74": 42258,
+            "7": 41506,
+            "39": 36544,
+            "255": 35109,
+            "190": 24926,
+            "1": 23999,
+            "5": 19987,
+            "198": 14244,
+            "124": 13280,
+            "134": 11710,
+            "131": 11468
         },
         "game.settings.keyboard": {
-            "(empty)": 1719559643
+            "(empty)": 11097812
         },
         "game.settings.keyboard_caps": {
-            "(empty)": 1719559643
+            "(empty)": 11097812
         },
         "game.settings.language": {
-            "english.lng": 1711205476,
-            "(other)": 4675572,
-            "english_US.lng": 3678595
+            "english_US.lng": 3678595,
+            "english.lng": 2743645,
+            "japanese.lng": 1041164,
+            "korean.lng": 866648,
+            "polish.lng": 604946,
+            "german.lng": 551703,
+            "czech.lng": 459729,
+            "swedish.lng": 326248,
+            "simplified_chinese.lng": 279574,
+            "english_AU.lng": 187852,
+            "ukrainian.lng": 112433,
+            "russian.lng": 83182,
+            "dutch.lng": 46948,
+            "hungarian.lng": 43543,
+            "brazilian_portuguese.lng": 40283,
+            "slovak.lng": 16207,
+            "norwegian_bokmal.lng": 13053,
+            "(other)": 2059
         },
         "game.settings.large_aa": {
-            "false": 1719252992,
+            "false": 10791161,
             "true": 306651
         },
         "game.settings.large_size": {
-            "0": 1716126260,
+            "0": 7664429,
             "16": 1869048,
-            "(other)": 1564335
+            "30": 339080,
+            "18": 324401,
+            "20": 310572,
+            "12": 213321,
+            "15": 142616,
+            "14": 121036,
+            "11": 101111,
+            "(other)": 12198
         },
         "game.settings.linkgraph.accuracy": {
-            "16": 1718754886,
-            "(other)": 804757
+            "16": 10293055,
+            "64": 435130,
+            "32": 105630,
+            "30": 86780,
+            "25": 62514,
+            "40": 57224,
+            "20": 30739,
+            "(other)": 26740
         },
         "game.settings.linkgraph.aircraft_link_scale": {
-            "1000": 1708650014,
             "100": 9748378,
-            "(other)": 1161251
+            "400": 568344,
+            "200": 246649,
+            "1000": 188183,
+            "250": 168478,
+            "150": 129164,
+            "300": 27098,
+            "500": 21518
         },
         "game.settings.linkgraph.demand_distance": {
-            "250": 1708636369,
             "100": 6962008,
-            "(other)": 3961266
+            "70": 1413503,
+            "90": 703598,
+            "125": 395503,
+            "0": 351089,
+            "220": 216512,
+            "250": 174538,
+            "180": 148939,
+            "60": 137381,
+            "150": 129488,
+            "50": 118267,
+            "200": 91118,
+            "75": 84817,
+            "25": 57787,
+            "85": 33893,
+            "(other)": 33793,
+            "130": 25795,
+            "120": 19783
         },
         "game.settings.linkgraph.demand_size": {
-            "100": 1718690881,
-            "(other)": 868762
+            "100": 10229050,
+            "90": 372089,
+            "80": 178812,
+            "65": 166526,
+            "50": 73491,
+            "75": 55147,
+            "95": 20082,
+            "(other)": 2615
         },
         "game.settings.linkgraph.distribution_armoured": {
-            "1": 1710471378,
             "0": 7810715,
-            "(other)": 1277550
+            "1": 2009547,
+            "2": 1146104,
+            "20": 131446
         },
         "game.settings.linkgraph.distribution_default": {
-            "0": 1717125746,
+            "0": 8663915,
             "1": 2277177,
-            "(other)": 156720
+            "20": 155936,
+            "(other)": 784
         },
         "game.settings.linkgraph.distribution_mail": {
-            "2": 1713196646,
+            "2": 4734815,
             "0": 3587688,
             "1": 2742336,
-            "(other)": 32973
+            "20": 32973
         },
         "game.settings.linkgraph.distribution_pax": {
-            "2": 1715043814,
+            "2": 6581983,
             "0": 2962653,
-            "(other)": 1553176
+            "1": 1372328,
+            "20": 159435,
+            "21": 21413
         },
         "game.settings.linkgraph.distribution_per_cargo[0]": {
-            "128": 1718874152,
-            "(other)": 685491
+            "128": 10412321,
+            "2": 420961,
+            "1": 231804,
+            "21": 26465,
+            "(other)": 6261
         },
         "game.settings.linkgraph.distribution_per_cargo[10]": {
-            "128": 1719161313,
-            "(other)": 398330
+            "128": 10699482,
+            "1": 231804,
+            "2": 166526
         },
         "game.settings.linkgraph.distribution_per_cargo[11]": {
-            "128": 1719135027,
-            "(other)": 424616
+            "128": 10673196,
+            "1": 240889,
+            "2": 166526,
+            "20": 17201
         },
         "game.settings.linkgraph.distribution_per_cargo[12]": {
-            "128": 1719142323,
-            "(other)": 417320
+            "128": 10680492,
+            "1": 250794,
+            "2": 166526
         },
         "game.settings.linkgraph.distribution_per_cargo[13]": {
-            "128": 1719317934,
-            "(other)": 241709
+            "128": 10856103,
+            "1": 241709
         },
         "game.settings.linkgraph.distribution_per_cargo[14]": {
-            "128": 1719317934,
-            "(other)": 241709
+            "128": 10856103,
+            "1": 241709
         },
         "game.settings.linkgraph.distribution_per_cargo[15]": {
-            "128": 1719327839,
-            "(other)": 231804
+            "128": 10866008,
+            "1": 231804
         },
         "game.settings.linkgraph.distribution_per_cargo[16]": {
-            "128": 1719327839,
-            "(other)": 231804
+            "128": 10866008,
+            "1": 231804
         },
         "game.settings.linkgraph.distribution_per_cargo[17]": {
-            "128": 1719092160,
-            "(other)": 467483
+            "128": 10630329,
+            "1": 231804,
+            "20": 225148,
+            "(other)": 10531
         },
         "game.settings.linkgraph.distribution_per_cargo[18]": {
-            "128": 1719102691,
-            "(other)": 456952
+            "128": 10640860,
+            "1": 231804,
+            "20": 225148
         },
         "game.settings.linkgraph.distribution_per_cargo[19]": {
-            "128": 1719554390,
+            "128": 11092559,
             "(other)": 5253
         },
         "game.settings.linkgraph.distribution_per_cargo[1]": {
-            "128": 1719151830,
-            "(other)": 407813
+            "128": 10689999,
+            "1": 240981,
+            "2": 166832
         },
         "game.settings.linkgraph.distribution_per_cargo[20]": {
-            "128": 1719327839,
-            "(other)": 231804
+            "128": 10866008,
+            "1": 231804
         },
         "game.settings.linkgraph.distribution_per_cargo[21]": {
-            "128": 1719324082,
-            "(other)": 235561
+            "128": 10862251,
+            "1": 231804,
+            "(other)": 3757
         },
         "game.settings.linkgraph.distribution_per_cargo[22]": {
-            "128": 1719327839,
-            "(other)": 231804
+            "128": 10866008,
+            "1": 231804
         },
         "game.settings.linkgraph.distribution_per_cargo[23]": {
-            "20": 1708636844,
             "128": 10641761,
-            "(other)": 281038
+            "1": 231804,
+            "20": 175013,
+            "2": 49234
         },
         "game.settings.linkgraph.distribution_per_cargo[24]": {
-            "128": 1719327839,
-            "(other)": 231804
+            "128": 10866008,
+            "1": 231804
         },
         "game.settings.linkgraph.distribution_per_cargo[25]": {
-            "20": 1708636844,
             "128": 10641761,
-            "(other)": 281038
+            "1": 231804,
+            "20": 175013,
+            "2": 49234
         },
         "game.settings.linkgraph.distribution_per_cargo[26]": {
-            "128": 1719318754,
-            "(other)": 240889
+            "128": 10856923,
+            "1": 240889
         },
         "game.settings.linkgraph.distribution_per_cargo[27]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[28]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[29]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[2]": {
-            "128": 1719067447,
-            "(other)": 492196
+            "128": 10605616,
+            "1": 297610,
+            "2": 194586
         },
         "game.settings.linkgraph.distribution_per_cargo[30]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[31]": {
-            "128": 1719327839,
-            "(other)": 231804
+            "128": 10866008,
+            "1": 231804
         },
         "game.settings.linkgraph.distribution_per_cargo[32]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[33]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[34]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[35]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[36]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[37]": {
-            "128": 1718403894,
-            "(other)": 1155749
+            "128": 9942063,
+            "2": 1155749
         },
         "game.settings.linkgraph.distribution_per_cargo[38]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[39]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[3]": {
-            "128": 1719152228,
-            "(other)": 407415
+            "128": 10690397,
+            "1": 240889,
+            "2": 166526
         },
         "game.settings.linkgraph.distribution_per_cargo[40]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[41]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[42]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[43]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[44]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[45]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[46]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[47]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[48]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[49]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[4]": {
-            "128": 1719161065,
-            "(other)": 398578
+            "128": 10699234,
+            "1": 231804,
+            "2": 166526,
+            "(other)": 248
         },
         "game.settings.linkgraph.distribution_per_cargo[50]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[51]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[52]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[53]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[54]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[55]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[56]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[57]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[58]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[59]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[5]": {
-            "128": 1719092997,
-            "(other)": 466646
+            "128": 10631166,
+            "1": 300120,
+            "2": 166526
         },
         "game.settings.linkgraph.distribution_per_cargo[60]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[61]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[62]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[63]": {
-            "128": 1719559643
+            "128": 11097812
         },
         "game.settings.linkgraph.distribution_per_cargo[6]": {
-            "128": 1719161065,
-            "(other)": 398578
+            "128": 10699234,
+            "1": 231804,
+            "2": 166526,
+            "(other)": 248
         },
         "game.settings.linkgraph.distribution_per_cargo[7]": {
-            "128": 1719161313,
-            "(other)": 398330
+            "128": 10699482,
+            "1": 231804,
+            "2": 166526
         },
         "game.settings.linkgraph.distribution_per_cargo[8]": {
-            "128": 1719152228,
-            "(other)": 407415
+            "128": 10690397,
+            "1": 240889,
+            "2": 166526
         },
         "game.settings.linkgraph.distribution_per_cargo[9]": {
-            "128": 1719161313,
-            "(other)": 398330
+            "128": 10699482,
+            "1": 231804,
+            "2": 166526
         },
         "game.settings.linkgraph.recalc_interval": {
-            "8": 1715498586,
+            "8": 7036755,
             "16": 2149301,
-            "(other)": 1911756
+            "64": 734876,
+            "32": 448902,
+            "36": 257181,
+            "30": 171911,
+            "4": 100343,
+            "12": 86749,
+            "24": 57787,
+            "10": 23409,
+            "90": 22949,
+            "(other)": 7649
         },
         "game.settings.linkgraph.recalc_time": {
-            "32": 1714831951,
-            "(other)": 2746946,
-            "64": 1980746
+            "32": 6370120,
+            "64": 1980746,
+            "20": 1160985,
+            "256": 424567,
+            "160": 257181,
+            "128": 217754,
+            "8192": 186479,
+            "70": 166526,
+            "1": 72505,
+            "124": 57787,
+            "30": 49719,
+            "2": 40861,
+            "(other)": 24889,
+            "512": 24655,
+            "10": 23565,
+            "1024": 22949,
+            "8": 16524
         },
         "game.settings.linkgraph.short_path_saturation": {
-            "80": 1715605707,
-            "(other)": 3953936
+            "80": 7143876,
+            "20": 1162447,
+            "75": 807461,
+            "67": 283072,
+            "40": 280151,
+            "50": 270004,
+            "60": 259101,
+            "70": 183248,
+            "10": 166526,
+            "30": 165025,
+            "90": 146403,
+            "65": 114259,
+            "85": 40756,
+            "55": 28452,
+            "250": 28060,
+            "(other)": 18971
         },
         "game.settings.locale.currency": {
-            "GBP": 1711556234,
-            "(other)": 5398316,
-            "EUR": 2605093
+            "GBP": 3094403,
+            "EUR": 2605093,
+            "USD": 1652297,
+            "JPY": 1096521,
+            "KRW": 658007,
+            "PLN": 511634,
+            "CZK": 393672,
+            "SEK": 326248,
+            "custom": 294168,
+            "DEM": 188353,
+            "RUB": 81751,
+            "HUF": 43277,
+            "BRL": 40650,
+            "CNY": 39024,
+            "LVL": 23309,
+            "DKK": 13904,
+            "NOK": 13053,
+            "CHF": 11686,
+            "(other)": 10762
         },
         "game.settings.locale.digit_decimal_separator": {
-            "(empty)": 1719559643
+            "(empty)": 11097812
         },
         "game.settings.locale.digit_group_separator": {
-            "(empty)": 1719559643
+            "(empty)": 11097812
         },
         "game.settings.locale.digit_group_separator_currency": {
-            "(empty)": 1719559643
+            "(empty)": 11097812
         },
         "game.settings.locale.units_force": {
-            "si": 1717668711,
-            "(other)": 1890932
+            "si": 9206880,
+            "metric": 1459531,
+            "imperial": 431401
         },
         "game.settings.locale.units_height": {
-            "metric": 1718929115,
-            "(other)": 630528
+            "metric": 10467284,
+            "imperial": 473762,
+            "si": 156766
         },
         "game.settings.locale.units_power": {
-            "metric": 1717815979,
-            "(other)": 1743664
+            "metric": 9354148,
+            "si": 1045679,
+            "imperial": 697985
         },
         "game.settings.locale.units_velocity": {
-            "metric": 1718837859,
-            "(other)": 721784
+            "metric": 10376028,
+            "imperial": 721784
         },
         "game.settings.locale.units_velocity_nautical": {
-            "metric": 1718745763,
-            "(other)": 813880
+            "metric": 10283932,
+            "imperial": 636271,
+            "4": 177609
         },
         "game.settings.locale.units_volume": {
-            "metric": 1719010959,
-            "(other)": 548684
+            "metric": 10549128,
+            "si": 434613,
+            "imperial": 114071
         },
         "game.settings.locale.units_weight": {
-            "metric": 1719037469,
-            "(other)": 522174
+            "metric": 10575638,
+            "imperial": 434898,
+            "si": 87276
         },
         "game.settings.medium_aa": {
-            "false": 1719061383,
+            "false": 10599552,
             "true": 498260
         },
         "game.settings.medium_size": {
-            "0": 1716029615,
+            "0": 7567784,
             "12": 1879289,
-            "(other)": 1650739
+            "10": 700983,
+            "25": 339080,
+            "15": 237330,
+            "16": 167896,
+            "14": 110660,
+            "11": 73034,
+            "(other)": 21756
         },
         "game.settings.mono_aa": {
-            "false": 1719363652,
+            "false": 10901821,
             "true": 195991
         },
         "game.settings.mono_size": {
-            "0": 1717488780,
-            "(other)": 2070863
+            "0": 9026949,
+            "12": 734880,
+            "10": 661209,
+            "24": 339080,
+            "14": 271928,
+            "15": 31186,
+            "(other)": 19747,
+            "11": 12833
         },
         "game.settings.music.playing": {
-            "true": 1714126586,
+            "true": 5664755,
             "false": 5433057
         },
         "game.settings.music.playlist": {
-            "5": 1708515736,
             "0": 8790046,
-            "(other)": 2253861
+            "4": 1535384,
+            "2": 287852,
+            "3": 242192,
+            "1": 188433,
+            "5": 53905
         },
         "game.settings.music.shuffle": {
-            "true": 1709845141,
-            "false": 9714502
+            "false": 9714502,
+            "true": 1383310
         },
         "game.settings.musicdriver": {
-            "(empty)": 1719550205,
+            "(empty)": 11088374,
             "(other)": 9438
         },
         "game.settings.network.autoclean_companies": {
-            "false": 1719475676,
+            "false": 11013845,
             "true": 83967
         },
         "game.settings.network.autoclean_novehicles": {
-            "0": 1719370779,
-            "(other)": 188864
+            "0": 10908948,
+            "36": 188864
         },
         "game.settings.network.autoclean_protected": {
-            "36": 1719339435,
-            "(other)": 220208
+            "36": 10877604,
+            "240": 188864,
+            "80": 20675,
+            "(other)": 10669
         },
         "game.settings.network.autoclean_unprotected": {
-            "12": 1719350104,
-            "(other)": 209539
+            "12": 10888273,
+            "240": 188864,
+            "36": 20675
         },
         "game.settings.network.bytes_per_frame": {
-            "8": 1719248644,
-            "(other)": 310999
+            "8": 10786813,
+            "256": 310999
         },
         "game.settings.network.bytes_per_frame_burst": {
-            "256": 1719248644,
-            "(other)": 310999
+            "256": 10786813,
+            "1000": 310999
         },
         "game.settings.network.commands_per_frame": {
-            "2": 1719463076,
-            "(other)": 96567
+            "2": 11001245,
+            "4": 96567
         },
         "game.settings.network.commands_per_frame_server": {
-            "16": 1719559643
+            "16": 11097812
         },
         "game.settings.network.frame_freq": {
-            "0": 1719559643
+            "0": 11097812
         },
         "game.settings.network.max_auth_failures": {
-            "10": 1719559643
+            "10": 11097812
         },
         "game.settings.network.max_clients": {
-            "25": 1716057891,
-            "(other)": 3501752
+            "25": 7596060,
+            "3": 1487707,
+            "255": 428058,
+            "5": 254470,
+            "30": 194154,
+            "4": 182463,
+            "2": 169909,
+            "8": 164865,
+            "32": 161268,
+            "17": 154394,
+            "24": 96567,
+            "20": 66184,
+            "15": 56945,
+            "10": 45683,
+            "7": 24773,
+            "(other)": 14312
         },
         "game.settings.network.max_commands_in_queue": {
-            "16": 1719463076,
-            "(other)": 96567
+            "16": 11001245,
+            "32": 96567
         },
         "game.settings.network.max_companies": {
-            "15": 1717291738,
-            "(other)": 2267905
+            "15": 8829907,
+            "2": 1299709,
+            "3": 326493,
+            "1": 228305,
+            "5": 221804,
+            "8": 78004,
+            "10": 46893,
+            "6": 33154,
+            "9": 24773,
+            "(other)": 8770
         },
         "game.settings.network.max_download_time": {
-            "1000": 1718601574,
-            "(other)": 958069
+            "1000": 10139743,
+            "32000": 373516,
+            "2000": 193081,
+            "10000": 138174,
+            "1200": 121140,
+            "3000": 71769,
+            "5000": 24773,
+            "20000": 20675,
+            "4000": 14941
         },
         "game.settings.network.max_init_time": {
-            "100": 1719025657,
-            "(other)": 533986
+            "100": 10563826,
+            "32000": 334557,
+            "1000": 148422,
+            "10000": 24576,
+            "20000": 20675,
+            "(other)": 5756
         },
         "game.settings.network.max_join_time": {
-            "500": 1718497705,
-            "(other)": 1061938
+            "500": 10035874,
+            "32000": 562470,
+            "5000": 273272,
+            "20000": 120682,
+            "3000": 71769,
+            "(other)": 18804,
+            "4000": 14941
         },
         "game.settings.network.max_lag_time": {
-            "500": 1718958460,
-            "(other)": 601183
+            "500": 10496629,
+            "32000": 321976,
+            "1000": 144264,
+            "5000": 132897,
+            "(other)": 2046
         },
         "game.settings.network.max_password_time": {
-            "2000": 1719062640,
-            "(other)": 497003
+            "2000": 10600809,
+            "32000": 324196,
+            "20000": 148034,
+            "5000": 24773
         },
         "game.settings.network.min_active_clients": {
-            "0": 1719342968,
-            "(other)": 216675
+            "0": 10881137,
+            "1": 216675
         },
         "game.settings.network.pause_on_join": {
-            "true": 1719496585,
+            "true": 11034754,
             "false": 63058
         },
         "game.settings.network.reload_cfg": {
-            "false": 1719559643
+            "false": 11097812
         },
         "game.settings.network.restart_game_year": {
-            "0": 1719559643
+            "0": 11097812
         },
         "game.settings.network.server_admin_chat": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.network.server_admin_port": {
-            "3977": 1719559643
+            "3977": 11097812
         },
         "game.settings.network.server_game_type": {
-            "public": 1711545583,
             "local": 7489322,
-            "(other)": 524738
+            "public": 3083752,
+            "invite-only": 524738
         },
         "game.settings.network.server_port": {
-            "3979": 1719538968,
-            "(other)": 20675
+            "3979": 11077137,
+            "9999": 20675
         },
         "game.settings.network.sync_freq": {
-            "100": 1719559643
+            "100": 11097812
         },
         "game.settings.news_display.acceptance": {
-            "summarized": 1710256287,
             "full": 8451427,
-            "(other)": 851929
+            "summarized": 1794456,
+            "off": 851929
         },
         "game.settings.news_display.accident": {
-            "full": 1719039325,
-            "(other)": 520318
+            "full": 10577494,
+            "off": 311335,
+            "summarized": 208983
         },
         "game.settings.news_display.accident_other": {
-            "summarized": 1708827481,
             "full": 10260752,
-            "(other)": 471410
+            "off": 471410,
+            "summarized": 365650
         },
         "game.settings.news_display.advice": {
-            "summarized": 1709769310,
             "full": 8267533,
-            "(other)": 1522800
+            "off": 1522800,
+            "summarized": 1307479
         },
         "game.settings.news_display.arrival_other": {
-            "summarized": 1717157299,
+            "summarized": 8695468,
             "off": 2076397,
-            "(other)": 325947
+            "full": 325947
         },
         "game.settings.news_display.arrival_player": {
-            "summarized": 1710057926,
             "full": 7241470,
-            "off": 2260247
+            "off": 2260247,
+            "summarized": 1596095
         },
         "game.settings.news_display.close": {
-            "summarized": 1717323749,
-            "(other)": 2235894
+            "summarized": 8861918,
+            "off": 1692500,
+            "full": 543394
         },
         "game.settings.news_display.company_info": {
-            "full": 1718365837,
-            "(other)": 1193806
+            "full": 9904006,
+            "summarized": 751493,
+            "off": 442313
         },
         "game.settings.news_display.economy": {
-            "full": 1718250547,
-            "(other)": 1309096
+            "full": 9788716,
+            "summarized": 665839,
+            "off": 643257
         },
         "game.settings.news_display.general": {
-            "summarized": 1709961834,
             "full": 9055609,
-            "(other)": 542200
+            "summarized": 1500003,
+            "off": 542200
         },
         "game.settings.news_display.new_vehicles": {
-            "full": 1717339255,
-            "(other)": 2220388
+            "full": 8877424,
+            "summarized": 1361478,
+            "off": 858910
         },
         "game.settings.news_display.open": {
-            "summarized": 1716935079,
-            "(other)": 2624564
+            "summarized": 8473248,
+            "full": 1616120,
+            "off": 1008444
         },
         "game.settings.news_display.production_nobody": {
-            "off": 1717377307,
+            "off": 8915476,
             "summarized": 1937017,
-            "(other)": 245319
+            "full": 245319
         },
         "game.settings.news_display.production_other": {
-            "off": 1718711009,
-            "(other)": 848634
+            "off": 10249178,
+            "summarized": 705972,
+            "full": 142662
         },
         "game.settings.news_display.production_player": {
-            "summarized": 1716800442,
+            "summarized": 8338611,
             "full": 2334606,
-            "(other)": 424595
+            "off": 424595
         },
         "game.settings.news_display.subsidies": {
-            "off": 1709518147,
             "summarized": 8645745,
-            "(other)": 1395751
+            "full": 1395751,
+            "off": 1056316
         },
         "game.settings.order.gradual_loading": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.order.improved_load": {
-            "true": 1719554882,
+            "true": 11093051,
             "false": 4761
         },
         "game.settings.order.no_servicing_if_no_breakdowns": {
-            "true": 1719014164,
+            "true": 10552333,
             "false": 545479
         },
         "game.settings.order.nonstop_only": {
-            "true": 1709832468,
-            "false": 9727175
+            "false": 9727175,
+            "true": 1370637
         },
         "game.settings.order.selectgoods": {
-            "true": 1719548633,
+            "true": 11086802,
             "false": 11010
         },
         "game.settings.order.serviceathelipad": {
-            "true": 1719170676,
+            "true": 10708845,
             "false": 388967
         },
         "game.settings.order.station_length_loading_penalty": {
-            "true": 1719109979,
+            "true": 10648148,
             "false": 449664
         },
         "game.settings.order_occupancy_smoothness": {
-            "75": 1719466926,
-            "(other)": 92717
+            "75": 11005095,
+            "65": 89555,
+            "(other)": 3162
         },
         "game.settings.pf.back_of_one_way_pbs_waiting_point": {
-            "true": 1719416938,
+            "true": 10955107,
             "false": 142705
         },
         "game.settings.pf.forbid_90_deg": {
-            "true": 1715783068,
+            "true": 7321237,
             "false": 3776575
         },
         "game.settings.pf.npf.maximum_go_to_depot_penalty": {
-            "2000": 1719559643
+            "2000": 11097812
         },
         "game.settings.pf.npf.npf_buoy_penalty": {
-            "200": 1719559643
+            "200": 11097812
         },
         "game.settings.pf.npf.npf_crossing_penalty": {
-            "300": 1719559643
+            "300": 11097812
         },
         "game.settings.pf.npf.npf_max_search_nodes": {
-            "10000": 1719559643
+            "10000": 11097812
         },
         "game.settings.pf.npf.npf_rail_curve_penalty": {
-            "100": 1719066004,
-            "(other)": 493639
+            "100": 10604173,
+            "1": 493639
         },
         "game.settings.pf.npf.npf_rail_depot_reverse_penalty": {
-            "5000": 1719559643
+            "5000": 11097812
         },
         "game.settings.pf.npf.npf_rail_firstred_exit_penalty": {
-            "10000": 1719559643
+            "10000": 11097812
         },
         "game.settings.pf.npf.npf_rail_firstred_penalty": {
-            "1000": 1719559643
+            "1000": 11097812
         },
         "game.settings.pf.npf.npf_rail_lastred_penalty": {
-            "1000": 1719559643
+            "1000": 11097812
         },
         "game.settings.pf.npf.npf_rail_pbs_cross_penalty": {
-            "300": 1719556976,
+            "300": 11095145,
             "(other)": 2667
         },
         "game.settings.pf.npf.npf_rail_pbs_signal_back_penalty": {
-            "1500": 1719559643
+            "1500": 11097812
         },
         "game.settings.pf.npf.npf_rail_slope_penalty": {
-            "100": 1719559643
+            "100": 11097812
         },
         "game.settings.pf.npf.npf_rail_station_penalty": {
-            "100": 1719559643
+            "100": 11097812
         },
         "game.settings.pf.npf.npf_road_bay_occupied_penalty": {
-            "1500": 1719559643
+            "1500": 11097812
         },
         "game.settings.pf.npf.npf_road_curve_penalty": {
-            "100": 1719065926,
-            "(other)": 493717
+            "100": 10604095,
+            "1": 493639,
+            "(other)": 78
         },
         "game.settings.pf.npf.npf_road_drive_through_penalty": {
-            "800": 1719559643
+            "800": 11097812
         },
         "game.settings.pf.npf.npf_road_dt_occupied_penalty": {
-            "800": 1719559643
+            "800": 11097812
         },
         "game.settings.pf.npf.npf_water_curve_penalty": {
-            "100": 1719066004,
-            "(other)": 493639
+            "100": 10604173,
+            "25": 493639
         },
         "game.settings.pf.path_backoff_interval": {
-            "20": 1719559643
+            "20": 11097812
         },
         "game.settings.pf.pathfinder_for_roadvehs": {
-            "2": 1719548991,
+            "2": 11087160,
             "(other)": 10652
         },
         "game.settings.pf.pathfinder_for_ships": {
-            "2": 1719559515,
+            "2": 11097684,
             "(other)": 128
         },
         "game.settings.pf.pathfinder_for_trains": {
-            "2": 1719528941,
-            "(other)": 30702
+            "2": 11067110,
+            "1": 30702
         },
         "game.settings.pf.reroute_rv_on_layout_change": {
-            "1": 1719432278,
-            "(other)": 127365
+            "1": 10970447,
+            "2": 127365
         },
         "game.settings.pf.reserve_paths": {
-            "false": 1719559643
+            "false": 11097812
         },
         "game.settings.pf.reverse_at_signals": {
-            "false": 1718993913,
+            "false": 10532082,
             "true": 565730
         },
         "game.settings.pf.roadveh_queue": {
-            "true": 1719559643
+            "true": 11097812
         },
         "game.settings.pf.wait_for_pbs_path": {
-            "30": 1719559643
+            "30": 11097812
         },
         "game.settings.pf.wait_oneway_signal": {
-            "15": 1719559643
+            "15": 11097812
         },
         "game.settings.pf.wait_twoway_signal": {
-            "41": 1719559643
+            "41": 11097812
         },
         "game.settings.pf.yapf.disable_node_optimization": {
-            "false": 1719559643
+            "false": 11097812
         },
         "game.settings.pf.yapf.max_search_nodes": {
-            "10000": 1719559643
+            "10000": 11097812
         },
         "game.settings.pf.yapf.maximum_go_to_depot_penalty": {
-            "2000": 1719559643
+            "2000": 11097812
         },
         "game.settings.pf.yapf.rail_crossing_penalty": {
-            "300": 1719556976,
+            "300": 11095145,
             "(other)": 2667
         },
         "game.settings.pf.yapf.rail_curve45_penalty": {
-            "100": 1719276780,
-            "(other)": 282863
+            "100": 10814949,
+            "300": 280196,
+            "(other)": 2667
         },
         "game.settings.pf.yapf.rail_curve90_penalty": {
-            "600": 1719559643
+            "600": 11097812
         },
         "game.settings.pf.yapf.rail_depot_reverse_penalty": {
-            "5000": 1719559643
+            "5000": 11097812
         },
         "game.settings.pf.yapf.rail_doubleslip_penalty": {
-            "100": 1719559643
+            "100": 11097812
         },
         "game.settings.pf.yapf.rail_firstred_exit_penalty": {
-            "10000": 1719559643
+            "10000": 11097812
         },
         "game.settings.pf.yapf.rail_firstred_penalty": {
-            "1000": 1719559643
+            "1000": 11097812
         },
         "game.settings.pf.yapf.rail_firstred_twoway_eol": {
-            "true": 1713887723,
-            "false": 5671920
+            "false": 5671920,
+            "true": 5425892
         },
         "game.settings.pf.yapf.rail_lastred_exit_penalty": {
-            "10000": 1719559643
+            "10000": 11097812
         },
         "game.settings.pf.yapf.rail_lastred_penalty": {
-            "1000": 1719559643
+            "1000": 11097812
         },
         "game.settings.pf.yapf.rail_longer_platform_penalty": {
-            "800": 1719556976,
+            "800": 11095145,
             "(other)": 2667
         },
         "game.settings.pf.yapf.rail_longer_platform_per_tile_penalty": {
-            "0": 1719556976,
+            "0": 11095145,
             "(other)": 2667
         },
         "game.settings.pf.yapf.rail_look_ahead_max_signals": {
-            "10": 1719559643
+            "10": 11097812
         },
         "game.settings.pf.yapf.rail_look_ahead_signal_p0": {
-            "500": 1719559643
+            "500": 11097812
         },
         "game.settings.pf.yapf.rail_look_ahead_signal_p1": {
-            "-100": 1719559643
+            "-100": 11097812
         },
         "game.settings.pf.yapf.rail_look_ahead_signal_p2": {
-            "5": 1719559643
+            "5": 11097812
         },
         "game.settings.pf.yapf.rail_pbs_cross_penalty": {
-            "300": 1719556976,
+            "300": 11095145,
             "(other)": 2667
         },
         "game.settings.pf.yapf.rail_pbs_signal_back_penalty": {
-            "1500": 1719559643
+            "1500": 11097812
         },
         "game.settings.pf.yapf.rail_pbs_station_penalty": {
-            "800": 1719536674,
-            "(other)": 22969
+            "800": 11074843,
+            "600": 22969
         },
         "game.settings.pf.yapf.rail_shorter_platform_penalty": {
-            "4000": 1719556976,
+            "4000": 11095145,
             "(other)": 2667
         },
         "game.settings.pf.yapf.rail_shorter_platform_per_tile_penalty": {
-            "0": 1719556976,
+            "0": 11095145,
             "(other)": 2667
         },
         "game.settings.pf.yapf.rail_slope_penalty": {
-            "200": 1719556976,
+            "200": 11095145,
             "(other)": 2667
         },
         "game.settings.pf.yapf.rail_station_penalty": {
-            "1000": 1718899062,
-            "(other)": 660581
+            "1000": 10437231,
+            "3000": 660581
         },
         "game.settings.pf.yapf.road_crossing_penalty": {
-            "300": 1719559643
+            "300": 11097812
         },
         "game.settings.pf.yapf.road_curve_penalty": {
-            "100": 1719559565,
+            "100": 11097734,
             "(other)": 78
         },
         "game.settings.pf.yapf.road_slope_penalty": {
-            "200": 1719559643
+            "200": 11097812
         },
         "game.settings.pf.yapf.road_stop_bay_occupied_penalty": {
-            "1500": 1719556976,
+            "1500": 11095145,
             "(other)": 2667
         },
         "game.settings.pf.yapf.road_stop_occupied_penalty": {
-            "800": 1719556976,
+            "800": 11095145,
             "(other)": 2667
         },
         "game.settings.pf.yapf.road_stop_penalty": {
-            "800": 1719559643
+            "800": 11097812
         },
         "game.settings.pf.yapf.ship_curve45_penalty": {
-            "100": 1719559643
+            "100": 11097812
         },
         "game.settings.pf.yapf.ship_curve90_penalty": {
-            "600": 1719559643
+            "600": 11097812
         },
         "game.settings.prefer_sprite_font": {
-            "false": 1718826185,
+            "false": 10364354,
             "true": 733458
         },
         "game.settings.prefix": {
-            "(empty)": 1719076479,
-            "(other)": 483164
+            "(empty)": 10614648,
+            "\u00a5": 161268,
+            "\\": 99186,
+            "AF$": 96567,
+            "cr. ": 33817,
+            "+": 29637,
+            "Canadian $": 20114,
+            "(other)": 18580,
+            "Neo\u20ac": 12309,
+            "B": 11686
         },
         "game.settings.rate": {
-            "1": 1718562005,
-            "(other)": 997638
+            "1": 10100174,
+            "1800": 206452,
+            "163": 161268,
+            "2": 121850,
+            "5": 110660,
+            "1000": 101963,
+            "27": 96567,
+            "624": 71505,
+            "10": 36388,
+            "65535": 27617,
+            "20120": 23766,
+            "3": 20350,
+            "25": 11686,
+            "(other)": 7566
         },
         "game.settings.remain_if_next_order_same_station": {
-            "true": 1719464601,
+            "true": 11002770,
             "false": 95042
         },
         "game.settings.renew_keep_length": {
-            "false": 1719548974,
+            "false": 11087143,
             "true": 10669
         },
         "game.settings.resolution": {
-            "1920,1009": 1708627783,
-            "(other)": 9157732,
-            "1920,1080": 1774128
+            "1920,1080": 1774128,
+            "1920,1001": 1336302,
+            "1920,1017": 1151261,
+            "1366,768": 745499,
+            "2560,1377": 468933,
+            "1440,900": 433655,
+            "2560,1369": 409386,
+            "1920,991": 379210,
+            "1920,1027": 281534,
+            "1680,987": 233545,
+            "1680,979": 231804,
+            "3840,2066": 218078,
+            "1728,1080": 210309,
+            "1815,1051": 207083,
+            "1920,974": 178275,
+            "2560,1346": 176784,
+            "1920,1009": 165952,
+            "1366,705": 156510,
+            "(other)": 123000,
+            "2240,1366": 108844,
+            "2520,1555": 101379,
+            "1680,978": 101254,
+            "3440,1369": 100628,
+            "1920,1046": 97794,
+            "2560,1440": 97687,
+            "3440,1377": 96567,
+            "2880,1526": 89555,
+            "1729,1035": 88576,
+            "3440,1440": 87977,
+            "1812,1051": 86275,
+            "1838,1057": 83273,
+            "3152,1777": 71769,
+            "1730,1036": 68285,
+            "3440,1387": 61875,
+            "1366,746": 60201,
+            "1680,1050": 58894,
+            "1400,979": 58823,
+            "1360,768": 52991,
+            "2560,1334": 50283,
+            "2548,1358": 49309,
+            "2160,1346": 48627,
+            "1920,1111": 47050,
+            "1920,989": 33817,
+            "1920,1057": 33558,
+            "1367,1186": 30160,
+            "3440,1417": 27006,
+            "1366,745": 25947,
+            "1830,1051": 25598,
+            "1440,837": 25483,
+            "1920,1166": 24913,
+            "1920,1051": 22772,
+            "2560,1494": 22620,
+            "1279,800": 21557,
+            "1918,1008": 18803,
+            "1920,1094": 18488,
+            "1600,818": 18098,
+            "949,535": 17641,
+            "2560,1080": 15795,
+            "1280,720": 15066,
+            "2056,1286": 14380,
+            "1560,1017": 13596,
+            "2560,1366": 11960,
+            "2256,1398": 11390
         },
         "game.settings.resolution.height": {
-            "1009": 1708627783,
-            "(other)": 8931628,
-            "1080": 2000232
+            "1080": 2000232,
+            "1001": 1336302,
+            "1017": 1164986,
+            "768": 798490,
+            "1377": 572153,
+            "1369": 510014,
+            "900": 437091,
+            "991": 379210,
+            "1051": 341728,
+            "979": 290627,
+            "1027": 283275,
+            "987": 233545,
+            "1346": 225411,
+            "2066": 218078,
+            "1440": 185664,
+            "974": 178275,
+            "1009": 165952,
+            "705": 156510,
+            "1057": 121897,
+            "1366": 120804,
+            "1555": 101379,
+            "978": 101254,
+            "1046": 97794,
+            "(other)": 96626,
+            "1526": 89555,
+            "1035": 88576,
+            "1777": 71769,
+            "1036": 68285,
+            "1387": 61875,
+            "746": 60201,
+            "1050": 59761,
+            "1334": 50283,
+            "1358": 49309,
+            "1111": 47050,
+            "1417": 34292,
+            "989": 33817,
+            "1186": 30160,
+            "745": 25947,
+            "837": 25483,
+            "1166": 24913,
+            "1494": 22620,
+            "800": 22615,
+            "1008": 18941,
+            "1094": 18488,
+            "818": 18098,
+            "535": 17641,
+            "720": 15066,
+            "1286": 14380,
+            "1398": 11390
         },
         "game.settings.resolution.width": {
-            "1920": 1714015341,
-            "(other)": 5544302
+            "1920": 5553510,
+            "2560": 1256808,
+            "1366": 988157,
+            "1680": 625497,
+            "1440": 462977,
+            "3440": 380941,
+            "3840": 241379,
+            "1728": 210309,
+            "1815": 207083,
+            "2240": 112585,
+            "2520": 101379,
+            "2880": 89555,
+            "1729": 88576,
+            "1812": 86275,
+            "1838": 83273,
+            "3152": 71769,
+            "1730": 68285,
+            "(other)": 65212,
+            "1400": 58823,
+            "1360": 52991,
+            "2548": 49309,
+            "2160": 48627,
+            "1367": 30160,
+            "1830": 26465,
+            "1279": 21557,
+            "1600": 21534,
+            "1280": 18966,
+            "1918": 18803,
+            "949": 17641,
+            "2056": 14380,
+            "1560": 13596,
+            "2256": 11390
         },
         "game.settings.rightclick_emulate": {
-            "false": 1719559643
+            "false": 11097812
         },
         "game.settings.savegame_format": {
-            "(empty)": 1719165517,
-            "(other)": 394126
+            "(empty)": 10703686,
+            "zlib": 394126
         },
         "game.settings.scenario.house_ignore_dates": {
-            "false": 1716781313,
+            "false": 8319482,
             "true": 2778330
         },
         "game.settings.scenario.house_ignore_grf": {
-            "false": 1716556638,
+            "false": 8094807,
             "true": 3003005
         },
         "game.settings.scenario.house_ignore_zones": {
-            "0": 1716751624,
+            "0": 8289793,
             "2": 2579020,
-            "(other)": 228999
+            "1": 228999
         },
         "game.settings.scenario.multiple_buildings": {
-            "false": 1717722122,
+            "false": 9260291,
             "true": 1837521
         },
         "game.settings.screenshot_format": {
-            "(empty)": 1719151565,
-            "(other)": 408078
+            "(empty)": 10689734,
+            "png": 397409,
+            "(other)": 10669
         },
         "game.settings.script.script_max_memory_megabytes": {
-            "1024": 1718957315,
-            "(other)": 602328
+            "1024": 10495484,
+            "8192": 400645,
+            "2048": 196170,
+            "(other)": 5513
         },
         "game.settings.script.script_max_opcode_till_suspend": {
-            "10000": 1718895162,
-            "(other)": 664481
+            "10000": 10433331,
+            "250000": 520033,
+            "20000": 141186,
+            "(other)": 3262
         },
         "game.settings.script.settings_profile": {
-            "easy": 1718075812,
-            "(other)": 1483831
+            "easy": 9613981,
+            "medium": 1235849,
+            "hard": 247982
         },
         "game.settings.separator": {
-            ",": 1708744169,
             ".": 8974149,
-            "(other)": 1841325
+            "(empty)": 1595168,
+            ",": 282338,
+            "'": 116822,
+            "P": 83273,
+            " ": 40306,
+            "(other)": 5756
         },
         "game.settings.small_aa": {
-            "false": 1718539752,
+            "false": 10077921,
             "true": 1019891
         },
         "game.settings.small_size": {
-            "0": 1715622821,
-            "(other)": 3936822
+            "0": 7160990,
+            "10": 1625402,
+            "12": 1224743,
+            "8": 485467,
+            "22": 339080,
+            "9": 115926,
+            "11": 95042,
+            "(other)": 28208,
+            "15": 22954
         },
         "game.settings.sound.ambient": {
-            "false": 1709533556,
-            "true": 10026087
+            "true": 10026087,
+            "false": 1071725
         },
         "game.settings.sound.click_beep": {
-            "false": 1709117850,
-            "true": 10441793
+            "true": 10441793,
+            "false": 656019
         },
         "game.settings.sound.confirm": {
-            "true": 1719230300,
+            "true": 10768469,
             "false": 329343
         },
         "game.settings.sound.disaster": {
-            "false": 1708975176,
-            "true": 10584467
+            "true": 10584467,
+            "false": 513345
         },
         "game.settings.sound.new_year": {
-            "true": 1718839874,
+            "true": 10378043,
             "false": 719769
         },
         "game.settings.sound.news_full": {
-            "false": 1709828906,
-            "true": 9730737
+            "true": 9730737,
+            "false": 1367075
         },
         "game.settings.sound.news_ticker": {
-            "false": 1710081542,
-            "true": 9478101
+            "true": 9478101,
+            "false": 1619711
         },
         "game.settings.sound.vehicle": {
-            "false": 1709569081,
-            "true": 9990562
+            "true": 9990562,
+            "false": 1107250
         },
         "game.settings.sounddriver": {
-            "(empty)": 1719559643
+            "(empty)": 11097812
         },
         "game.settings.sprite_cache_size_px": {
-            "128": 1719239228,
-            "(other)": 320415
+            "128": 10777397,
+            "75": 151111,
+            "512": 108795,
+            "384": 60201,
+            "(other)": 308
         },
         "game.settings.station.adjacent_stations": {
-            "true": 1719547104,
+            "true": 11085273,
             "false": 12539
         },
         "game.settings.station.cargo_class_rating_wait_time": {
-            "false": 1716139254,
+            "false": 7677423,
             "true": 3420389
         },
         "game.settings.station.catchment_increase": {
-            "1": 1709234051,
             "0": 7172096,
             "5": 2231037,
-            "(other)": 922459
+            "1": 772220,
+            "2": 686550,
+            "3": 165297,
+            "4": 70612
         },
         "game.settings.station.distant_join_stations": {
-            "true": 1719526579,
+            "true": 11064748,
             "false": 33064
         },
         "game.settings.station.modified_catchment": {
-            "true": 1719531481,
+            "true": 11069650,
             "false": 28162
         },
         "game.settings.station.never_expire_airports": {
-            "true": 1715447276,
+            "true": 6985445,
             "false": 4112367
         },
         "game.settings.station.serve_neutral_industries": {
-            "true": 1718995064,
+            "true": 10533233,
             "false": 564579
         },
         "game.settings.station.station_delivery_mode": {
-            "1": 1711636609,
-            "0": 7923034
+            "0": 7923034,
+            "1": 3174778
         },
         "game.settings.station.station_size_rating_cargo_amount": {
-            "false": 1716005957,
+            "false": 7544126,
             "true": 3553686
         },
         "game.settings.station.station_spread": {
-            "64": 1713128876,
-            "(other)": 3549796,
-            "12": 2880971
+            "64": 4667045,
+            "12": 2880971,
+            "24": 603115,
+            "40": 487035,
+            "20": 440562,
+            "15": 391743,
+            "30": 374473,
+            "50": 327806,
+            "25": 225481,
+            "14": 148419,
+            "32": 126455,
+            "17": 97707,
+            "21": 58974,
+            "13": 54280,
+            "18": 53263,
+            "48": 51493,
+            "16": 39744,
+            "29": 24773,
+            "60": 19015,
+            "41": 18522,
+            "(other)": 6936
         },
         "game.settings.suffix": {
-            " Freedom Bucks": 1708471309,
             " credits": 6395353,
             "credits": 1941839,
             "(empty)": 1845458,
-            "(other)": 905684
+            "\uc6d0": 206452,
+            "\u5186": 151111,
+            "\u00a5": 116822,
+            "Fr": 110660,
+            " AU$": 77514,
+            " Pounds": 57787,
+            " C": 36388,
+            "(other)": 35417,
+            "Caps": 31178,
+            " RS": 30396,
+            " moneys": 29637,
+            "CAD": 20114,
+            "mBTC": 11686
         },
         "game.settings.support8bpp": {
-            "no": 1719559643
+            "no": 11097812
         },
         "game.settings.timetable_autofill_rounding": {
-            "74": 1712311290,
             "0": 6790798,
-            "(other)": 457555
+            "74": 3849459,
+            "1": 195552,
+            "120": 161268,
+            "300": 65139,
+            "345": 32313,
+            "(other)": 3283
         },
         "game.settings.to_euro": {
-            "0": 1719516993,
-            "(other)": 42650
+            "0": 11055162,
+            "2999": 33817,
+            "(other)": 8833
         },
         "game.settings.transparency_locks": {
-            "393": 1708471309,
             "0": 7909567,
-            "(other)": 3178767
+            "509": 1183079,
+            "505": 510948,
+            "3": 267265,
+            "257": 259246,
+            "1": 161343,
+            "329": 121140,
+            "12": 110660,
+            "256": 81597,
+            "16": 79784,
+            "2": 69899,
+            "511": 60201,
+            "(other)": 57801,
+            "499": 54773,
+            "34": 41396,
+            "28": 36698,
+            "131": 33817,
+            "467": 28431,
+            "392": 18488,
+            "473": 11679
         },
         "game.settings.transparency_options": {
-            "2": 1709462708,
-            "(other)": 6675731,
-            "0": 3421204
+            "0": 3421204,
+            "71": 1166558,
+            "2": 1000877,
+            "38": 715204,
+            "3": 580116,
+            "7": 575681,
+            "1": 545967,
+            "43": 531148,
+            "6": 481437,
+            "5": 326080,
+            "164": 270313,
+            "257": 184713,
+            "167": 182765,
+            "511": 149428,
+            "182": 121140,
+            "4": 118677,
+            "255": 102380,
+            "(other)": 90554,
+            "162": 86275,
+            "39": 84235,
+            "495": 65575,
+            "34": 54353,
+            "256": 32197,
+            "37": 27043,
+            "483": 23398,
+            "13": 22924,
+            "130": 18721,
+            "35": 18697,
+            "135": 17278,
+            "14": 15523,
+            "36": 15520,
+            "144": 14663,
+            "46": 13743,
+            "15": 12056,
+            "152": 11369
         },
         "game.settings.vehicle.adjacent_crossings": {
-            "true": 1719247865,
+            "true": 10786034,
             "false": 311778
         },
         "game.settings.vehicle.auto_separation_by_default": {
-            "false": 1709261514,
-            "true": 10298129
+            "true": 10298129,
+            "false": 799683
         },
         "game.settings.vehicle.auto_timetable_by_default": {
-            "true": 1710477673,
-            "false": 9081970
+            "false": 9081970,
+            "true": 2015842
         },
         "game.settings.vehicle.disable_elrails": {
-            "false": 1719500825,
+            "false": 11038994,
             "true": 58818
         },
         "game.settings.vehicle.drive_through_train_depot": {
-            "true": 1713786494,
-            "false": 5773149
+            "false": 5773149,
+            "true": 5324663
         },
         "game.settings.vehicle.dynamic_engines": {
-            "true": 1719554882,
+            "true": 11093051,
             "false": 4761
         },
         "game.settings.vehicle.extend_vehicle_life": {
-            "0": 1719548473,
+            "0": 11086642,
             "(other)": 11170
         },
         "game.settings.vehicle.freight_trains": {
-            "2": 1709327038,
             "1": 9111091,
-            "(other)": 1121514
+            "2": 865207,
+            "3": 389859,
+            "6": 271990,
+            "5": 194643,
+            "8": 142662,
+            "4": 112463,
+            "(other)": 9897
         },
         "game.settings.vehicle.improved_breakdowns": {
-            "false": 1716626585,
+            "false": 8164754,
             "true": 2933058
         },
         "game.settings.vehicle.limit_train_acceleration": {
-            "true": 1710525607,
-            "false": 9034036
+            "false": 9034036,
+            "true": 2063776
         },
         "game.settings.vehicle.max_aircraft": {
-            "5000": 1709146857,
             "200": 6089632,
             "10000": 2967232,
-            "(other)": 1355922
+            "5000": 685026,
+            "2700": 299409,
+            "2000": 258986,
+            "100": 171719,
+            "1000": 144242,
+            "6000": 135252,
+            "3000": 52682,
+            "5100": 49234,
+            "500": 41982,
+            "(other)": 38425,
+            "350": 35180,
+            "15": 34907,
+            "1": 33817,
+            "1200": 20489,
+            "250": 14205,
+            "0": 13714,
+            "900": 11679
         },
         "game.settings.vehicle.max_roadveh": {
-            "5000": 1710459376,
             "500": 4935945,
             "10000": 3207086,
-            "(other)": 957236
+            "5000": 1997545,
+            "1000": 373499,
+            "2500": 140356,
+            "1500": 90763,
+            "5100": 49234,
+            "1200": 39051,
+            "4000": 38734,
+            "800": 35180,
+            "150": 34745,
+            "1100": 31178,
+            "3000": 30389,
+            "2000": 26428,
+            "(other)": 24266,
+            "9000": 22924,
+            "2300": 20489
         },
         "game.settings.vehicle.max_ships": {
-            "5000": 1709285535,
             "300": 5733447,
             "10000": 2967232,
-            "(other)": 1573429
+            "5000": 823704,
+            "1000": 311631,
+            "9400": 299409,
+            "3000": 231351,
+            "100": 168136,
+            "200": 131037,
+            "500": 122204,
+            "2000": 100910,
+            "5100": 49234,
+            "50": 34907,
+            "1100": 34226,
+            "1200": 28326,
+            "700": 24071,
+            "1900": 20489,
+            "10": 12539,
+            "(other)": 4959
         },
         "game.settings.vehicle.max_train_length": {
-            "64": 1712437938,
-            "(other)": 3941023,
-            "7": 3180682
+            "64": 3976107,
+            "7": 3180682,
+            "12": 512886,
+            "20": 444193,
+            "16": 392629,
+            "10": 360162,
+            "25": 354429,
+            "14": 345166,
+            "15": 318283,
+            "30": 276812,
+            "32": 252747,
+            "28": 151111,
+            "50": 104708,
+            "29": 67995,
+            "17": 63562,
+            "8": 58587,
+            "27": 48478,
+            "24": 47272,
+            "40": 36978,
+            "21": 31960,
+            "48": 30111,
+            "9": 25725,
+            "(other)": 17229
         },
         "game.settings.vehicle.max_trains": {
-            "5000": 1709819888,
             "500": 4878647,
             "10000": 3261162,
-            "(other)": 1599946
+            "5000": 1358057,
+            "3000": 371308,
+            "1000": 333894,
+            "800": 216444,
+            "1500": 193623,
+            "2100": 116472,
+            "2000": 106604,
+            "300": 76251,
+            "700": 53426,
+            "1100": 50828,
+            "5100": 49234,
+            "2500": 14205,
+            "1200": 11679,
+            "(other)": 5978
         },
         "game.settings.vehicle.never_expire_vehicles": {
-            "true": 1715830181,
+            "true": 7368350,
             "false": 3729462
         },
         "game.settings.vehicle.no_expire_vehicles_after": {
-            "0": 1718461341,
-            "(other)": 1098302
+            "0": 9999510,
+            "36": 299409,
+            "1960": 161268,
+            "2000": 147131,
+            "1980": 110908,
+            "1998": 81044,
+            "1970": 68616,
+            "1990": 64439,
+            "1985": 46259,
+            "1200": 33817,
+            "(other)": 32815,
+            "1997": 30175,
+            "2020": 22421
         },
         "game.settings.vehicle.no_introduce_vehicles_after": {
-            "0": 1719518653,
-            "(other)": 40990
+            "0": 11056822,
+            "2023": 30175,
+            "(other)": 10815
         },
         "game.settings.vehicle.no_train_crash_other_company": {
-            "false": 1718440682,
+            "false": 9978851,
             "true": 1118961
         },
         "game.settings.vehicle.non_leading_engines_keep_name": {
-            "false": 1718977760,
+            "false": 10515929,
             "true": 581883
         },
         "game.settings.vehicle.pay_for_repair": {
-            "true": 1718893913,
+            "true": 10432082,
             "false": 665730
         },
         "game.settings.vehicle.plane_crashes": {
-            "0": 1714635078,
+            "0": 6173247,
             "2": 4088543,
-            "(other)": 836022
+            "1": 836022
         },
         "game.settings.vehicle.plane_speed": {
-            "1": 1713389305,
             "4": 5342674,
-            "(other)": 827664
+            "1": 4927474,
+            "2": 527567,
+            "3": 300097
         },
         "game.settings.vehicle.rail_depot_speed_limit": {
-            "61": 1718135313,
-            "(other)": 1424330
+            "61": 9673482,
+            "100": 950904,
+            "80": 307826,
+            "10": 67995,
+            "70": 48478,
+            "71": 30308,
+            "(other)": 18819
         },
         "game.settings.vehicle.realistic_braking_aspect_limited": {
-            "1": 1710279338,
-            "0": 9280305
+            "0": 9280305,
+            "1": 1817507
         },
         "game.settings.vehicle.repair_cost": {
-            "100": 1718813332,
-            "(other)": 746311
+            "100": 10351501,
+            "99": 270313,
+            "80": 161268,
+            "255": 113126,
+            "91": 76251,
+            "20": 64915,
+            "50": 49951,
+            "(other)": 10487
         },
         "game.settings.vehicle.road_side": {
-            "right": 1717352285,
+            "right": 8890454,
             "left": 2207358
         },
         "game.settings.vehicle.roadveh_acceleration_model": {
-            "1": 1718759326,
-            "(other)": 800317
+            "1": 10297495,
+            "0": 800317
         },
         "game.settings.vehicle.roadveh_articulated_overtaking": {
-            "true": 1719546963,
+            "true": 11085132,
             "false": 12680
         },
         "game.settings.vehicle.roadveh_cant_quantum_tunnel": {
-            "false": 1718385896,
+            "false": 9924065,
             "true": 1173747
         },
         "game.settings.vehicle.roadveh_slope_steepness": {
-            "5": 1708892576,
             "7": 8469981,
-            "(other)": 2197086
+            "0": 1432594,
+            "5": 430745,
+            "3": 258251,
+            "4": 229292,
+            "10": 152603,
+            "8": 72252,
+            "6": 48436,
+            "(other)": 3658
         },
         "game.settings.vehicle.safer_crossings": {
-            "true": 1714536662,
+            "true": 6074831,
             "false": 5022981
         },
         "game.settings.vehicle.servint_aircraft": {
-            "65": 1708471869,
             "100": 8446053,
-            "(other)": 2641721
+            "800": 1158166,
+            "50": 1073704,
+            "5": 116664,
+            "30": 104166,
+            "20": 67200,
+            "25": 61875,
+            "(other)": 26240,
+            "15": 26063,
+            "80": 17681
         },
         "game.settings.vehicle.servint_ispercent": {
-            "true": 1709608855,
-            "false": 9950788
+            "false": 9950788,
+            "true": 1147024
         },
         "game.settings.vehicle.servint_roadveh": {
-            "65": 1708471869,
             "150": 8378969,
-            "(other)": 2708805
+            "800": 1175928,
+            "50": 950518,
+            "20": 188340,
+            "5": 116664,
+            "30": 104118,
+            "25": 62034,
+            "45": 49322,
+            "(other)": 28175,
+            "15": 26063,
+            "100": 17681
         },
         "game.settings.vehicle.servint_ships": {
-            "65": 1708471869,
             "360": 8378969,
-            "(other)": 2708805
+            "800": 1175928,
+            "50": 844023,
+            "100": 161268,
+            "35": 121140,
+            "12": 96645,
+            "20": 80609,
+            "25": 61875,
+            "30": 49393,
+            "90": 49322,
+            "(other)": 28286,
+            "5": 20019,
+            "150": 17681,
+            "15": 12654
         },
         "game.settings.vehicle.servint_trains": {
-            "70": 1708471309,
             "150": 7837848,
-            "(other)": 3250486
+            "800": 1342454,
+            "50": 950518,
+            "162": 231804,
+            "240": 142662,
+            "12": 121140,
+            "5": 116664,
+            "30": 104118,
+            "20": 67200,
+            "25": 62034,
+            "45": 49322,
+            "(other)": 28304,
+            "125": 17681,
+            "10": 13409,
+            "15": 12654
         },
         "game.settings.vehicle.ship_collision_avoidance": {
-            "true": 1719158350,
+            "true": 10696519,
             "false": 401293
         },
         "game.settings.vehicle.slow_road_vehicles_in_curves": {
-            "false": 1711756925,
-            "true": 7802718
+            "true": 7802718,
+            "false": 3295094
         },
         "game.settings.vehicle.smoke_amount": {
-            "2": 1713173305,
             "1": 6354025,
-            "(other)": 32313
+            "2": 4711474,
+            "0": 32313
         },
         "game.settings.vehicle.through_load_speed_limit": {
-            "15": 1718377075,
-            "(other)": 1182568
+            "15": 9915244,
+            "5": 270313,
+            "61": 206452,
+            "500": 183782,
+            "65": 180472,
+            "10": 119046,
+            "20": 58939,
+            "60": 49309,
+            "25": 48478,
+            "30": 35686,
+            "48": 15459,
+            "(other)": 14632
         },
         "game.settings.vehicle.train_acceleration_model": {
-            "1": 1718806268,
-            "(other)": 753375
+            "1": 10344437,
+            "0": 753375
         },
         "game.settings.vehicle.train_braking_model": {
-            "1": 1711295582,
-            "0": 8264061
+            "0": 8264061,
+            "1": 2833751
         },
         "game.settings.vehicle.train_slope_steepness": {
-            "5": 1708854968,
             "3": 7269915,
             "0": 2115021,
-            "(other)": 1319739
+            "7": 489389,
+            "4": 463294,
+            "5": 393137,
+            "2": 156654,
+            "6": 137349,
+            "9": 31321,
+            "10": 30307,
+            "1": 11264,
+            "(other)": 161
         },
         "game.settings.vehicle.train_speed_adaptation": {
-            "true": 1712321735,
-            "false": 7237908
+            "false": 7237908,
+            "true": 3859904
         },
         "game.settings.vehicle.wagon_speed_limits": {
-            "true": 1717951231,
+            "true": 9489400,
             "false": 1608412
         },
         "game.settings.video_hw_accel": {
-            "true": 1716235044,
+            "true": 7773213,
             "false": 3324599
         },
         "game.settings.video_vsync": {
-            "false": 1716450846,
+            "false": 7989015,
             "true": 3108797
         },
         "game.settings.videodriver": {
-            "(empty)": 1719526499,
-            "(other)": 33144
+            "(empty)": 11064668,
+            "sdl": 33144
         },
         "game.settings.window_maximize": {
-            "true": 1715915445,
+            "true": 7453614,
             "false": 2147229,
             "(not reported)": 1496969
         },
         "game.settings.zoning_overlay_inner": {
-            "7": 1708664635,
             "0": 8670979,
-            "(other)": 2224029
+            "5": 1442250,
+            "4": 763228,
+            "7": 202804,
+            "6": 18551
         },
         "game.settings.zoning_overlay_outer": {
-            "5": 1710680798,
             "0": 8385948,
-            "(other)": 492897
+            "5": 2218967,
+            "4": 345797,
+            "7": 112417,
+            "9": 30466,
+            "(other)": 4217
         },
         "info.configuration.blitter": {
-            "40bpp-anim": 1716181576,
+            "40bpp-anim": 7719745,
             "32bpp-sse2-anim": 2233508,
-            "(other)": 1144559
+            "32bpp-anim": 607319,
+            "32bpp-optimized": 192024,
+            "32bpp-sse4-anim": 180118,
+            "null": 165098
         },
         "info.configuration.language.filename": {
-            "english.lng": 1711205476,
-            "(other)": 4675572,
-            "english_US.lng": 3678595
+            "english_US.lng": 3678595,
+            "english.lng": 2743645,
+            "japanese.lng": 1041164,
+            "korean.lng": 866648,
+            "polish.lng": 604946,
+            "german.lng": 551703,
+            "czech.lng": 459729,
+            "swedish.lng": 326248,
+            "simplified_chinese.lng": 279574,
+            "english_AU.lng": 187852,
+            "ukrainian.lng": 112433,
+            "russian.lng": 83182,
+            "dutch.lng": 46948,
+            "hungarian.lng": 43543,
+            "brazilian_portuguese.lng": 40283,
+            "slovak.lng": 16207,
+            "norwegian_bokmal.lng": 13053,
+            "(other)": 2059
         },
         "info.configuration.language.isocode": {
-            "en_GB": 1711205476,
-            "(other)": 4675572,
-            "en_US": 3678595
+            "en_US": 3678595,
+            "en_GB": 2743645,
+            "ja_JP": 1041164,
+            "ko_KR": 866648,
+            "pl_PL": 604946,
+            "de_DE": 551703,
+            "cs_CZ": 459729,
+            "sv_SE": 326248,
+            "zh_CN": 279574,
+            "en_AU": 187852,
+            "uk_UA": 112433,
+            "ru_RU": 83182,
+            "nl_NL": 46948,
+            "hu_HU": 43543,
+            "pt_BR": 40283,
+            "sk_SK": 16207,
+            "nb_NO": 13053,
+            "(other)": 2059
         },
         "info.configuration.language.name": {
-            "English (UK)": 1711205476,
-            "(other)": 4675572,
-            "English (US)": 3678595
+            "English (US)": 3678595,
+            "English (UK)": 2743645,
+            "Japanese": 1041164,
+            "Korean": 866648,
+            "Polish": 604946,
+            "German": 551703,
+            "Czech": 459729,
+            "Swedish": 326248,
+            "Chinese (Simplified)": 279574,
+            "English (AU)": 187852,
+            "Ukrainian": 112433,
+            "Russian": 83182,
+            "Dutch": 46948,
+            "Hungarian": 43543,
+            "Portuguese (Brazilian)": 40283,
+            "Slovak": 16207,
+            "Norwegian (Bokmal)": 13053,
+            "(other)": 2059
         },
         "info.configuration.music_driver": {
-            "dmusic": 1712208037,
             "null": 7178205,
-            "(other)": 173401
+            "dmusic": 3746206,
+            "cocoa": 83818,
+            "fluidsynth": 43757,
+            "extmidi": 36388,
+            "(other)": 9438
         },
         "info.configuration.network": {
-            "no": 1718382190,
-            "(other)": 1177453
+            "no": 9920359,
+            "server": 1177453
         },
         "info.configuration.sound_driver": {
-            "win32": 1717876861,
-            "(other)": 1682782
+            "win32": 9415030,
+            "cocoa": 1385501,
+            "null": 185813,
+            "sdl": 111468
         },
         "info.configuration.video_driver": {
-            "win32-opengl": 1715758497,
+            "win32-opengl": 7296666,
             "win32": 2139079,
-            "(other)": 1662067
+            "cocoa": 963534,
+            "cocoa-opengl": 421967,
+            "dedicated": 165098,
+            "sdl": 90032,
+            "sdl-opengl": 21436
         },
         "info.configuration.video_info": {
-            "NVIDIA GeForce GTX 1080 Ti/PCIe/SSE2": 1708537367,
-            "(other)": 7664533,
-            "(no hardware acceleration)": 3357743
+            "(no hardware acceleration)": 3357743,
+            "Intel(R) UHD Graphics": 615126,
+            "Intel(R) UHD Graphics 620": 567829,
+            "NVIDIA GeForce RTX 2070 SUPER/PCIe/SSE2": 546444,
+            "Intel(R) UHD Graphics 630": 541017,
+            "AMD Radeon(TM) Graphics": 459517,
+            "Intel(R) Iris(R) Xe Graphics": 361027,
+            "Intel Iris Pro OpenGL Engine": 348165,
+            "AMD Radeon(TM) RX Vega 10 Graphics": 345689,
+            "NVIDIA GeForce RTX 2060 SUPER/PCIe/SSE2": 322328,
+            "Radeon RX 570 Series": 281128,
+            "Intel(R) HD Graphics 4600": 211398,
+            "NVIDIA GeForce GTX 970/PCIe/SSE2": 193546,
+            "NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2": 168776,
+            "NVIDIA GeForce RTX 3060/PCIe/SSE2": 162544,
+            "AMD Radeon RX 5700 XT": 158457,
+            "AMD Radeon(TM) R3 Graphics": 151111,
+            "AMD Radeon RX 7900 XTX": 136252,
+            "AMD Radeon R9 200 Series": 121140,
+            "NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2": 113521,
+            "NVIDIA GeForce GTX 1050 Ti/PCIe/SSE2": 101330,
+            "NVIDIA GeForce GTX 1660 Ti/PCIe/SSE2": 97576,
+            "NVIDIA GeForce RTX 3080 Ti/PCIe/SSE2": 88390,
+            "NVIDIA GeForce RTX 3090/PCIe/SSE2": 83480,
+            "NVIDIA GeForce GTX 1650/PCIe/SSE2": 82452,
+            "(other)": 78824,
+            "NVIDIA GeForce RTX 3070/PCIe/SSE2": 78232,
+            "NVIDIA GeForce GTX 1080 Ti/PCIe/SSE2": 75536,
+            "GeForce GTS 360M/PCI/SSE2": 73247,
+            "NVIDIA GeForce RTX 2070/PCIe/SSE2": 71769,
+            "ASUS EAH5450 Series": 64486,
+            "NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2": 64345,
+            "NVIDIA GeForce RTX 3060 Laptop GPU/PCIe/SSE2": 61882,
+            "NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2": 60969,
+            "ION/PCIe/SSE2": 60201,
+            "NVIDIA GeForce RTX 2080 Ti/PCIe/SSE2": 57787,
+            "NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2": 55630,
+            "Intel(R) HD Graphics 4400": 54438,
+            "Apple M1": 48391,
+            "NVIDIA GeForce GTX 1070/PCIe/SSE2": 40356,
+            "AMD Radeon HD 7290 Graphics": 40283,
+            "NVIDIA GeForce RTX 4060/PCIe/SSE2": 32889,
+            "NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2": 30743,
+            "Intel(R) HD Graphics 2500": 30702,
+            "Radeon RX 580 Series": 30532,
+            "NVIDIA GeForce RTX 3050 Ti Laptop GPU/PCIe/SSE2": 30396,
+            "Radeon RX 560 Series": 26839,
+            "AMD Radeon (TM) Graphics": 26664,
+            "GeForce MX230/PCIe/SSE2": 25947,
+            "NVIDIA GeForce RTX 4070 Ti/PCIe/SSE2": 21846,
+            "NVIDIA GeForce RTX 3080/PCIe/SSE2": 21528,
+            "NVIDIA GeForce RTX 4080/PCIe/SSE2": 20489,
+            "NVIDIA GeForce RTX 4090/PCIe/SSE2": 20350,
+            "NVIDIA GeForce GTX 1070 Ti/PCIe/SSE2": 20114,
+            "NVIDIA GeForce GTX 1660/PCIe/SSE2": 19234,
+            "Intel(R) RaptorLake-S Mobile Graphics Controller": 17681,
+            "NVIDIA GeForce RTX 3070 Ti Laptop GPU/PCIe/SSE2": 15874,
+            "NVIDIA GeForce GTX 1080/PCIe/SSE2": 15256,
+            "AMD Radeon RX 6700": 14486,
+            "Apple M1 Max": 14380,
+            "NVIDIA GeForce RTX 2060/PCIe/SSE2": 12911,
+            "AMD Radeon RX 7800 XT": 11960,
+            "AMD Radeon RX 6650M": 11789,
+            "NVIDIA GeForce GTX 960M/PCIe/SSE2": 11679,
+            "AMD Radeon RX 7700 XT": 11161
         },
         "info.configuration.video_info.brand": {
-            "NVIDIA": 1711389827,
             "(no hardware acceleration)": 3357743,
+            "NVIDIA": 2927996,
             "Intel": 2767753,
-            "AMD": 1854645
+            "AMD": 1854645,
+            "(other)": 124687,
+            "Apple": 64988
         },
         "info.font.large": {
-            "OpenTTD Serif": 1714164416,
-            "(other)": 5395227
+            "OpenTTD Serif": 5702585,
+            "Tahoma Bold": 1166090,
+            "sprite": 1094684,
+            "Arial Unicode MS": 709348,
+            "\uff2d\uff33 \u30b4\u30b7\u30c3\u30af": 442476,
+            "\uad74\ub9bc": 411837,
+            "Arial": 292130,
+            "\u5fae\u8f6f\u96c5\u9ed1": 267658,
+            "Roboto Bold": 161268,
+            "\ub9d1\uc740 \uace0\ub515": 149599,
+            "Arial Bold": 147510,
+            "OpenTTD Serif, Regular": 101370,
+            "\ub098\ub214\uace0\ub515": 99186,
+            "Yu Mincho Demibold": 96567,
+            "\ub098\ub214\ubc14\ub978\uace0\ub515": 89555,
+            "Times New Roman": 61875,
+            "(other)": 51601,
+            "Unifont": 23766,
+            "Georgia": 15874,
+            "Meiryo": 12833
         },
         "info.font.medium": {
-            "OpenTTD Sans": 1714373711,
-            "(other)": 5185932
+            "OpenTTD Sans": 5911880,
+            "Tahoma Bold": 1277828,
+            "sprite": 885389,
+            "Arial Unicode MS": 709348,
+            "\uff2d\uff33 \u30b4\u30b7\u30c3\u30af": 442476,
+            "\uad74\ub9bc": 411837,
+            "\u5fae\u8f6f\u96c5\u9ed1": 267658,
+            "Roboto Medium": 161268,
+            "\ub9d1\uc740 \uace0\ub515": 149599,
+            "Arial Bold": 147510,
+            "Arial": 133232,
+            "OpenTTD Sans, Bold": 101370,
+            "Arial tu\u010dn\u00e9": 101111,
+            "\ub098\ub214\uace0\ub515": 99186,
+            "Yu Gothic UI Regular": 96567,
+            "\ub098\ub214\ubc14\ub978\uace0\ub515": 89555,
+            "(other)": 40932,
+            "Tahoma": 34467,
+            "Unifont": 23766,
+            "Meiryo": 12833
         },
         "info.font.mono": {
-            "sprite": 1719011732,
-            "(other)": 547911
+            "sprite": 10549901,
+            "OpenTTD Mono": 239229,
+            "\uad74\ub9bc\uccb4": 146519,
+            "\uad74\ub9bc": 73247,
+            "(other)": 32744,
+            "Consolas": 29687,
+            "OpenTTD Mono, Bold": 26485
         },
         "info.font.small": {
-            "OpenTTD Small": 1713854555,
-            "(other)": 5705088
+            "OpenTTD Small": 5392724,
+            "Tahoma Bold": 1166090,
+            "sprite": 885389,
+            "Arial Unicode MS": 709348,
+            "Lucida Sans Regular": 519156,
+            "\uff2d\uff33 \u30b4\u30b7\u30c3\u30af": 442476,
+            "\uad74\ub9bc": 411837,
+            "Arial": 354095,
+            "\u5fae\u8f6f\u96c5\u9ed1": 267658,
+            "Roboto": 161268,
+            "\ub9d1\uc740 \uace0\ub515": 149599,
+            "Arial Bold": 147420,
+            "OpenTTD Small, Regular": 101370,
+            "\ub098\ub214\uace0\ub515": 99186,
+            "Yu Gothic UI Light": 96567,
+            "\ub098\ub214\ubc14\ub978\uace0\ub515": 89555,
+            "(other)": 40932,
+            "Tahoma": 26543,
+            "Unifont": 23766,
+            "Meiryo": 12833
         },
         "info.openttd.bits": {
-            "64": 1718782317,
-            "(other)": 777326
+            "64": 10320486,
+            "32": 777326
         },
         "info.openttd.dedicated_build": {
-            "no": 1719559643
+            "no": 11097812
         },
         "info.openttd.endian": {
-            "little": 1719559643
+            "little": 11097812
         },
         "info.os.hardware_concurrency": {
-            "12": 1710353586,
             "8": 3271772,
-            "(other)": 3195061,
-            "4": 2739224
+            "4": 2739224,
+            "12": 1891755,
+            "16": 1640166,
+            "24": 447824,
+            "2": 374127,
+            "10": 291261,
+            "20": 258004,
+            "6": 127276,
+            "32": 45126,
+            "3": 11277
         },
         "info.os.memory": {
-            "32 GiB": 1710902767,
             "16 GiB": 3815699,
+            "32 GiB": 2440936,
             "8 GiB": 2439341,
-            "(other)": 2401836
+            "4 GiB": 1149545,
+            "64 GiB": 332477,
+            "24 GiB": 324837,
+            "20 GiB": 129855,
+            "6 GiB": 124407,
+            "48 GiB": 91405,
+            "12 GiB": 85406,
+            "15 GiB": 65084,
+            "3 GiB": 40283,
+            "128 GiB": 30308,
+            "14 GiB": 25620,
+            "(other)": 2609
         },
         "info.os.os": {
-            "Windows 10.0.22631": 1710044517,
             "Windows 10.0.19045": 5068185,
-            "(other)": 4446941
+            "Windows 10.0.22631": 1582686,
+            "Windows 10.0.22621": 1190622,
+            "MacOS 11.7.0": 598688,
+            "Windows 10.0.19042": 519156,
+            "MacOS 11.7.10": 348165,
+            "Windows 10.0.18362": 311262,
+            "MacOS 14.3.1": 288265,
+            "Windows 10.0.22000": 285869,
+            "Windows 10.0.20348": 165098,
+            "Windows 6.1.7601 (Service Pack 1)": 146102,
+            "Windows 10.0.26058": 115669,
+            "Windows 10.0.19043": 99255,
+            "MacOS 13.2.0": 69048,
+            "MacOS 14.2.1": 67508,
+            "Windows 10.0.19044": 62080,
+            "Linux 6.7.5": 43417,
+            "(other)": 36687,
+            "Linux 5.15.0": 35546,
+            "Linux 6.7.4": 23476,
+            "Windows 10.0.22622": 22540,
+            "Windows 10.0.22635": 18488
         },
         "info.os.os.version": {
-            "Windows 11": 1711677705,
             "Windows 10": 6238867,
-            "(other)": 1643071
+            "Windows 11": 3215874,
+            "MacOS 11": 951177,
+            "MacOS 14": 359612,
+            "Windows 7": 146102,
+            "Linux": 111468,
+            "MacOS 13": 69048,
+            "(other)": 5664
         },
         "info.os.vendor": {
-            "Windows": 1718062674,
-            "(other)": 1496969
+            "Windows": 9600843,
+            "MacOS": 1385501,
+            "Linux": 111468
         },
         "reason": {
-            "leave": 1713262956,
             "exit": 6195370,
+            "leave": 4801125,
             "crash": 101317
         },
         "summary": {
-            "seconds": 1719559643,
-            "count": 1576,
+            "seconds": 11097812,
+            "count": 1575,
             "ids": 723
         }
     },
