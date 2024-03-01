@@ -1,5 +1,4 @@
 {
-    "14.0-beta1": null,
     "14.0-beta2": {
         "game.settings.ai.ai_disable_veh_aircraft": {
             "false": 2922715,
@@ -10654,7 +10653,6 @@
             "ids": 307
         }
     },
-    "jgrpp-0.57.0": null,
     "jgrpp-0.57.1": {
         "game.settings.advance_order_on_clone": {
             "false": 4197866,

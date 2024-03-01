@@ -10,6 +10,10 @@ from .windows_name import WINDOWS_BUILD_NUMBER_TO_NAME
 # Otherwise it is very easy for one user to be visible in the results.
 THRESHOLD_DIFFERENT_SAVEGAMES = 150
 THRESHOLD_DIFFERENT_SURVEYS = 300
+# Ensure games were actually played, and not just opened/closed.
+# Otherwise it is very easy to bring your settings to the top.
+THRESHOLD_GAME_SECONDS = 60
+THRESHOLD_GAME_TICKS = 100
 
 # These versions report the "seconds" wrong for network client games.
 VERSION_BROKEN_NETWORK_CLIENT = [
@@ -181,7 +185,7 @@ def summarize_result(summary, fp):
 
     # Surveys results that were either mostly paused or really short are skipped
     # to avoid people gaming the system.
-    if seconds < 60 or ticks < 100:
+    if seconds < THRESHOLD_GAME_SECONDS or ticks < THRESHOLD_GAME_TICKS:
         return
 
     version = data["info"]["openttd"]["version"]["revision"]
@@ -247,6 +251,8 @@ def main():
     for filename in sys.argv[1:]:
         summarize_archive(summary, filename)
 
+    remove_version = []
+
     # Calculate the "false" condition of each display option, assuming that if you didn't have it on, it was off.
     for version, version_summary in summary.items():
         # Sort the data based on the path.
@@ -257,7 +263,7 @@ def main():
                 data["ids"] = len(data["ids"])
 
                 if data["ids"] < THRESHOLD_DIFFERENT_SAVEGAMES or data["count"] < THRESHOLD_DIFFERENT_SURVEYS:
-                    summary[version] = None
+                    remove_version.append(version)
                     break
 
             if path.startswith("game.settings.display_opt.") or path.startswith("game.settings.extra_display_opt."):
@@ -281,6 +287,10 @@ def main():
 
             # Sort the data based on the value.
             summary[version][path] = dict(sorted(data.items(), key=lambda item: item[1], reverse=True))
+
+    # Remove versions that didn't reach the threshold.
+    for version in remove_version:
+        del summary[version]
 
     print(json.dumps(dict(sorted(summary.items(), key=lambda item: item[0])), indent=4))
 

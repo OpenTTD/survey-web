@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div id="section-full">
+    <div class="section-header">
+        <h3>Survey Result Summary - {{ page.name }}</h3>
+    </div>
+    <div class="section-item">
+        <div class="content">
+            <p>
+                Below is the summary of the survey results from {{ page.start_date }} to {{ page.end_date }} for {{ page.version }}.
+            </p>
+
+            <p>
+                The following statistics are based on "seconds played".
+                That is to say, if a setting was "true" for 100 seconds of play-time and "false" for 200 seconds of play-time, it would be 33% true and 66% false.
+                This is to avoid biasing the results towards shorter games.
+                <br />
+                Worded differently, the following statistics are not counting how often something was used, but how long it was used for.
+            </p>
+
+            <p>
+                Be mindful that these numbers are only based on those people willing to send us survey results.
+                It might not be representative of the entire OpenTTD player base.
+            </p>
+
+            <p>
+                Entries listed as "(other)" are the collection of all values lower than 0.1% of the total.
+            </p>
+
+            {% assign versions = site.data.summaries[page.year][page.week] %}
+            {% assign version = versions[page.version] %}
+            {% assign seconds = version.summary.seconds | times: 1.0 %}
+
+            <p>
+                We received surveys for a total of <b>{{ version.summary.seconds | divided_by: 3600 | round: 2 }} hours</b> of games played, over a total of <b>{{ version.summary.ids }} games</b>.
+                This is an average of {{ seconds | divided_by: version.summary.ids | divided_by: 3600 | round: 2 }} hours per game.
+            </p>
+
+            <table class="summary-table">
+            {% for summary in version %}
+                {% if summary[0] == "summary" %}{% continue %}{% endif %}
+                <tr id="{{ summary[0] }}" class="setting">
+                    <th colspan="3">
+                        <a href="#{{ summary[0] }}">{{ summary[0] }}</a>
+                    </th>
+                </tr>
+                {% for line in summary[1] %}
+                    {% assign percentage = line[1] | divided_by: seconds | percentage %}
+                <tr>
+                    <td style="width: 40px;"></td>
+                    <td><pre>{{ line[0] }}</pre></td>
+                    {% if percentage == "0.0" %}
+                    <td style="text-align: right;">&lt;0.1%</td>
+                    {% else %}
+                    <td style="text-align: right;">{{ percentage }}%</td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>

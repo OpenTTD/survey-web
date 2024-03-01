@@ -12,6 +12,7 @@ permalink: /summaries.html
     <div class="section-item">
         <div class="content">
             {% for summary in site.summaries %}
+                {% if summary.version != nil %}{% continue %}{% endif %}
                 {{ summary.end_date }}: <a href="{{ summary.url }}">Survey Result Summary - {{ summary.name }}</a><br/>
             {% endfor %}
         </div>
