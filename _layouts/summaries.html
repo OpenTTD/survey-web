@@ -14,12 +14,9 @@ layout: default
 
             <ul>
                 {% for version in site.data.summaries[page.year][page.week] %}
+                    {% if version[1] == nil %}{% continue %}{% endif %}
                     <li>
-                        {% if version[1] == nil %}
-                            {{ version[0] }} (no summary due to low games played)
-                        {% else %}
-                            <a href="#{{ version[0] }}">{{ version[0] }}</a>
-                        {% endif %}
+                        <a href="#{{ version[0] }}">{{ version[0] }}</a>
                     </li>
                 {% endfor %}
             </ul>
