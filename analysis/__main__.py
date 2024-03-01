@@ -11,6 +11,17 @@ from .windows_name import WINDOWS_BUILD_NUMBER_TO_NAME
 THRESHOLD_DIFFERENT_SAVEGAMES = 150
 THRESHOLD_DIFFERENT_SURVEYS = 300
 
+# These versions report the "seconds" wrong for network client games.
+VERSION_BROKEN_NETWORK_CLIENT = [
+    "14.0-beta1",
+    "14.0-beta2",
+    "14.0-beta3",
+    "jgrpp-0.56.2",
+    "jgrpp-0.57.0",
+    "jgrpp-0.57.1",
+]
+VERSION_BROKEN_NETWORK_CLIENT_MASTER = 20240213
+
 BLACKLIST_PATHS = [
     "date",  # Not interesting.
     "game.companies",  # Processed differently.
@@ -168,15 +179,6 @@ def summarize_result(summary, fp):
         # Invalid (or very old) survey result.
         return
 
-    # Due to a bug in OpenTTD, clients report a broken "seconds".
-    if data["info"]["configuration"]["network"] == "client":
-        return
-
-    # This is most likely an unix timestamp; caused by bugs in the client,
-    # but let's make sure it doesn't influence the survey results.
-    if seconds > 1000000000:
-        return
-
     # Surveys results that were either mostly paused or really short are skipped
     # to avoid people gaming the system.
     if seconds < 60 or ticks < 100:
@@ -188,8 +190,21 @@ def summarize_result(summary, fp):
         branch = version.split("-")[1]
         # Only track the nightlies.
         if branch == "master":
+            date = int(version[0:8])
             version = "vanilla-master"
         else:
+            return
+
+    # Due to a bug in older OpenTTD clients, results with network=client report a broken "seconds".
+    if version in VERSION_BROKEN_NETWORK_CLIENT or (
+        version == "vanilla-master" and date < VERSION_BROKEN_NETWORK_CLIENT_MASTER
+    ):
+        if data["info"]["configuration"]["network"] == "client":
+            return
+        # Due to another bug, the game sometimes doesn't report it was a network=client.
+        # The biggest impact with these games is that they can contain the unixtimestamp
+        # as "seconds". Ignore only this situation here.
+        if seconds > 1000000000:
             return
 
     for key, value in data.items():
