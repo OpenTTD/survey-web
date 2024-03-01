@@ -122,18 +122,7 @@ jobs:
     - name: Create summary entry
       shell: bash
       run: |
-        mkdir -p _summaries/${{ steps.dates.outputs.year }}
-        summary="_summaries/${{ steps.dates.outputs.year }}/wk${{ steps.dates.outputs.week }}.md"
-
-        echo "---" > ${summary}
-        echo "name: ${{ steps.dates.outputs.year }} - Week ${{ steps.dates.outputs.week }}" >> ${summary}
-        echo "title: Survey Result Summary - ${{ steps.dates.outputs.year }} - Week ${{ steps.dates.outputs.week }}"
-        echo "active_nav: summaries" >> ${summary}
-        echo "year: \"${{ steps.dates.outputs.year }}\"" >> ${summary}
-        echo "week: wk${{ steps.dates.outputs.week }}" >> ${summary}
-        echo "start_date: \"${{ steps.dates.outputs.start_date }}\"" >> ${summary}
-        echo "end_date: \"${{ steps.dates.outputs.end_date }}\"" >> ${summary}
-        echo "---" >> ${summary}
+        python -m create_markdown ${{ steps.dates.outputs.year }} ${{ steps.dates.outputs.week }} ${{ steps.dates.outputs.start_date }} ${{ steps.dates.outputs.end_date }}
 
     - name: Commit and push
       shell: bash

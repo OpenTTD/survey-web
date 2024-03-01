@@ -9,74 +9,27 @@ layout: default
     <div class="section-item">
         <div class="content">
             <p>
-                Below is the summary of the survey results from {{ page.start_date }} to {{ page.end_date }}.
+                Below are the versions with a summary of the survey results from {{ page.start_date }} to {{ page.end_date }}.
             </p>
 
             <ul>
-                {% for version in site.data.summaries[page.year][page.week] %}
-                    {% if version[1] == nil %}{% continue %}{% endif %}
+                {% for summary in site.summaries %}
+                    {% if summary.year != page.year or summary.week != page.week or summary.version == nil %}{% continue %}{% endif %}
                     <li>
-                        <a href="#{{ version[0] }}">{{ version[0] }}</a>
+                        <a href="{{ summary.url }}">{{ summary.version }}</a>
                     </li>
                 {% endfor %}
             </ul>
 
             <p>
-                The following statistics are based on "seconds played".
-                That is to say, if a setting was "true" for 100 seconds of play-time and "false" for 200 seconds of play-time, it would be 33% true and 66% false.
-                This is to avoid biasing the results towards shorter games.
-                <br />
-                Worded differently, the following statistics are not counting how often something was used, but how long it was used for.
-            </p>
-
-            <p>
-                Be mindful that these numbers are only based on those people willing to send us survey results.
-                It might not be representative of the entire OpenTTD player base.
-            </p>
-
-            <p>
-                Entries listed as "(other)" are the collection of all values lower than 0.1% of the total.
+                <small>
+                    Note: some versions are not shown, as they do not have a summary created for them.
+                    To protect the privacy of the participants and to avoid any misinterpretation of the data, a summary is only created if sufficient valid responses are received.
+                    What is considered sufficient depends on a number of factors, like amount of reports received, amount of games reported, amount of time played, and so on.
+                    What is considered valid depends on things like whether it was send by an official binary, whether it contains all the required fields, and so on.
+                    For more details about these thresholds and validations, please check <a href="https://github.com/OpenTTD/survey-web/blob/main/analysis/__main__.py">the source code</a>.
+                </small>
             </p>
         </div>
     </div>
-
-    {% for version in site.data.summaries[page.year][page.week] %}
-        {% if version[1] == nil %}{% continue %}{% endif %}
-        <div class="section-header" id="{{ version[0] }}">
-            <h3>{{ version[0] }}</h3>
-        </div>
-        <div class="section-item">
-            <div class="content">
-                {% assign seconds = version[1].summary.seconds | times: 1.0 %}
-
-                <p>
-                    We received surveys for a total of {{ version[1].summary.seconds | divided_by: 3600 | round: 2 }} hours of games played, over a total of {{ version[1].summary.ids }} games.
-                    This is an average of {{ seconds | divided_by: version[1].summary.ids | divided_by: 3600 | round: 2 }} hours per game.
-                </p>
-
-                <table class="summary-table">
-                {% for summary in version[1] %}
-                    {% if summary[0] == "summary" %}{% continue %}{% endif %}
-                    <tr id="{{ version[0] }}-{{ summary[0] }}" class="setting">
-                        <th colspan="3">
-                            <a href="#{{ version[0] }}-{{ summary[0] }}">{{ summary[0] }}</a>
-                        </th>
-                    </tr>
-                    {% for line in summary[1] %}
-                        {% assign percentage = line[1] | divided_by: seconds | percentage %}
-                    <tr>
-                        <td style="width: 40px;"></td>
-                        <td><pre>{{ line[0] }}</pre></td>
-                        {% if percentage == "0.0" %}
-                        <td style="text-align: right;">&lt;0.1%</td>
-                        {% else %}
-                        <td style="text-align: right;">{{ percentage }}%</td>
-                        {% endif %}
-                    </tr>
-                    {% endfor %}
-                {% endfor %}
-                </table>
-            </div>
-        </div>
-    {% endfor %}
 </div>
