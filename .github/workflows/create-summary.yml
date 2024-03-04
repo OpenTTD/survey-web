@@ -132,6 +132,7 @@ jobs:
 
         git add _data/summaries/${{ steps.dates.outputs.year }}/wk${{ steps.dates.outputs.week }}.json
         git add _summaries/${{ steps.dates.outputs.year }}/wk${{ steps.dates.outputs.week }}.md
+        git add _summaries/${{ steps.dates.outputs.year }}/wk${{ steps.dates.outputs.week }}
 
         git commit -m "Add: summary for week ${{ steps.dates.outputs.week }} of ${{ steps.dates.outputs.year }}"
         git push
