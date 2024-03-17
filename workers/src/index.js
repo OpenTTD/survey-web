@@ -53,18 +53,30 @@ async function handleSurveyResult(body, env) {
         const payload = JSON.parse(body);
 
         /* Check if the payload looks valid on the surface. */
-        if (!("id" in payload) || !("key" in payload) || !("schema" in payload)) {
+        if (!("key" in payload) || !("schema" in payload)) {
             return;
         }
 
-        /* We only support schema 1 for now. */
-        if (payload["schema"] != 1) {
+        /* We only support schema 1 and 2 for now. */
+        if (payload["schema"] < 1 || payload["schema"] > 2) {
             return;
+        }
+
+        /* Validate "id" is present. */
+        if (payload["schema"] == 1) {
+            if (!("id" in payload)) {
+                return;
+            }
+        } else {
+            if (!("session" in payload) || !("id" in payload["session"])) {
+                return;
+            }
         }
 
         /* Validate the UUID is a 32-character hexidecimal string. */
+        const id = payload["schema"] == 1 ? payload["id"] : payload["session"]["id"];
         const valid_uuid=/^([0-9A-F]{32})$/i;
-        if (!valid_uuid.test(payload["id"])) {
+        if (!valid_uuid.test(id)) {
             return;
         }
 
@@ -74,7 +86,7 @@ async function handleSurveyResult(body, env) {
         /* Generate the object-name based on the current time, state, and the unique key; in the very
          * unlikely case there are two submissions that are identical, it is fine if they overwrite. */
         const date = (new Date()).toISOString().split("T", 2);
-        const objectName = `${date[0]}/${date[1]}-${payload["id"]}.${state}.json`;
+        const objectName = `${date[0]}/${date[1]}-${id}.${state}.json`;
 
         /* Post the survey to the R2 bucket. */
         await env.SURVEY_BUCKET.put(objectName, body);
