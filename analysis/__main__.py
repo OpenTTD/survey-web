@@ -62,6 +62,7 @@ BLACKLIST_PATHS = [
     "info.os.version",  # OS specific setting, Not interesting.
     "key",  # Not interesting.
     "schema",  # Not interesting.
+    "session",  # Processed differently.
 ]
 
 
@@ -175,9 +176,14 @@ def summarize_setting(summary, version, seconds, path, data):
 
 def summarize_result(summary, fp):
     data = json.loads(fp.read())
+    schema = data["schema"]
 
     try:
-        seconds = data["game"]["timers"]["seconds"]
+        if schema == 1:
+            seconds = data["game"]["timers"]["seconds"]
+        else:
+            seconds = data["session"]["seconds"]
+
         ticks = data["game"]["timers"]["ticks"]
     except KeyError:
         # Invalid (or very old) survey result.
@@ -217,9 +223,17 @@ def summarize_result(summary, fp):
     summary[version]["summary"]["count"] += 1
     summary[version]["summary"]["seconds"] += seconds
 
+    # Depending whether the game was saved, we see a savegame-size or not.
+    if schema >= 2 and "savegame_size" in data["session"]:
+        summary[version]["savegame"]["count"] += 1
+        summary[version]["savegame"]["size"] += data["session"]["savegame_size"]
+
     if "ids" not in summary[version]["summary"]:
         summary[version]["summary"]["ids"] = set()
-    summary[version]["summary"]["ids"].add(data["id"])
+    if schema == 1:
+        summary[version]["summary"]["ids"].add(data["id"])
+    else:
+        summary[version]["summary"]["ids"].add(data["session"]["id"])
 
 
 def summarize_archive(summary, filename):
@@ -266,17 +280,23 @@ def main():
                     remove_version.append(version)
                     break
 
+            if path == "savegame":
+                if data["count"] != 0:
+                    data["average_size"] = int(data["size"] / data["count"])
+                del data["size"]
+                del data["count"]
+
             if path.startswith("game.settings.display_opt.") or path.startswith("game.settings.extra_display_opt."):
                 data["false"] = version_summary["summary"]["seconds"] - data["true"]
 
             total = sum(data.values())
 
             # Check if it adds up to the total; if not, it is (most likely) an OS specific setting.
-            if path != "summary" and total != version_summary["summary"]["seconds"]:
+            if path not in ("summary", "savegame") and total != version_summary["summary"]["seconds"]:
                 data["(not reported)"] = version_summary["summary"]["seconds"] - total
 
             # Collapse entries below 0.1% to a single (other) entry, and not true/false.
-            if path not in ("summary", "reason"):
+            if path not in ("summary", "reason", "savegame"):
                 collapse = []
                 for key, value in data.items():
                     if value / total < 0.001 and key not in ("true", "false", "(not reported)"):

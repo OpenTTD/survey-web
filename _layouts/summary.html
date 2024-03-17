@@ -51,10 +51,14 @@ layout: default
                 <tr>
                     <td style="width: 40px;"></td>
                     <td><pre>{{ line[0] }}</pre></td>
-                    {% if percentage == "0.0" %}
-                    <td style="text-align: right;">&lt;0.1%</td>
+                    {% if line[0] == "average_size" %}
+                    <td style="text-align: right;">{{ line[1] | divided_by: 1024 }} KiB</td>
                     {% else %}
-                    <td style="text-align: right;">{{ percentage }}%</td>
+                        {% if percentage == "0.0" %}
+                        <td style="text-align: right;">&lt;0.1%</td>
+                        {% else %}
+                        <td style="text-align: right;">{{ percentage }}%</td>
+                        {% endif %}
                     {% endif %}
                 </tr>
                 {% endfor %}
