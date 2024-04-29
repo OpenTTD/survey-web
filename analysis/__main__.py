@@ -220,6 +220,21 @@ def summarize_result(summary, fp):
     for key, value in data.items():
         summarize_setting(summary, version, seconds, key, value)
 
+    # Count how many NewGRFs are active.
+    newgrf_count = (
+        sum(1 for grf in data["game"]["grfs"].values() if grf["status"] == "activated") if data["game"]["grfs"] else 0
+    )
+    summary[version]["game.newgrf_count"][newgrf_count] += seconds
+    # Count how many AIs are active.
+    ai_count = (
+        sum(1 for company in data["game"]["companies"].values() if company["type"] == "ai")
+        if data["game"]["companies"]
+        else 0
+    )
+    summary[version]["game.ai_count"][ai_count] += seconds
+    # Mention whether a GameScript was used.
+    summary[version]["game.game_script_used"][True if data["game"]["game_script"] else False] += seconds
+
     summary[version]["summary"]["count"] += 1
     summary[version]["summary"]["seconds"] += seconds
 
