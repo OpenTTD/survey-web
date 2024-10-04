@@ -174,7 +174,7 @@ def summarize_setting(summary, version, seconds, path, data):
     summary[version][path][data] += seconds
 
 
-def summarize_result(summary, fp):
+def summarize_result(summary, timeframe, fp):
     data = json.loads(fp.read())
     schema = data["schema"]
 
@@ -217,6 +217,15 @@ def summarize_result(summary, fp):
         if seconds > 1000000000:
             return
 
+    if timeframe == "wk":
+        pass
+    elif timeframe == "q":
+        original_version = version
+
+        # For quarterly summaries, we only report "14" or "jgrpp" for versions.
+        version = version.rsplit(".")[0]
+        version = version.split("-")[0]
+
     for key, value in data.items():
         summarize_setting(summary, version, seconds, key, value)
 
@@ -238,6 +247,10 @@ def summarize_result(summary, fp):
     summary[version]["summary"]["count"] += 1
     summary[version]["summary"]["seconds"] += seconds
 
+    # Quarterly reports are combined per major version; also show the relative usage of versions.
+    if timeframe == "q":
+        summary[version]["info.openttd.version"][original_version] += seconds
+
     # Depending whether the game was saved, we see a savegame-size or not.
     if schema >= 2 and "savegame_size" in data["session"]:
         summary[version]["savegame"]["count"] += 1
@@ -251,13 +264,13 @@ def summarize_result(summary, fp):
         summary[version]["summary"]["ids"].add(data["session"]["id"])
 
 
-def summarize_archive(summary, filename):
+def summarize_archive(summary, timeframe, filename):
     if filename.endswith(".json"):
         if not filename.endswith("verified.json"):
             return
 
         with open(filename) as fp:
-            summarize_result(summary, fp)
+            summarize_result(summary, timeframe, fp)
             return
 
     with tarfile.open(filename) as archive:
@@ -271,14 +284,16 @@ def summarize_archive(summary, filename):
                 continue
 
             with archive.extractfile(member) as fp:
-                summarize_result(summary, fp)
+                summarize_result(summary, timeframe, fp)
 
 
 def main():
+    timeframe = sys.argv[1]
+
     summary = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
 
-    for filename in sys.argv[1:]:
-        summarize_archive(summary, filename)
+    for filename in sys.argv[2:]:
+        summarize_archive(summary, timeframe, filename)
 
     remove_version = []
 

@@ -1,0 +1,134 @@
+name: Create Summary
+
+on:
+  schedule:
+  - cron: '0 8 1 * *'
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Year to create the summary of'
+        required: true
+      quarter:
+        description: 'Quarter to create the summary of'
+        required: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    name: Create Summary
+
+    steps:
+    - name: Generate access token
+      id: generate_token
+      uses: tibdex/github-app-token@v2
+      with:
+        app_id: ${{ secrets.SURVEY_SUMMARY_APP_ID }}
+        private_key: ${{ secrets.SURVEY_SUMMARY_APP_PRIVATE_KEY }}
+        installation_retrieval_mode: "repository"
+        installation_retrieval_payload: "OpenTTD/survey-web"
+
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        token: ${{ steps.generate_token.outputs.token }}
+
+    - name: Install rclone
+      shell: bash
+      run: |
+        curl -sL https://rclone.org/install.sh | sudo bash
+
+        rclone config create --no-obscure openttd s3 \
+          provider Cloudflare \
+          access_key_id ${{ secrets.R2_SURVEY_ACCESS_KEY_ID }} \
+          secret_access_key ${{ secrets.R2_SURVEY_SECRET_ACCESS_KEY }} \
+          endpoint ${{ secrets.R2_SURVEY_ENDPOINT }} \
+          acl private \
+          no_check_bucket true
+
+    - name: Calculate dates
+      shell: bash
+      id: dates
+      run: |
+        year="$1"
+        quarter="$2"
+
+        # If no year/quarter is given, detect the quarter before today.
+        # This assumes this script is started on the first day of the next quarter.
+        if [ -z "${year}" ] || [ -z "${quarter}" ]; then
+            year=$(date -d "yesterday" +%Y)
+            quarter=$(date -d "yesterday" +%q)
+        fi
+
+        # Calculate the start and end of the quarter.
+        start_month=$(( (${quarter} - 1) * 3 + 1 ))
+        end_month=$(( ${quarter} * 3 ))
+        start_date=$(date -d "${year}-${start_month}-01" +%Y-%m-%d)
+        end_date=$(date -d "${year}-${end_month}-01 +1 month -1 day" +%Y-%m-%d)
+
+        # Ensure the start date is actually in the quarter we want.
+        start_check=$(date -d "${start_date}" +%Y-%q)
+        if [ "${start_check}" != "${year}-${quarter}" ]; then
+            echo "Start date ${start_date} is not in ${year}-${quarter}, but in ${start_check}"
+            exit 1
+        fi
+
+        # Ensure the end date is actually in the quarter we want.
+        end_check=$(date -d "${end_date}" +%Y-%q)
+        if [ "${end_check}" != "${year}-${quarter}" ]; then
+            echo "End date ${end_date} is not in ${year}-${quarter}, but in ${end_check}"
+            exit 1
+        fi
+
+        echo "Quarter: ${quarter}"
+        echo "Year: ${year}"
+        echo "Start date: ${start_date}"
+        echo "End date: ${end_date}"
+
+        echo "quarter=${quarter}" >> "$GITHUB_OUTPUT"
+        echo "year=${year}" >> "$GITHUB_OUTPUT"
+        echo "start_date=${start_date}" >> "$GITHUB_OUTPUT"
+        echo "end_date=${end_date}" >> "$GITHUB_OUTPUT"
+
+    - name: Download packed results
+      shell: bash
+      run: |
+        echo "Downloading packs for quarter ${{ steps.dates.outputs.quarter }} in ${{ steps.dates.outputs.year }}: [${{ steps.dates.outputs.start_date }} .. ${{ steps.dates.outputs.end_date }}]"
+
+        mkdir -p packed
+        for i in $(seq 0 93); do
+          date=$(date -d "${{ steps.dates.outputs.start_date }} +${i} days" +%Y-%m-%d)
+          date_year=$(date -d "${{ steps.dates.outputs.start_date }} +${i} days" +%Y)
+          date_month=$(date -d "${{ steps.dates.outputs.start_date }} +${i} days" +%m)
+
+          echo "Downloading ${date}"
+          rclone copy -v openttd:survey-packed-prod/${date_year}/${date_month}/openttd-survey-pack.${date}.tar.xz packed
+
+          if [ "${date}" = "${{ steps.dates.outputs.end_date }}" ]; then
+            break
+          fi
+        done
+
+    - name: Run analysis
+      shell: bash
+      run: |
+        mkdir -p _data/summaries/${{ steps.dates.outputs.year }}
+        python -m analysis q packed/* > _data/summaries/${{ steps.dates.outputs.year }}/q${{ steps.dates.outputs.quarter }}.json
+
+    - name: Create summary entry
+      shell: bash
+      run: |
+        python -m create_markdown q ${{ steps.dates.outputs.year }} ${{ steps.dates.outputs.quarter }} ${{ steps.dates.outputs.start_date }} ${{ steps.dates.outputs.end_date }}
+
+    - name: Commit and push
+      shell: bash
+      run: |
+        git config --global user.name "OpenTTD Survey"
+        git config --global user.email "survey@openttd.org"
+
+        git add _data/summaries/${{ steps.dates.outputs.year }}/q${{ steps.dates.outputs.quarter }}.json
+        git add _summaries/${{ steps.dates.outputs.year }}/q${{ steps.dates.outputs.quarter }}.md
+        git add _summaries/${{ steps.dates.outputs.year }}/q${{ steps.dates.outputs.quarter }}
+
+        git commit -m "Add: summary for Q${{ steps.dates.outputs.quarter }} of ${{ steps.dates.outputs.year }}"
+        git push

@@ -29,7 +29,7 @@ layout: default
                 Entries listed as "(other)" are the collection of all values lower than 0.1% of the total.
             </p>
 
-            {% assign versions = site.data.summaries[page.year][page.week] %}
+            {% assign versions = site.data.summaries[page.year][page.filename] %}
             {% assign version = versions[page.version] %}
             {% assign seconds = version.summary.seconds | times: 1.0 %}
 
