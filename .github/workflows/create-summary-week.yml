@@ -117,12 +117,12 @@ jobs:
       shell: bash
       run: |
         mkdir -p _data/summaries/${{ steps.dates.outputs.year }}
-        python -m analysis packed/* > _data/summaries/${{ steps.dates.outputs.year }}/wk${{ steps.dates.outputs.week }}.json
+        python -m analysis wk packed/* > _data/summaries/${{ steps.dates.outputs.year }}/wk${{ steps.dates.outputs.week }}.json
 
     - name: Create summary entry
       shell: bash
       run: |
-        python -m create_markdown ${{ steps.dates.outputs.year }} ${{ steps.dates.outputs.week }} ${{ steps.dates.outputs.start_date }} ${{ steps.dates.outputs.end_date }}
+        python -m create_markdown wk ${{ steps.dates.outputs.year }} ${{ steps.dates.outputs.week }} ${{ steps.dates.outputs.start_date }} ${{ steps.dates.outputs.end_date }}
 
     - name: Commit and push
       shell: bash

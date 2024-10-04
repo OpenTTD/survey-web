@@ -14,13 +14,14 @@ layout: default
 
             <ul>
                 {% for summary in site.summaries %}
-                    {% if summary.year != page.year or summary.week != page.week or summary.version == nil %}{% continue %}{% endif %}
+                    {% if summary.year != page.year or summary.filename != page.filename or summary.version == nil %}{% continue %}{% endif %}
                     <li>
                         <a href="{{ summary.url }}">{{ summary.version }}</a>
                     </li>
                 {% endfor %}
             </ul>
 
+            {% if page.type == "week" %}
             <p>
                 <small>
                     Note: some versions are not shown, as they do not have a summary created for them.
@@ -30,6 +31,7 @@ layout: default
                     For more details about these thresholds and validations, please check <a href="https://github.com/OpenTTD/survey-web/blob/main/analysis/__main__.py">the source code</a>.
                 </small>
             </p>
+            {% endif %}
         </div>
     </div>
 </div>

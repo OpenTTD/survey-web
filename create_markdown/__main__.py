@@ -2,31 +2,58 @@ import json
 import os
 import sys
 
-def create_summary(year, week, start_date, end_date):
-    output = f"_summaries/{year}/wk{week}.md"
+def create_summary(timeframe, year, quarter_or_week, start_date, end_date):
+    output = f"_summaries/{year}/{timeframe}{quarter_or_week}.md"
     os.makedirs(os.path.dirname(output), exist_ok=True)
 
     with open(output, "w") as file:
-        file.write(f"""---
-title: {year} - Week {week}
+        if timeframe == "wk":
+            file.write(f"""---
+title: {year} - Week {quarter_or_week}
 active_nav: summaries
 year: "{year}"
-week: "wk{week}"
+type: week
+filename: "wk{quarter_or_week}"
+start_date: "{start_date}"
+end_date: "{end_date}"
+---
+""")
+        else:
+            file.write(f"""---
+title: {year} - Quarter {quarter_or_week}
+active_nav: summaries
+year: "{year}"
+type: quarter
+filename: "q{quarter_or_week}"
 start_date: "{start_date}"
 end_date: "{end_date}"
 ---
 """)
 
-def create_version(year, week, start_date, end_date, version):
-    output = f"_summaries/{year}/wk{week}/{version}.md"
+
+def create_version(timeframe, year, quarter_or_week, start_date, end_date, version):
+    output = f"_summaries/{year}/{timeframe}{quarter_or_week}/{version}.md"
     os.makedirs(os.path.dirname(output), exist_ok=True)
 
     with open(output, "w") as file:
-        file.write(f"""---
-title: {year} - Week {week} - {version}
+        if timeframe == "wk":
+            file.write(f"""---
+title: {year} - Week {quarter_or_week} - {version}
 active_nav: summaries
 year: "{year}"
-week: "wk{week}"
+filename: "wk{quarter_or_week}"
+version: "{version}"
+start_date: "{start_date}"
+end_date: "{end_date}"
+layout: "summary"
+---
+""")
+        else:
+            file.write(f"""---
+title: {year} - Quarter {quarter_or_week} - {version}
+active_nav: summaries
+year: "{year}"
+filename: "q{quarter_or_week}"
 version: "{version}"
 start_date: "{start_date}"
 end_date: "{end_date}"
@@ -35,17 +62,21 @@ layout: "summary"
 """)
 
 def main():
-    year = sys.argv[1]
-    week = sys.argv[2]
-    start_date = sys.argv[3]
-    end_date = sys.argv[4]
+    timeframe = sys.argv[1]
+    year = sys.argv[2]
+    week = sys.argv[3]
+    start_date = sys.argv[4]
+    end_date = sys.argv[5]
 
-    create_summary(year, week, start_date, end_date)
-    with open(f"_data/summaries/{year}/wk{week}.json", "r") as file:
+    if timeframe != "q" and timeframe != "wk":
+        raise ValueError("Timeframe must be 'q' or 'wk'")
+
+    create_summary(timeframe, year, week, start_date, end_date)
+    with open(f"_data/summaries/{year}/{timeframe}{week}.json", "r") as file:
         data = json.load(file)
         for version, content in data.items():
             if content:
-                create_version(year, week, start_date, end_date, version)
+                create_version(timeframe, year, week, start_date, end_date, version)
 
 if __name__ == "__main__":
     main()
