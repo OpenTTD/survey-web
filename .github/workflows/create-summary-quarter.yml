@@ -1,4 +1,4 @@
-name: Create Summary
+name: Create Summary (Quarter)
 
 on:
   schedule:
@@ -50,8 +50,8 @@ jobs:
       shell: bash
       id: dates
       run: |
-        year="$1"
-        quarter="$2"
+        year="${{ inputs.year }}"
+        quarter="${{ inputs.quarter }}"
 
         # If no year/quarter is given, detect the quarter before today.
         # This assumes this script is started on the first day of the next quarter.

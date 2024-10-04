@@ -1,4 +1,4 @@
-name: Create Summary
+name: Create Summary (Week)
 
 on:
   schedule:
