@@ -1,5 +1,5 @@
 ---
-name: 2024 - Week 03 - vanilla-master
+title: 2024 - Week 03 - vanilla-master
 active_nav: summaries
 year: "2024"
 week: "wk03"

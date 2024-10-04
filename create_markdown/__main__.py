@@ -8,7 +8,7 @@ def create_summary(year, week, start_date, end_date):
 
     with open(output, "w") as file:
         file.write(f"""---
-name: {year} - Week {week}
+title: {year} - Week {week}
 active_nav: summaries
 year: "{year}"
 week: "wk{week}"
@@ -23,7 +23,7 @@ def create_version(year, week, start_date, end_date, version):
 
     with open(output, "w") as file:
         file.write(f"""---
-name: {year} - Week {week} - {version}
+title: {year} - Week {week} - {version}
 active_nav: summaries
 year: "{year}"
 week: "wk{week}"

@@ -1,5 +1,5 @@
 ---
-name: 2024 - Week 29 - jgrpp-0.59.1
+title: 2024 - Week 29 - jgrpp-0.59.1
 active_nav: summaries
 year: "2024"
 week: "wk29"
