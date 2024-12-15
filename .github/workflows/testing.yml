@@ -44,10 +44,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Set up Ruby 3.0
+    - name: Set up Ruby 3.3
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0' # Not needed with a .ruby-version file
+        ruby-version: '3.3'
         bundler-cache: true
 
     - name: Build
