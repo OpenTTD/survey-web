@@ -1,0 +1,264 @@
+---
+layout: default
+---
+
+<div id="section-full">
+    <div class="section-header">
+        <h3>Survey Result Summary - {{ page.title }}</h3>
+    </div>
+    <div class="section-item">
+        <div class="content">
+            <p>
+                Below is the summary for 3rd party content of the survey results from {{ page.start_date }} to {{ page.end_date }} for {{ page.version }}.
+            </p>
+
+            <p>
+                The following statistics are based on "seconds played".
+                That is to say, if a setting was "true" for 100 seconds of play-time and "false" for 200 seconds of play-time, it would be 33% true and 66% false.
+                This is to avoid biasing the results towards shorter games.
+                <br />
+                Worded differently, the following statistics are not counting how often something was used, but how long it was used for.
+            </p>
+
+            <p>
+                Be mindful that these numbers are only based on those people willing to send us survey results.
+                It might not be representative of the entire OpenTTD player base.
+            </p>
+
+            <p>
+                Entries listed as "(other)" are the collection of all values lower than 0.1% of the total, or content that is not available on <a href="https://bananas.openttd.org/">BaNaNaS</a>.
+                Content that is not available on BaNaNaS is not listed, as they are potentially private or unreleased content.
+            </p>
+
+            {% assign versions = site.data.summaries[page.year][page.filename].survey %}
+            {% assign content = site.data.summaries[page.year][page.filename].content %}
+            {% assign version = versions[page.version] %}
+            {% assign seconds = version.summary.seconds | times: 1.0 %}
+
+            <p>
+                We received surveys for a total of <b>{{ version.summary.seconds | divided_by: 3600 | round: 2 }} hours</b> of games played, over a total of <b>{{ version.summary.ids }} games</b>.
+                This is an average of {{ seconds | divided_by: version.summary.ids | divided_by: 3600 | round: 2 }} hours per game.
+            </p>
+
+            <table class="summary-table">
+                <tr class="setting" id="base-graphics-set">
+                    <th colspan="3"><a href="#base-graphics-set">Base Graphics Set</a></th>
+                </tr>
+
+            {% for summary in version %}
+                {% assign graphicsset = summary[0] | startswith: "info.configuration.graphics_set." %}
+                {% if graphicsset == false %}{% continue %}{% endif %}
+
+                <tr id="{{ summary[0] }}">
+                    {% assign name = summary[0] | replace_first: "info.configuration.graphics_set.", "" %}
+                    <td style="width: 40px;"></td>
+                    <td>
+                        {% if contentid == "(other)" %}
+                            (other)
+                        {% else %}
+                            {{ name }}
+                        {% endif %}
+                    </td>
+
+                    {% assign total = 0 %}
+                    {% for line in summary[1] %}
+                        {% assign total = total | plus: line[1] %}
+                    {% endfor %}
+                    {% assign percentage = total | divided_by: seconds | percentage %}
+
+                    {% if percentage == "0.0" %}
+                    <td style="text-align: right;">&lt;0.1%</td>
+                    {% else %}
+                    <td style="text-align: right;">{{ percentage }}%</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+
+                <tr class="setting" id="base-sound-set">
+                    <th colspan="3"><a href="#base-sound-set">Base Sound Set</a></th>
+                </tr>
+
+            {% for summary in version %}
+                {% assign soundset = summary[0] | startswith: "info.configuration.sound_set." %}
+                {% if soundset == false %}{% continue %}{% endif %}
+
+                <tr id="{{ summary[0] }}">
+                    {% assign name = summary[0] | replace_first: "info.configuration.sound_set.", "" %}
+                    <td style="width: 40px;"></td>
+                    <td>
+                        {% if contentid == "(other)" %}
+                            (other)
+                        {% else %}
+                            {{ name }}
+                        {% endif %}
+                    </td>
+
+                    {% assign total = 0 %}
+                    {% for line in summary[1] %}
+                        {% assign total = total | plus: line[1] %}
+                    {% endfor %}
+                    {% assign percentage = total | divided_by: seconds | percentage %}
+
+                    {% if percentage == "0.0" %}
+                    <td style="text-align: right;">&lt;0.1%</td>
+                    {% else %}
+                    <td style="text-align: right;">{{ percentage }}%</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+
+                <tr class="setting" id="base-music-set">
+                    <th colspan="3"><a href="#base-music-set">Base Music Set</a></th>
+                </tr>
+
+            {% for summary in version %}
+                {% assign musicset = summary[0] | startswith: "info.configuration.music_set." %}
+                {% if musicset == false %}{% continue %}{% endif %}
+
+                <tr id="{{ summary[0] }}">
+                    {% assign name = summary[0] | replace_first: "info.configuration.music_set.", "" %}
+                    <td style="width: 40px;"></td>
+                    <td>
+                        {% if contentid == "(other)" %}
+                            (other)
+                        {% else %}
+                            {{ name }}
+                        {% endif %}
+                    </td>
+
+                    {% assign total = 0 %}
+                    {% for line in summary[1] %}
+                        {% assign total = total | plus: line[1] %}
+                    {% endfor %}
+                    {% assign percentage = total | divided_by: seconds | percentage %}
+
+                    {% if percentage == "0.0" %}
+                    <td style="text-align: right;">&lt;0.1%</td>
+                    {% else %}
+                    <td style="text-align: right;">{{ percentage }}%</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+
+
+                <tr class="setting" id="ais">
+                    <th colspan="3"><a href="#ais">AIs</a></th>
+                </tr>
+
+            {% for summary in version %}
+                {% assign gameai = summary[0] | startswith: "game.ai." %}
+                {% if gameai == false %}{% continue %}{% endif %}
+
+                <tr id="{{ summary[0] }}">
+                    {% assign contentid = summary[0] | replace_first: "game.ai.", "" %}
+                    <td style="width: 40px;"></td>
+                    <td>
+                        {% if contentid == "(other)" %}
+                            (other)
+                        {% else %}
+                            <a href="https://bananas.openttd.org/package/ai/{{ contentid }}" target="_new">{{ content.ai[contentid].name }}</a>
+                        {% endif %}
+                    </td>
+
+                    {% assign total = 0 %}
+                    {% for line in summary[1] %}
+                        {% assign total = total | plus: line[1] %}
+                    {% endfor %}
+                    {% assign percentage = total | divided_by: seconds | percentage %}
+
+                    {% if percentage == "0.0" %}
+                    <td style="text-align: right;">&lt;0.1%</td>
+                    {% else %}
+                    <td style="text-align: right;">{{ percentage }}%</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+
+                <tr class="setting" id="game-script">
+                    <th colspan="3"><a href="#game-script">GameScripts</a></th>
+                </tr>
+
+            {% for summary in version %}
+                {% assign gamegs = summary[0] | startswith: "game.game_script." %}
+                {% if gamegs == false %}{% continue %}{% endif %}
+
+                <tr id="{{ summary[0] }}">
+                    {% assign contentid = summary[0] | replace_first: "game.game_script.", "" %}
+                    <td style="width: 40px;"></td>
+                    <td>
+                        {% if contentid == "(other)" %}
+                            (other)
+                        {% else %}
+                            <a href="https://bananas.openttd.org/package/game-script/{{ contentid }}" target="_new">{{ content.game_script[contentid].name }}</a>
+                        {% endif %}
+                    </td>
+
+                    {% assign total = 0 %}
+                    {% for line in summary[1] %}
+                        {% assign total = total | plus: line[1] %}
+                    {% endfor %}
+                    {% assign percentage = total | divided_by: seconds | percentage %}
+
+                    {% if percentage == "0.0" %}
+                    <td style="text-align: right;">&lt;0.1%</td>
+                    {% else %}
+                    <td style="text-align: right;">{{ percentage }}%</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+
+            {% assign setList = "" | split: "," %}
+            {% for summary in version %}
+                {% assign gamegrf = summary[0] | startswith: "game.grf." %}
+                {% if gamegrf == false %}{% continue %}{% endif %}
+
+                {% assign set_and_contentid = summary[0] | replace_first: "game.grf.", "" | split: "." %}
+                {% assign set = set_and_contentid[0] %}
+                {% unless setList contains set %}
+                    {% assign setList = setList | push: set %}
+                {% endunless %}
+            {% endfor %}
+
+            {% assign setList = setList | sort %}
+
+            {% for set in setList %}
+                <tr class="setting" id="newgrf-{{ set }}">
+                    <th colspan="3"><a href="#newgrf-{{ set }}">NewGRFs - {{ set }} set</a></th>
+                </tr>
+
+                {% for summary in version %}
+                    {% assign gamegrf = summary[0] | startswith: "game.grf." %}
+                    {% if gamegrf == false %}{% continue %}{% endif %}
+
+                    {% assign set_and_contentid = summary[0] | replace_first: "game.grf.", "" | split: "." %}
+                    {% assign contentset = set_and_contentid[0] %}
+                    {% assign contentid = set_and_contentid[1] %}
+                    {% if set != contentset %}{% continue %}{% endif %}
+
+                    <tr id="{{ summary[0] }}">
+                        <td style="width: 40px;"></td>
+                        <td>
+                            {% if contentid == "(other)" %}
+                                (other)
+                            {% else %}
+                                <a href="https://bananas.openttd.org/package/newgrf/{{ contentid }}" target="_new">{{ content.newgrf[contentid].name }}</a>
+                            {% endif %}
+                        </td>
+                        {% assign total = 0 %}
+                        {% for line in summary[1] %}
+                            {% assign total = total | plus: line[1] %}
+                        {% endfor %}
+                        {% assign percentage = total | divided_by: seconds | percentage %}
+
+                        {% if percentage == "0.0" %}
+                        <td style="text-align: right;">&lt;0.1%</td>
+                        {% else %}
+                        <td style="text-align: right;">{{ percentage }}%</td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>

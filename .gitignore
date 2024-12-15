@@ -6,4 +6,5 @@ __pycache__/
 /.env/
 /_analysis/
 /_site/
+/BaNaNaS/
 /workers/node_modules/

@@ -12,7 +12,10 @@ This is a [Jekyll](https://jekyllrb.com/) website, and is served by nginx as a s
 
 To summarize survey results, the Python application `analysis` processes a bundle of JSONs and outputs another JSON with the summary.
 
-To run it, simply execute `python3 -m analysis <tar-xz bundle files>`
+To run it:
+- `git clone https://github.com/OpenTTD/BaNaNaS` to get the BaNaNaS dataset (needed to resolve NewGRFs).
+- Create a Python virtual env run `pip install -r requirements.txt`.
+- `python3 -m analysis <tar-xz bundle files>` to run the analysis.
 
 ### Running a local server
 

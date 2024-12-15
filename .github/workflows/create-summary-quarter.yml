@@ -109,6 +109,23 @@ jobs:
           fi
         done
 
+    - name: Download BaNaNaS database
+      uses: actions/checkout@v4
+      with:
+        repository: OpenTTD/BaNaNaS
+        path: BaNaNaS
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.11
+
+    - name: Prepare environment
+      shell: bash
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
     - name: Run analysis
       shell: bash
       run: |

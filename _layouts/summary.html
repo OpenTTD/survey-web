@@ -29,7 +29,7 @@ layout: default
                 Entries listed as "(other)" are the collection of all values lower than 0.1% of the total.
             </p>
 
-            {% assign versions = site.data.summaries[page.year][page.filename] %}
+            {% assign versions = site.data.summaries[page.year][page.filename].survey %}
             {% assign version = versions[page.version] %}
             {% assign seconds = version.summary.seconds | times: 1.0 %}
 
@@ -38,8 +38,23 @@ layout: default
                 This is an average of {{ seconds | divided_by: version.summary.ids | divided_by: 3600 | round: 2 }} hours per game.
             </p>
 
+            <p>
+                {% for summary in site.summaries %}
+                    {% if summary.year != page.year or summary.filename != page.filename or summary.version != page.version or summary.layout != "summary_content" %}{% continue %}{% endif %}
+                    To check the popularity of 3rd party content in this time window for this version, check <a href="{{ summary.url }}">here</a>.
+                {% endfor %}
+            </p>
+
             <table class="summary-table">
             {% for summary in version %}
+                {% assign gamegrf = summary[0] | startswith: "game.grf." %}
+                {% assign gameai = summary[0] | startswith: "game.ai." %}
+                {% assign gamegs = summary[0] | startswith: "game.game_script." %}
+                {% assign graphicsset = summary[0] | startswith: "info.configuration.graphics_set." %}
+                {% assign musicset = summary[0] | startswith: "info.configuration.music_set." %}
+                {% assign soundset = summary[0] | startswith: "info.configuration.sound_set." %}
+                {% if gamegrf or gameai or gamegs or graphicsset or musicset or soundset %}{% continue %}{% endif %}
+
                 {% if summary[0] == "summary" %}{% continue %}{% endif %}
                 <tr id="{{ summary[0] }}" class="setting">
                     <th colspan="3">
