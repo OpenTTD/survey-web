@@ -4,6 +4,7 @@ import tarfile
 
 from collections import defaultdict
 
+from .content import analyse_ais, analyse_gamescripts, analyse_grfs, export_bananas_data
 from .windows_name import WINDOWS_BUILD_NUMBER_TO_NAME
 
 # Ensure the summary is always based on a good amount of surveys.
@@ -48,10 +49,7 @@ BLACKLIST_PATHS = [
     "game.timers",  # Not interesting.
     "id",  # Not interesting.
     "info.compiler",  # Not interesting.
-    "info.configuration.graphics_set",  # Processed differently.
     "info.configuration.graphics_set_parameters",  # Processed differently.
-    "info.configuration.music_set",  # Processed differently.
-    "info.configuration.sound_set",  # Processed differently.
     "info.libraries",  # Not interesting.
     "info.openttd.build_date",  # Not interesting.
     "info.openttd.version",  # Not interesting.
@@ -165,6 +163,11 @@ def summarize_setting(summary, version, seconds, path, data):
 
         summarize_setting(summary, version, seconds, f"{path}.version", os_version)
 
+    if path in ("info.configuration.graphics_set", "info.configuration.music_set", "info.configuration.sound_set"):
+        content, _, content_version = data.partition(".")
+        path = f"{path}.{content}"
+        data = content_version
+
     if type(data) is str:
         if data.startswith('"') and data.endswith('"'):
             data = data[1:-1]
@@ -225,9 +228,15 @@ def summarize_result(summary, timeframe, fp):
         # For quarterly summaries, we only report "14" or "jgrpp" for versions.
         version = version.rsplit(".")[0]
         version = version.split("-")[0]
+    else:
+        raise Exception(f"Unknown timeframe: {timeframe}")
 
     for key, value in data.items():
         summarize_setting(summary, version, seconds, key, value)
+
+    analyse_ais(data["game"]["companies"], summary[version], seconds)
+    analyse_gamescripts(data["game"]["game_script"], summary[version], seconds)
+    analyse_grfs(data["game"]["grfs"], summary[version], seconds)
 
     # Count how many NewGRFs are active.
     newgrf_count = (
@@ -236,7 +245,11 @@ def summarize_result(summary, timeframe, fp):
     summary[version]["game.newgrf_count"][newgrf_count] += seconds
     # Count how many AIs are active.
     ai_count = (
-        sum(1 for company in data["game"]["companies"].values() if company["type"] == "ai")
+        sum(
+            1
+            for company in data["game"]["companies"].values()
+            if company["type"] == "ai" and company["script"] != "DummyAI"
+        )
         if data["game"]["companies"]
         else 0
     )
@@ -299,9 +312,6 @@ def main():
 
     # Calculate the "false" condition of each display option, assuming that if you didn't have it on, it was off.
     for version, version_summary in summary.items():
-        # Sort the data based on the path.
-        summary[version] = dict(sorted(summary[version].items(), key=lambda item: item[0]))
-
         for path, data in version_summary.items():
             if path == "summary":
                 data["ids"] = len(data["ids"])
@@ -321,28 +331,87 @@ def main():
 
             total = sum(data.values())
 
-            # Check if it adds up to the total; if not, it is (most likely) an OS specific setting.
-            if path not in ("summary", "savegame") and total != version_summary["summary"]["seconds"]:
-                data["(not reported)"] = version_summary["summary"]["seconds"] - total
+            if (
+                path.startswith("game.grf.")
+                or path.startswith("game.ai.")
+                or path.startswith("game.game_script.")
+                or path.startswith("info.configuration.graphics_set.")
+                or path.startswith("info.configuration.music_set.")
+                or path.startswith("info.configuration.sound_set.")
+            ):
+                # Content entries follow special rules (see below).
+                pass
+            else:
+                # Check if it adds up to the total; if not, it is (most likely) an OS specific setting.
+                if path not in ("summary", "savegame") and total != version_summary["summary"]["seconds"]:
+                    data["(not reported)"] = version_summary["summary"]["seconds"] - total
 
-            # Collapse entries below 0.1% to a single (other) entry, and not true/false.
-            if path not in ("summary", "reason", "savegame"):
-                collapse = []
-                for key, value in data.items():
-                    if value / total < 0.001 and key not in ("true", "false", "(not reported)"):
-                        collapse.append(key)
-                for key in collapse:
-                    data["(other)"] += data[key]
-                    del data[key]
+                # Collapse entries below 0.1% to a single (other) entry, and not true/false.
+                if path not in ("summary", "reason", "savegame"):
+                    collapse = []
+                    for key, value in data.items():
+                        if value / total < 0.001 and key not in ("true", "false", "(not reported)"):
+                            collapse.append(key)
+                    for key in collapse:
+                        data["(other)"] += data[key]
+                        del data[key]
 
+        # We iterate again, this time to collapse GRF / AI / GS.
+        for path, data in list(version_summary.items()):
+            total = sum(data.values())
+
+            if path.startswith("game.grf."):
+                set = path.split(".")[2]
+                if total / version_summary["summary"]["seconds"] < 0.001:
+                    version_summary[f"game.grf.{set}.(other)"]["(other)"] += total
+                    del version_summary[path]
+            elif path.startswith("game.ai.") or path.startswith("game.game_script."):
+                prefix = ".".join(path.split(".")[:2])
+                if total / version_summary["summary"]["seconds"] < 0.001:
+                    version_summary[f"{prefix}.(other)"]["(other)"] += total
+                    del version_summary[path]
+            elif (
+                path.startswith("info.configuration.graphics_set.")
+                or path.startswith("info.configuration.music_set.")
+                or path.startswith("info.configuration.sound_set.")
+            ):
+                prefix = ".".join(path.split(".")[:3])
+                if total / version_summary["summary"]["seconds"] < 0.001:
+                    version_summary[f"{prefix}.(other)"]["(other)"] += total
+                    del version_summary[path]
+
+        for path, data in version_summary.items():
             # Sort the data based on the value.
-            summary[version][path] = dict(sorted(data.items(), key=lambda item: item[1], reverse=True))
+            version_summary[path] = dict(sorted(data.items(), key=lambda item: item[1], reverse=True))
+
+        def sort_results(item):
+            # Sort based on popularity.
+            for key in (
+                "game.grf.",
+                "game.ai.",
+                "game.game_script.",
+                "info.configuration.graphics_set.",
+                "info.configuration.music_set.",
+                "info.configuration.sound_set.",
+            ):
+                if item[0].startswith(key):
+                    return (key, -sum(item[1].values()))
+
+            # Sort the data based on the path.
+            return (item[0], 0)
+
+        summary[version] = dict(sorted(summary[version].items(), key=sort_results))
 
     # Remove versions that didn't reach the threshold.
     for version in remove_version:
         del summary[version]
 
-    print(json.dumps(dict(sorted(summary.items(), key=lambda item: item[0])), indent=4))
+    summary = {
+        "survey": dict(sorted(summary.items(), key=lambda item: item[0])),
+        "content": export_bananas_data(),
+    }
+
+    print(json.dumps(summary, indent=2))
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ layout: default
 
             <ul>
                 {% for summary in site.summaries %}
-                    {% if summary.year != page.year or summary.filename != page.filename or summary.version == nil %}{% continue %}{% endif %}
+                    {% if summary.year != page.year or summary.filename != page.filename or summary.version == nil or summary.layout == "summary_content" %}{% continue %}{% endif %}
                     <li>
                         <a href="{{ summary.url }}">{{ summary.version }}</a>
                     </li>

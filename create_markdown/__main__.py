@@ -61,6 +61,35 @@ layout: "summary"
 ---
 """)
 
+    output = f"_summaries/{year}/{timeframe}{quarter_or_week}/{version}/content.md"
+    os.makedirs(os.path.dirname(output), exist_ok=True)
+
+    with open(output, "w") as file:
+        if timeframe == "wk":
+            file.write(f"""---
+title: {year} - Week {quarter_or_week} - {version} - 3rd Party Content
+active_nav: summaries
+year: "{year}"
+filename: "wk{quarter_or_week}"
+version: "{version}"
+start_date: "{start_date}"
+end_date: "{end_date}"
+layout: "summary_content"
+---
+""")
+        else:
+            file.write(f"""---
+title: {year} - Quarter {quarter_or_week} - {version} - 3rd Party Content
+active_nav: summaries
+year: "{year}"
+filename: "q{quarter_or_week}"
+version: "{version}"
+start_date: "{start_date}"
+end_date: "{end_date}"
+layout: "summary_content"
+---
+""")
+
 def main():
     timeframe = sys.argv[1]
     year = sys.argv[2]
@@ -74,7 +103,7 @@ def main():
     create_summary(timeframe, year, week, start_date, end_date)
     with open(f"_data/summaries/{year}/{timeframe}{week}.json", "r") as file:
         data = json.load(file)
-        for version, content in data.items():
+        for version, content in data["survey"].items():
             if content:
                 create_version(timeframe, year, week, start_date, end_date, version)
 
