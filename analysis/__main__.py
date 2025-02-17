@@ -146,7 +146,7 @@ def summarize_setting(summary, version, seconds, path, data):
 
     if path == "info.os.os":
         if data.startswith("Windows"):
-            major, minor, buildnumber = data.split(" ", 1)[1].split(".")
+            major, minor, buildnumber = data.split(" ")[1].split(".")
             os_version = WINDOWS_BUILD_NUMBER_TO_NAME.get(f"{major}.{minor}", data)
             if major == "10" and buildnumber.isdigit() and int(buildnumber) >= 22000:
                 os_version = WINDOWS_BUILD_NUMBER_TO_NAME.get(f"{major}.{minor}.22000", os_version)
