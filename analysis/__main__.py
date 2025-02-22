@@ -63,6 +63,9 @@ BLACKLIST_PATHS = [
     "session",  # Processed differently.
 ]
 
+# In what percentile to report savegame sizes.
+SAVEGAME_SIZE_PERCENTILE = [50, 90, 95, 99, 99.9]
+
 
 def summarize_setting(summary, version, seconds, path, data):
     if path in BLACKLIST_PATHS:
@@ -266,8 +269,7 @@ def summarize_result(summary, timeframe, fp):
 
     # Depending whether the game was saved, we see a savegame-size or not.
     if schema >= 2 and "savegame_size" in data["session"]:
-        summary[version]["savegame"]["count"] += 1
-        summary[version]["savegame"]["size"] += data["session"]["savegame_size"]
+        summary[version]["savegame_size"][(data["session"]["savegame_size"] // 10000) * 10000] += 1
 
     if "ids" not in summary[version]["summary"]:
         summary[version]["summary"]["ids"] = set()
@@ -300,6 +302,17 @@ def summarize_archive(summary, timeframe, filename):
                 summarize_result(summary, timeframe, fp)
 
 
+def get_percentile(data, percentile):
+    total = sum(data.values())
+    target = total * percentile / 100
+    current = 0
+    for key, value in data.items():
+        current += value
+        if current >= target:
+            return key
+    return None
+
+
 def main():
     timeframe = sys.argv[1]
 
@@ -320,11 +333,13 @@ def main():
                     remove_version.append(version)
                     break
 
-            if path == "savegame":
-                if data["count"] != 0:
-                    data["average_size"] = int(data["size"] / data["count"])
-                del data["size"]
-                del data["count"]
+            if path == "savegame_size":
+                buckets = dict(sorted(data.items()))
+                data = {}
+                for percentile in SAVEGAME_SIZE_PERCENTILE:
+                    data[f"Percentile ({percentile}%)"] = get_percentile(buckets, percentile)
+                data["Average size"] = sum(key * value for key, value in buckets.items()) // sum(buckets.values())
+                version_summary[path] = data
 
             if path.startswith("game.settings.display_opt.") or path.startswith("game.settings.extra_display_opt."):
                 data["false"] = version_summary["summary"]["seconds"] - data["true"]
@@ -343,11 +358,11 @@ def main():
                 pass
             else:
                 # Check if it adds up to the total; if not, it is (most likely) an OS specific setting.
-                if path not in ("summary", "savegame") and total != version_summary["summary"]["seconds"]:
+                if path not in ("summary", "savegame_size") and total != version_summary["summary"]["seconds"]:
                     data["(not reported)"] = version_summary["summary"]["seconds"] - total
 
                 # Collapse entries below 0.1% to a single (other) entry, and not true/false.
-                if path not in ("summary", "reason", "savegame"):
+                if path not in ("summary", "reason", "savegame_size"):
                     collapse = []
                     for key, value in data.items():
                         if value / total < 0.001 and key not in ("true", "false", "(not reported)"):
