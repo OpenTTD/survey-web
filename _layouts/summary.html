@@ -66,7 +66,7 @@ layout: default
                 <tr>
                     <td style="width: 40px;"></td>
                     <td><pre>{{ line[0] }}</pre></td>
-                    {% if line[0] == "average_size" %}
+                    {% if summary[0] == "savegame_size" %}
                     <td style="text-align: right;">{{ line[1] | divided_by: 1024 }} KiB</td>
                     {% else %}
                         {% if percentage == "0.0" %}
