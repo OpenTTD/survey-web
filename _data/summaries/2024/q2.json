@@ -8243,8 +8243,8 @@
         "MacOS 14.1.1": 1697594
       },
       "info.os.os.version": {
-        "Windows 10": 749212305,
-        "Windows 11": 641578703,
+        "Windows 10": 749140217,
+        "Windows 11": 641650791,
         "MacOS 14": 70407085,
         "Linux": 48972108,
         "Windows 7": 27011384,
@@ -8285,8 +8285,13 @@
         "leave": 505361950,
         "crash": 11930433
       },
-      "savegame": {
-        "average_size": 3357407
+      "savegame_size": {
+        "Percentile (99.9%)": 36980000,
+        "Percentile (99%)": 30420000,
+        "Percentile (95%)": 23070000,
+        "Percentile (90%)": 7700000,
+        "Average size": 3352426,
+        "Percentile (50%)": 640000
       },
       "summary": {
         "seconds": 1596027053,
@@ -19271,8 +19276,13 @@
         "leave": 114063915,
         "crash": 1139540
       },
-      "savegame": {
-        "average_size": 10849994
+      "savegame_size": {
+        "Percentile (99.9%)": 356910000,
+        "Percentile (99%)": 128290000,
+        "Percentile (95%)": 34370000,
+        "Percentile (90%)": 22790000,
+        "Average size": 10845021,
+        "Percentile (50%)": 3300000
       },
       "summary": {
         "seconds": 320165388,
@@ -24347,8 +24357,13 @@
         "leave": 10722709,
         "crash": 54052
       },
-      "savegame": {
-        "average_size": 7667532
+      "savegame_size": {
+        "Percentile (99.9%)": 33990000,
+        "Percentile (99%)": 31950000,
+        "Percentile (95%)": 31080000,
+        "Percentile (90%)": 30590000,
+        "Average size": 7662476,
+        "Percentile (50%)": 1750000
       },
       "summary": {
         "seconds": 23774103,

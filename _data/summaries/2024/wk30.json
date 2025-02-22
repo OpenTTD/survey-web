@@ -3994,8 +3994,13 @@
         "exit": 2058745,
         "leave": 653257
       },
-      "savegame": {
-        "average_size": 3900004
+      "savegame_size": {
+        "Percentile (99.9%)": 28370000,
+        "Percentile (99%)": 27610000,
+        "Percentile (95%)": 27230000,
+        "Percentile (90%)": 11880000,
+        "Average size": 3894819,
+        "Percentile (50%)": 470000
       },
       "summary": {
         "seconds": 2712002,
@@ -11288,8 +11293,13 @@
         "leave": 41578912,
         "crash": 388904
       },
-      "savegame": {
-        "average_size": 3318930
+      "savegame_size": {
+        "Percentile (99.9%)": 34290000,
+        "Percentile (99%)": 30370000,
+        "Percentile (95%)": 24020000,
+        "Percentile (90%)": 7500000,
+        "Average size": 3313931,
+        "Percentile (50%)": 670000
       },
       "summary": {
         "seconds": 133701574,
@@ -17645,8 +17655,13 @@
         "leave": 1908514,
         "crash": 5219
       },
-      "savegame": {
-        "average_size": 9457319
+      "savegame_size": {
+        "Percentile (99.9%)": 360150000,
+        "Percentile (99%)": 92170000,
+        "Percentile (95%)": 23030000,
+        "Percentile (90%)": 18140000,
+        "Average size": 9452403,
+        "Percentile (50%)": 2660000
       },
       "summary": {
         "seconds": 8871529,
@@ -25808,8 +25823,13 @@
         "leave": 3018754,
         "crash": 93207
       },
-      "savegame": {
-        "average_size": 10507604
+      "savegame_size": {
+        "Percentile (99.9%)": 384620000,
+        "Percentile (99%)": 78400000,
+        "Percentile (95%)": 45490000,
+        "Percentile (90%)": 25250000,
+        "Average size": 10502469,
+        "Percentile (50%)": 3030000
       },
       "summary": {
         "seconds": 9321529,

@@ -7395,8 +7395,13 @@
         "leave": 50119349,
         "crash": 208238
       },
-      "savegame": {
-        "average_size": 3296477
+      "savegame_size": {
+        "Percentile (99.9%)": 32690000,
+        "Percentile (99%)": 29590000,
+        "Percentile (95%)": 22920000,
+        "Percentile (90%)": 7650000,
+        "Average size": 3291499,
+        "Percentile (50%)": 700000
       },
       "summary": {
         "seconds": 156893900,
@@ -13238,8 +13243,13 @@
         "leave": 6257263,
         "crash": 135668
       },
-      "savegame": {
-        "average_size": 4027826
+      "savegame_size": {
+        "Percentile (99.9%)": 39330000,
+        "Percentile (99%)": 30850000,
+        "Percentile (95%)": 26080000,
+        "Percentile (90%)": 12060000,
+        "Average size": 4022772,
+        "Percentile (50%)": 680000
       },
       "summary": {
         "seconds": 19387156,
@@ -20117,8 +20127,13 @@
         "leave": 1754521,
         "crash": 15163
       },
-      "savegame": {
-        "average_size": 13986783
+      "savegame_size": {
+        "Percentile (99.9%)": 288230000,
+        "Percentile (99%)": 128890000,
+        "Percentile (95%)": 54720000,
+        "Percentile (90%)": 35450000,
+        "Average size": 13981696,
+        "Percentile (50%)": 4750000
       },
       "summary": {
         "seconds": 8325350,
@@ -27944,8 +27959,13 @@
         "leave": 3280375,
         "crash": 6670
       },
-      "savegame": {
-        "average_size": 13059572
+      "savegame_size": {
+        "Percentile (99.9%)": 183370000,
+        "Percentile (99%)": 144750000,
+        "Percentile (95%)": 58170000,
+        "Percentile (90%)": 38380000,
+        "Average size": 13054690,
+        "Percentile (50%)": 4460000
       },
       "summary": {
         "seconds": 8293653,
@@ -31404,8 +31424,13 @@
         "leave": 598975,
         "crash": 9152
       },
-      "savegame": {
-        "average_size": 2370096
+      "savegame_size": {
+        "Percentile (99.9%)": 27270000,
+        "Percentile (99%)": 26980000,
+        "Percentile (95%)": 19230000,
+        "Percentile (90%)": 5560000,
+        "Average size": 2363819,
+        "Percentile (50%)": 310000
       },
       "summary": {
         "seconds": 1615407,
