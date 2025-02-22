@@ -7260,8 +7260,8 @@
         "MacOS 13.7.0": 152912
       },
       "info.os.os.version": {
-        "Windows 11": 65836244,
-        "Windows 10": 61176813,
+        "Windows 11": 65887666,
+        "Windows 10": 61125391,
         "MacOS 14": 7756632,
         "Linux": 2795145,
         "Windows 7": 2770615,
@@ -7302,8 +7302,13 @@
         "leave": 45274668,
         "crash": 133139
       },
-      "savegame": {
-        "average_size": 3299453
+      "savegame_size": {
+        "Percentile (99.9%)": 38850000,
+        "Percentile (99%)": 30160000,
+        "Percentile (95%)": 23590000,
+        "Percentile (90%)": 7500000,
+        "Average size": 3294429,
+        "Percentile (50%)": 590000
       },
       "summary": {
         "seconds": 147164571,
@@ -13961,8 +13966,13 @@
         "exit": 3355368,
         "leave": 1143164
       },
-      "savegame": {
-        "average_size": 21645674
+      "savegame_size": {
+        "Percentile (99.9%)": 433770000,
+        "Percentile (99%)": 304980000,
+        "Percentile (95%)": 100690000,
+        "Average size": 21640805,
+        "Percentile (90%)": 16320000,
+        "Percentile (50%)": 4230000
       },
       "summary": {
         "seconds": 4498532,
@@ -22180,8 +22190,13 @@
         "leave": 5040519,
         "crash": 41836
       },
-      "savegame": {
-        "average_size": 13631619
+      "savegame_size": {
+        "Percentile (99.9%)": 231510000,
+        "Percentile (99%)": 92520000,
+        "Percentile (95%)": 66320000,
+        "Percentile (90%)": 46260000,
+        "Average size": 13626525,
+        "Percentile (50%)": 4970000
       },
       "summary": {
         "seconds": 13827427,
@@ -25602,8 +25617,13 @@
         "exit": 414317,
         "leave": 277110
       },
-      "savegame": {
-        "average_size": 2378020
+      "savegame_size": {
+        "Percentile (99.9%)": 31250000,
+        "Percentile (99%)": 30030000,
+        "Percentile (95%)": 12740000,
+        "Percentile (90%)": 6320000,
+        "Average size": 2373285,
+        "Percentile (50%)": 110000
       },
       "summary": {
         "seconds": 691427,

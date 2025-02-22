@@ -6980,8 +6980,8 @@
         "Linux 6.1.0": 23320
       },
       "info.os.os.version": {
-        "Windows 10": 11306074,
-        "Windows 11": 8790859,
+        "Windows 10": 11291025,
+        "Windows 11": 8805908,
         "Linux": 1021348,
         "MacOS 14": 589795,
         "Windows 7": 247051,
@@ -7020,8 +7020,13 @@
         "leave": 6829509,
         "crash": 116833
       },
-      "savegame": {
-        "average_size": 3726344
+      "savegame_size": {
+        "Percentile (99.9%)": 40750000,
+        "Percentile (99%)": 32730000,
+        "Percentile (95%)": 25730000,
+        "Percentile (90%)": 8050000,
+        "Average size": 3721271,
+        "Percentile (50%)": 790000
       },
       "summary": {
         "seconds": 22256735,
@@ -12904,8 +12909,13 @@
         "leave": 5142826,
         "crash": 997974
       },
-      "savegame": {
-        "average_size": 3409686
+      "savegame_size": {
+        "Percentile (99.9%)": 34780000,
+        "Percentile (99%)": 29450000,
+        "Percentile (95%)": 19860000,
+        "Percentile (90%)": 12610000,
+        "Average size": 3404564,
+        "Percentile (50%)": 610000
       },
       "summary": {
         "seconds": 15542167,
@@ -27796,8 +27806,13 @@
         "leave": 3126257,
         "crash": 31409
       },
-      "savegame": {
-        "average_size": 11256821
+      "savegame_size": {
+        "Percentile (99.9%)": 230900000,
+        "Percentile (99%)": 228110000,
+        "Percentile (95%)": 54010000,
+        "Percentile (90%)": 21810000,
+        "Average size": 11251892,
+        "Percentile (50%)": 1920000
       },
       "summary": {
         "seconds": 7827225,
@@ -35428,8 +35443,13 @@
         "leave": 1070590,
         "crash": 8358
       },
-      "savegame": {
-        "average_size": 12216521
+      "savegame_size": {
+        "Percentile (99.9%)": 232040000,
+        "Percentile (99%)": 231140000,
+        "Percentile (95%)": 48660000,
+        "Percentile (90%)": 23650000,
+        "Average size": 12211972,
+        "Percentile (50%)": 2430000
       },
       "summary": {
         "seconds": 2773307,

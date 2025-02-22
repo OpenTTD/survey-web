@@ -4078,8 +4078,13 @@
         "exit": 1284451,
         "leave": 528353
       },
-      "savegame": {
-        "average_size": 1874103
+      "savegame_size": {
+        "Percentile (99.9%)": 29900000,
+        "Percentile (99%)": 23940000,
+        "Percentile (95%)": 8220000,
+        "Percentile (90%)": 3760000,
+        "Average size": 1868691,
+        "Percentile (50%)": 220000
       },
       "summary": {
         "seconds": 1812804,
@@ -11467,8 +11472,13 @@
         "leave": 38675168,
         "crash": 137430
       },
-      "savegame": {
-        "average_size": 3296986
+      "savegame_size": {
+        "Percentile (99.9%)": 34110000,
+        "Percentile (99%)": 30190000,
+        "Percentile (95%)": 22600000,
+        "Percentile (90%)": 7670000,
+        "Average size": 3291956,
+        "Percentile (50%)": 670000
       },
       "summary": {
         "seconds": 122878313,
@@ -17812,8 +17822,8 @@
       },
       "info.os.os.version": {
         "MacOS 11": 2328374,
-        "Windows 11": 1540515,
-        "Windows 10": 1120368,
+        "Windows 11": 1632414,
+        "Windows 10": 1028469,
         "MacOS 13": 197913,
         "Windows 8.1": 120955,
         "MacOS 10.15": 70059,
@@ -17840,8 +17850,13 @@
         "exit": 3961357,
         "leave": 1510431
       },
-      "savegame": {
-        "average_size": 5794685
+      "savegame_size": {
+        "Percentile (99.9%)": 112600000,
+        "Percentile (99%)": 23930000,
+        "Percentile (95%)": 17710000,
+        "Percentile (90%)": 15130000,
+        "Average size": 5789446,
+        "Percentile (50%)": 2490000
       },
       "summary": {
         "seconds": 5471788,
@@ -26224,8 +26239,13 @@
         "leave": 4636097,
         "crash": 129481
       },
-      "savegame": {
-        "average_size": 9736179
+      "savegame_size": {
+        "Percentile (99.9%)": 261550000,
+        "Percentile (99%)": 93360000,
+        "Percentile (95%)": 33580000,
+        "Percentile (90%)": 29620000,
+        "Average size": 9731299,
+        "Percentile (50%)": 1800000
       },
       "summary": {
         "seconds": 12814460,

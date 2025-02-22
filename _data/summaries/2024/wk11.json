@@ -19155,8 +19155,13 @@
         "leave": 1144303,
         "crash": 25749
       },
-      "savegame": {
-        "average_size": 4799529
+      "savegame_size": {
+        "Percentile (99%)": 25750000,
+        "Percentile (99.9%)": 25750000,
+        "Percentile (95%)": 17120000,
+        "Percentile (90%)": 17050000,
+        "Average size": 4794761,
+        "Percentile (50%)": 2000000
       },
       "summary": {
         "seconds": 3327491,
