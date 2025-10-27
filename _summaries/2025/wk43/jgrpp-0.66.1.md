@@ -1,0 +1,10 @@
+---
+title: 2025 - Week 43 - jgrpp-0.66.1
+active_nav: summaries
+year: "2025"
+filename: "wk43"
+version: "jgrpp-0.66.1"
+start_date: "2025-10-20"
+end_date: "2025-10-26"
+layout: "summary"
+---
