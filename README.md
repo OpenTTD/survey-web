@@ -61,24 +61,3 @@ The private key is, of course, a secret within the GitHub workflow of the projec
 
 Based on this, the worker can validate that the request is valid, and create a survey key based on the request.
 This is then used by the GitHub workflow to embed in the binaries.
-
-### Patch-pack support
-
-The survey fully supports patch-packs, including the ability for them to get a survey key.
-
-First, an RSA private/public key is needed.
-This can be generated in various of ways, but for example via `openssl`:
-
-- Private key: `openssl genrsa -out privatekey.pem 2048`
-- Public key (based on the private key above): `openssl rsa -in privatekey.pem -outform PEM -pubout -out publickey.pem`
-
-Now the public key (without the lines starting with `----`) needs to be added under `workers/src/public_keys/` and `workers/src/public_keys/index.js` needs to be adjusted to import the new key.
-The name of the file under `public_keys/` is important, as this is part of the URL to retrieve a new survey key.
-Requests to this URL have to be signed with the private key of which the public key is in this repository.
-
-Make a Pull Request out of this change, and point to where your patch-pack can be found etc.
-
-Next, the contents of the private key file (`privatekey.pem`) needs to be added as the `SURVEY_SIGNING_KEY` secret to the GitHub Actions of your repository.
-Now for the last part, add the `SURVEY_TYPE` variable to the GitHub Actions of your repository matching the name of the file above.
-The patch-pack can now safely create new survey keys.
-See OpenTTD's workflow (`release-source.yml`) for more details exactly how.
