@@ -96,6 +96,11 @@ def summarize_setting(summary, version, seconds, path, data):
             data = "(not running)"
 
     if type(data) is list:
+        # Fonts were of type list in OpenTTD starting with nightly 20251207.
+        # This was reverted in nightly 20251214.
+        # Once support for lists is added, this temporary workaround can be removed.
+        if path.startswith("info.font."):
+            return
         raise Exception("Lists are not implemented yet")
 
     if path in ("game.settings.display_opt", "game.settings.extra_display_opt"):
