@@ -29,7 +29,7 @@ jobs:
         installation_retrieval_payload: "OpenTTD/survey-web"
 
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         token: ${{ steps.generate_token.outputs.token }}
 
@@ -110,13 +110,13 @@ jobs:
         done
 
     - name: Download BaNaNaS database
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         repository: OpenTTD/BaNaNaS
         path: BaNaNaS
 
     - name: Set up Python 3.11
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: 3.11
 
