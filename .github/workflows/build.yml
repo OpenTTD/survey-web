@@ -1,0 +1,50 @@
+name: Build
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    name: Build
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.pull_request.head.sha || github.ref }}
+        fetch-depth: 0
+
+    - name: Set up Ruby 3.3
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.3'
+        bundler-cache: true
+
+    - name: Build
+      run: |
+        JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter
+
+    - name: Prepare branch name
+      run: |
+        mkdir branch
+        echo "${{ github.event_name == 'push' && github.ref_name || format('pr/{0}', github.event.pull_request.number) }}" > ./branch/name
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v6
+      with:
+        name: payload
+        path: |
+          _site
+          branch
+        retention-days: 1
