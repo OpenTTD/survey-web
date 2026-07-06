@@ -1,0 +1,10 @@
+---
+title: 2026 - Week 27 - 16.0-beta1 - 3rd Party Content
+active_nav: summaries
+year: "2026"
+filename: "wk27"
+version: "16.0-beta1"
+start_date: "2026-06-29"
+end_date: "2026-07-05"
+layout: "summary_content"
+---
