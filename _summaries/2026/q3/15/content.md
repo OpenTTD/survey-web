@@ -1,0 +1,10 @@
+---
+title: 2026 - Quarter 3 - 15 - 3rd Party Content
+active_nav: summaries
+year: "2026"
+filename: "q3"
+version: "15"
+start_date: "2026-07-01"
+end_date: "2026-09-30"
+layout: "summary_content"
+---
